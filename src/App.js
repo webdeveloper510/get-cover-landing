@@ -1,4 +1,8 @@
 import './App.css';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+
 // -------------Component imported
 import Header from './common/Header';
 import Footer from './common/Footer';
@@ -30,9 +34,27 @@ import Input from './common/Input';
 
 
 function App() {
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 4
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 4
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
   return (
     <div className='bg-full-bg bg-cover bg-no-repeat '>
-      <div className='px-20'>
+      <div className='w-1366 mx-auto'>
         <Header />
         <div className='grid grid-cols-2 gap-4'>
           <div className='self-center '>
@@ -51,7 +73,7 @@ function App() {
       <div className=' mb-32'>
         <img src={overlay} alt='Overlay' />
       </div>
-      <div className='px-20 pb-32'>
+      <div className='w-1366 mx-auto pb-32'>
         <div className='grid grid-cols-3 gap-4'>
           <div className='col-span-2'>
             <h1 className='text-[35px] font-bold leading-none my-4 text-white'>Our Featured <br /> Protection Plans</h1>
@@ -83,7 +105,7 @@ function App() {
           <div className='col-span-1'>
             <div className=''>
               <img src={plainImage2} className='mb-3' alt='plainImage' />
-              <p className='bg-gradient-to-r from-[#FFC7AD] capitalize to-[#FF9E9C] bg-clip-text text-transparent mt-5 text-[14px] font-bold mb-3'>Reseller Extended Warranty</p>
+              <p className='bg-gradient-to-r from-[#FFC7AD] capitalize to-[#FF9E9C] bg-clip-text text-transparent mt-6 text-[14px] font-bold mb-3'>Reseller Extended Warranty</p>
               <h1 className='text-xl font-semibold text-white leading-tight capitalize'>Getcover Offers Comprehensive <br /> Protection Plans for Resellers to <br /> Resell Under Your Own Brand.</h1>
               <p className='bg-gradient-to-r from-[#ACA1DF] to-[#D8BCD2] capitalize bg-clip-text text-transparent text-base'>Multiple Plans, Complete <br /> Coverage, and a Hassle-Free <br /> Claims Process.</p>
               <button className='text-white text-sm border border-[#AB9CC0] py-2 px-5 mt-3 rounded-lg'> Get Started Today</button>
@@ -91,86 +113,123 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='px-20 pb-32'>
+      <div className='w-1366 mx-auto pb-32'>
         <div className='flex justify-between'>
           <p className='text-[35px] font-bold leading-none text-white '>Essential Gadgets <br /> Protection Plans</p>
           <div className='self-center flex'>
-            <img src={left} className='w-10 h-10 mr-4' alt='left' />
-            <img src={right} className='w-10 h-10 mr-4' alt='right' />
+            <button className='self-center' onClick={() => Carousel.previous()}>
+              <img src={left} className='w-10 h-10 mr-4' alt='left' />
+            </button>
+            <button className='self-center' onClick={() => Carousel.next()}>
+              <img src={right} className='w-10 h-10 mr-4' alt='right' />
+            </button>
           </div>
         </div>
-        <div className='grid grid-cols-4 gap-4 my-10'>
-          <div className='bg-Mobile bg-cover bg-no-repeat px-8 py-9 rounded-[20px]'>
-            <div className='flex pl-4'>
-              <div className='self-center w-[30%]'>
-                <img src={MobileIcon} alt='mobile' />
+        <div className='my-10'>
+          <Carousel
+            responsive={responsive}
+            arrows={false}
+            renderDotsOutside={true}
+            ref={(el) => (Carousel = el)} // Assigning ref to control the carousel
+          >
+            <div className='mx-3'>
+              <div className='bg-Mobile bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
+                <div className='flex pl-4'>
+                  <div className='self-center w-[30%]'>
+                    <img src={MobileIcon} alt='mobile' />
+                  </div>
+                  <p className='text-white text-[15px]'>Mobile Protection <br /> Plans</p>
+                </div>
               </div>
-              <p className='text-white text-base'>Mobile Protection <br /> Plans</p>
-            </div>
-          </div>
-          <div className='bg-Power bg-cover bg-no-repeat px-8 py-9 rounded-[20px]'>
-            <div className='flex pl-4'>
-              <div className='self-center w-[30%]'>
-                <img src={PowerIcon} alt='Power' />
+              <div className='bg-Headphone bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
+                <div className='flex pl-4'>
+                  <div className='self-center w-[30%]'>
+                    <img src={HeadphoneIcon} alt='Headphone' />
+                  </div>
+                  <p className='text-white text-[15px]'>Headphone  <br /> Protection</p>
+                </div>
               </div>
-              <p className='text-white text-base'>Power Tool  <br /> Protection</p>
             </div>
-          </div>
-          <div className='bg-Laptop bg-cover bg-no-repeat px-8 py-9 rounded-[20px]'>
-            <div className='flex pl-4'>
-              <div className='self-center w-[30%]'>
-                <img src={LaptopIcon} alt='Laptop' />
+            <div className='mx-3'>
+              <div className='bg-Power bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
+                <div className='flex pl-4'>
+                  <div className='self-center w-[30%]'>
+                    <img src={PowerIcon} alt='Power' />
+                  </div>
+                  <p className='text-white text-[15px]'>Power Tool  <br /> Protection</p>
+                </div>
               </div>
-              <p className='text-white text-base'>Laptop  <br /> Protection</p>
-            </div>
-          </div>
-          <div className='bg-Gaming bg-cover bg-no-repeat px-8 py-9 rounded-[20px]'>
-            <div className='flex pl-4'>
-              <div className='self-center w-[30%]'>
-                <img src={GamingIcon} alt='Gaming' />
+              <div className='bg-Smartwatch bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
+                <div className='flex pl-4'>
+                  <div className='self-center w-[30%]'>
+                    <img src={SmartwatchIcon} alt='Smartwatch' />
+                  </div>
+                  <p className='text-white text-[15px]'>Smartwatch  <br /> Protection</p>
+                </div>
               </div>
-              <p className='text-white text-base'>Gaming Console  <br /> Protection</p>
             </div>
-          </div>
-          <div className='bg-Headphone bg-cover bg-no-repeat px-8 py-9 rounded-[20px]'>
-            <div className='flex pl-4'>
-              <div className='self-center w-[30%]'>
-                <img src={HeadphoneIcon} alt='Headphone' />
+            <div className='mx-3'>
+              <div className='bg-Laptop bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
+                <div className='flex pl-4'>
+                  <div className='self-center w-[30%]'>
+                    <img src={LaptopIcon} alt='Laptop' />
+                  </div>
+                  <p className='text-white text-[15px]'>Laptop  <br /> Protection</p>
+                </div>
               </div>
-              <p className='text-white text-base'>Headphone  <br /> Protection</p>
-            </div>
-          </div>
-          <div className='bg-Smartwatch bg-cover bg-no-repeat px-8 py-9 rounded-[20px]'>
-            <div className='flex pl-4'>
-              <div className='self-center w-[30%]'>
-                <img src={SmartwatchIcon} alt='Smartwatch' />
+              <div className='bg-Fitness bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
+                <div className='flex pl-4'>
+                  <div className='self-center w-[30%]'>
+                    <img src={FitnessIcon} alt='Fitness' />
+                  </div>
+                  <p className='text-white text-[15px]'>Fitness Equipment  <br /> Protection</p>
+                </div>
               </div>
-              <p className='text-white text-base'>Smartwatch  <br /> Protection</p>
             </div>
-          </div>
-          <div className='bg-Fitness bg-cover bg-no-repeat px-8 py-9 rounded-[20px]'>
-            <div className='flex pl-4'>
-              <div className='self-center w-[30%]'>
-                <img src={FitnessIcon} alt='Fitness' />
+            <div className='mx-3'>
+              <div className='bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
+                <div className='flex pl-4'>
+                  <div className='self-center w-[30%]'>
+                    <img src={GamingIcon} alt='Gaming' />
+                  </div>
+                  <p className='text-white text-[15px]'>Gaming Console  <br /> Protection</p>
+                </div>
               </div>
-              <p className='text-white text-base'>Fitness Equipment  <br /> Protection</p>
-            </div>
-          </div>
-          <div className='bg-Major bg-cover bg-no-repeat px-8 py-9 rounded-[20px]'>
-            <div className='flex pl-4'>
-              <div className='self-center w-[30%]'>
-                <img src={MajorIcon} alt='Major' />
+              <div className='bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
+                <div className='flex pl-4'>
+                  <div className='self-center w-[30%]'>
+                    <img src={MajorIcon} alt='Major' />
+                  </div>
+                  <p className='text-white text-[15px]'>Major Appliance  <br /> Protection</p>
+                </div>
               </div>
-              <p className='text-white text-base'>Major Appliance  <br /> Protection</p>
             </div>
-          </div>
+            <div className='mx-3'>
+              <div className='bg-Mobile bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
+                <div className='flex pl-4'>
+                  <div className='self-center w-[30%]'>
+                    <img src={MobileIcon} alt='mobile' />
+                  </div>
+                  <p className='text-white text-[15px]'>Mobile Protection <br /> Plans</p>
+                </div>
+              </div>
+              <div className='bg-Headphone bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
+                <div className='flex pl-4'>
+                  <div className='self-center w-[30%]'>
+                    <img src={HeadphoneIcon} alt='Headphone' />
+                  </div>
+                  <p className='text-white text-[15px]'>Headphone  <br /> Protection</p>
+                </div>
+              </div>
+            </div>
+          </Carousel>
         </div>
       </div>
-      <div className='px-20 pb-20'>
+      <div className='w-1366 mx-auto pb-20'>
         <p className='text-[35px] font-bold leading-none text-white '>Get Cover truly  <br /> cares for you</p>
         <div className='grid grid-cols-3 gap-4 my-12'>
           <div className='flex '>
-            <div className='w-[27%] self-center'>
+            <div className='w-[25%] self-center'>
               <img src={Time} alt='Save Time' />
             </div>
             <div>
@@ -179,7 +238,7 @@ function App() {
             </div>
           </div>
           <div className='flex '>
-            <div className='w-[27%] self-center'>
+            <div className='w-[25%] self-center'>
               <img src={Money} alt='Save Money' />
             </div>
             <div>
@@ -188,7 +247,7 @@ function App() {
             </div>
           </div>
           <div className='flex '>
-            <div className='w-[27%] self-center'>
+            <div className='w-[25%] self-center'>
               <img src={Hassles} alt='Save Hassles' />
             </div>
             <div>
@@ -199,7 +258,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='px-20 pb-20'>
+      <div className='w-1366 mx-auto pb-20'>
         <div className='grid grid-cols-12 gap-4'>
           <div className='col-span-5 self-center'>
             <h1 className='text-[35px] font-bold leading-[40px] text-white mb-3'>Why Get Device <br /> Protection Plans?</h1>
@@ -225,13 +284,13 @@ function App() {
         </div>
       </div>
 
-      <div className='px-20 pb-32'>
+      <div className='w-1366 mx-auto pb-32'>
         <div className='bg-About bg-cover bg-no-repeat text-center p-16 rounded-[16px]'>
           <h1 className='text-white text-3xl font-bold mb-5'>About Us</h1>
-          <p className='text-center w-2/3 text-[20px] mx-auto text-[#B8AEDA]'><span className='text-white font-bold'> GetCover </span> is an InsureTech leader, delivering innovative warranty and technology solutions for businesses and individuals. Backed by the resources and global expertise of Newpoint Financial Group, we ensure reliable and efficient services across North America, Europe, Africa, and the Middle East. Our mission is to offer peace of mind with comprehensive and dependable coverage.</p>
+          <p className='text-center w-[73%] text-[20px] mx-auto text-[#B8AEDA]'><span className='text-white font-bold'> GetCover </span> is an InsureTech leader, delivering innovative warranty and technology solutions for businesses and individuals. Backed by the resources and global expertise of Newpoint Financial Group, we ensure reliable and efficient services across North America, Europe, Africa, and the Middle East. Our mission is to offer peace of mind with comprehensive and dependable coverage.</p>
         </div>
       </div>
-      <div className='px-20 pb-32'>
+      <div className='w-1366 mx-auto pb-28'>
         <div className='flex justify-between pb-20'>
           <h1 className='text-[40px] font-bold leading-[48px] text-[#B8AEDB]'>To experience the <br /> <span className='text-white'> GetCover </span> difference.</h1>
           <div className='h-[1px] self-center my-auto bg-[#B8AEDA] w-[40%] ml-2'></div>
@@ -262,7 +321,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='px-20 pb-32'>
+      <div className='w-1366 mx-auto pb-28'>
         <h1 className='text-[40px] font-bold text-center leading-[48px] text-white'>Testimonials</h1>
         <div className='grid grid-cols-12 gap-4 my-8'>
           <div className='col-span-2'></div>
@@ -283,7 +342,7 @@ function App() {
           <div className='col-span-2'></div>
         </div>
       </div>
-      <div className='px-20 pb-32'>
+      <div className='w-1366 mx-auto pb-32'>
         <div className='bg-Contact bg-cover bg-no-repeat rounded-[16px]'>
           <div className='grid grid-cols-12 gap-4 p-12'>
             <div className='col-span-5 self-center'>
@@ -311,7 +370,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='px-20'>
+      <div className='w-1366 mx-auto'>
         <Footer />
       </div>
     </div>
