@@ -7,10 +7,10 @@ function Header() {
                 <img src={logo} alt='logo' />
             </div>
             <div className='flex justify-between text-white self-center'>
-                <p className='ml-5 self-center text-base'>Our Plans</p>
-                <p className='ml-5 self-center text-base'> About Us</p>
-                <p className='ml-5 self-center text-base'>Why Us</p>
-                <button className='text-black font-semibold bg-white rounded-lg p-3 ml-5'>Contact Us</button>
+                <a href='#plain' className='ml-5 self-center text-base'>Our Plans</a>
+                <a href='#aboutUs' className='ml-5 self-center text-base'> About Us</a>
+                <a href='#whyUs' className='ml-5 self-center text-base'>Why Us</a>
+                <a href="#contactUs" className='text-black font-semibold bg-white rounded-lg p-3 ml-5'>Contact Us</a>
             </div>
         </div>
     )

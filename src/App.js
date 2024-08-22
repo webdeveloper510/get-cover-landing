@@ -63,8 +63,7 @@ function App() {
           <div className='self-center '>
             <h1 className='text-[60px] font-bold leading-none text-white'><span className='text-[#dacdffda]'> A New Era <br /> of </span>  Warranty <br /> Assurance</h1>
             <p className='text-[#dacdffda] text-[28px] font-bold leading-none my-4'>Expertise You Can Trust, Assurance <br /> You Can Rely On</p>
-            <p className='text-[#dacdffda] text-[18px] mb-4'>Premium Technology and Warranty Solutions,<br /> Enhanced by Financial Strength of Newpoint <br /> Financial Group
-            </p>
+            <p className='text-[#dacdffda] text-[18px] mb-4'>Premium Technology and Warranty Solutions,<br /> Enhanced by Financial Strength </p>
             <button className='bg-gradient text-base font-semibold py-4 px-12 rounded-lg'>Explore More</button>
           </div>
           <div>
@@ -76,7 +75,7 @@ function App() {
       <div className=' mb-32'>
         <img src={overlay} alt='Overlay' />
       </div>
-      <div className='w-1366 mx-auto pb-32'>
+      <div className='w-1366 mx-auto pb-32' id='plain'>
         <div className='grid grid-cols-3 gap-4'>
           <div className='col-span-2'>
             <h1 className='text-[35px] font-bold leading-none my-4 text-white'>Our Featured <br /> Protection Plans</h1>
@@ -290,7 +289,7 @@ function App() {
       <div className='w-1366 mx-auto pb-32' id='aboutUs'>
         <div className='bg-About bg-cover bg-no-repeat text-center p-16 rounded-[16px]'>
           <h1 className='text-white text-3xl font-bold mb-5'>About Us</h1>
-          <p className='text-center w-[73%] text-[20px] mx-auto text-[#B8AEDA]'><span className='text-white font-bold'> GetCover </span> is an InsureTech leader, delivering innovative warranty and technology solutions for businesses and individuals. Backed by the resources and global expertise of Newpoint Financial Group, we ensure reliable and efficient services across North America, Europe, Africa, and the Middle East. Our mission is to offer peace of mind with comprehensive and dependable coverage.</p>
+          <p className='text-center w-[73%] text-[20px] mx-auto text-[#B8AEDA]'><span className='text-white font-bold'> GetCover </span> is an InsureTech leader, delivering innovative warranty and technology solutions for businesses and individuals. Backed by the resources and global expertise of <a href="https://nfgsa.com/" target='_blank'> Newpoint Financial Group </a>, we ensure reliable and efficient services across North America, Europe, Africa, and the Middle East. Our mission is to offer peace of mind with comprehensive and dependable coverage.</p>
         </div>
       </div>
       <div className='w-1366 mx-auto pb-28'>
@@ -301,7 +300,7 @@ function App() {
             <button className='font-semibold text-[#323148] bg-white rounded-lg px-5 py-4 ml-5'>Book An Appointment</button>
           </div>
         </div>
-        <div className='grid grid-cols-2 pb-12 gap-4'>
+        <div className='grid grid-cols-2 pb-12 gap-4' id="whyUs">
           <div>
             <img src={WhyUs} alt='Why Us' />
           </div>
@@ -345,7 +344,7 @@ function App() {
           <div className='col-span-2'></div>
         </div>
       </div>
-      <div className='w-1366 mx-auto pb-32'>
+      <div className='w-1366 mx-auto pb-32' id='contactUs'>
         <div className='bg-Contact bg-cover bg-no-repeat rounded-[16px]'>
           <div className='grid grid-cols-12 gap-4 p-12'>
             <div className='col-span-5 self-center'>
