@@ -31,6 +31,7 @@ import Hassles from './assets/images/Save Hassles.png';
 import Why from './assets/images/Why Get.png';
 import WhyUs from './assets/images/Why Choose US.png';
 import image from './assets/images/Testimonials.png';
+import FadeIn from './common/FadeIn';
 
 
 
@@ -57,7 +58,7 @@ function App() {
   };
   return (
     <div className='bg-full-bg bg-cover bg-no-repeat '>
-      <div className='w-1366 mx-auto'>
+      <FadeIn className='w-1366 mx-auto'>
         <Header />
         <div className='grid grid-cols-2 gap-4'>
           <div className='self-center '>
@@ -71,11 +72,11 @@ function App() {
           </div>
 
         </div>
-      </div>
-      <div className=' mb-32'>
+      </FadeIn>
+      <FadeIn className=' mb-32'>
         <img src={overlay} alt='Overlay' />
-      </div>
-      <div className='w-1366 mx-auto pb-32' id='plain'>
+      </FadeIn>
+      <FadeIn className='w-1366 mx-auto pb-32' id='plain'>
         <div className='grid grid-cols-3 gap-4'>
           <div className='col-span-2'>
             <h1 className='text-[35px] font-bold leading-none my-4 text-white'>Our Featured <br /> Protection Plans</h1>
@@ -114,8 +115,8 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
-      <div className='w-1366 mx-auto pb-32'>
+      </FadeIn>
+      <FadeIn className='w-1366 mx-auto pb-32'>
         <div className='flex justify-between'>
           <p className='text-[35px] font-bold leading-none text-white '>Essential Gadgets <br /> Protection Plans</p>
           <div className='self-center flex'>
@@ -226,8 +227,8 @@ function App() {
             </div>
           </Carousel>
         </div>
-      </div>
-      <div className='w-1366 mx-auto pb-20'>
+      </FadeIn>
+      <FadeIn className='w-1366 mx-auto pb-20'>
         <p className='text-[35px] font-bold leading-none text-white '>Get Cover truly  <br /> cares for you</p>
         <div className='grid grid-cols-3 gap-4 my-12'>
           <div className='flex '>
@@ -259,8 +260,8 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
-      <div className='w-1366 mx-auto pb-20'>
+      </FadeIn>
+      <FadeIn className='w-1366 mx-auto pb-20'>
         <div className='grid grid-cols-12 gap-4'>
           <div className='col-span-5 self-center'>
             <h1 className='text-[35px] font-bold leading-[40px] text-white mb-3'>Why Get Device <br /> Protection Plans?</h1>
@@ -284,15 +285,15 @@ function App() {
             <img src={Why} alt='Why Get' />
           </div>
         </div>
-      </div>
+      </FadeIn>
 
-      <div className='w-1366 mx-auto pb-32' id='aboutUs'>
-        <div className='bg-About bg-cover bg-no-repeat text-center p-16 rounded-[16px]'>
+      <FadeIn className='w-1366 mx-auto pb-32' id='aboutUs'>
+        <FadeIn className='bg-About bg-cover bg-no-repeat text-center p-16 rounded-[16px]'>
           <h1 className='text-white text-3xl font-bold mb-5'>About Us</h1>
-          <p className='text-center w-[73%] text-[20px] mx-auto text-[#B8AEDA]'><span className='text-white font-bold'> GetCover </span> is an InsureTech leader, delivering innovative warranty and technology solutions for businesses and individuals. Backed by the resources and global expertise of <a href="https://nfgsa.com/" target='_blank'> Newpoint Financial Group </a>, we ensure reliable and efficient services across North America, Europe, Africa, and the Middle East. Our mission is to offer peace of mind with comprehensive and dependable coverage.</p>
-        </div>
-      </div>
-      <div className='w-1366 mx-auto pb-28'>
+          <p className='text-center w-[73%] text-[20px] mx-auto text-[#B8AEDA]'><span className='text-white font-bold'> GetCover </span> is an InsureTech leader, delivering innovative warranty and technology solutions for businesses and individuals. Backed by the resources and global expertise of <a href="https://nfgsa.com/" className='underline' target='_blank'> Newpoint Financial Group </a> , we ensure reliable and efficient services across North America, Europe, Africa, and the Middle East. Our mission is to offer peace of mind with comprehensive and dependable coverage.</p>
+        </FadeIn>
+      </FadeIn>
+      <FadeIn className='w-1366 mx-auto pb-28'>
         <div className='flex justify-between pb-20'>
           <h1 className='text-[40px] font-bold leading-[48px] text-[#B8AEDB]'>To experience the <br /> <span className='text-white'> GetCover </span> difference.</h1>
           <div className='h-[1px] self-center my-auto bg-[#B8AEDA] w-[40%] ml-2'></div>
@@ -322,8 +323,8 @@ function App() {
             <button className='font-semibold text-[#323148] bg-white rounded-lg px-5 py-4'>Learn More</button>
           </div>
         </div>
-      </div>
-      <div className='w-1366 mx-auto pb-28'>
+      </FadeIn>
+      <FadeIn className='w-1366 mx-auto pb-28'>
         <h1 className='text-[40px] font-bold text-center leading-[48px] text-white'>Testimonials</h1>
         <div className='grid grid-cols-12 gap-4 my-8'>
           <div className='col-span-2'></div>
@@ -343,8 +344,8 @@ function App() {
           </div>
           <div className='col-span-2'></div>
         </div>
-      </div>
-      <div className='w-1366 mx-auto pb-32' id='contactUs'>
+      </FadeIn>
+      <FadeIn className='w-1366 mx-auto pb-32' id='contactUs'>
         <div className='bg-Contact bg-cover bg-no-repeat rounded-[16px]'>
           <div className='grid grid-cols-12 gap-4 p-12'>
             <div className='col-span-5 self-center'>
@@ -371,7 +372,7 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+      </FadeIn>
       <div className='w-1366 mx-auto'>
         <Footer />
       </div>
