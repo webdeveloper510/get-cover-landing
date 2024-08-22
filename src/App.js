@@ -1,10 +1,12 @@
-import './App.css';
+import { useRef } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import './App.css';
 
 
 // -------------Component imported
 import Header from './common/Header';
+import Input from './common/Input';
 import Footer from './common/Footer';
 
 // -------------Media Images imported
@@ -29,11 +31,12 @@ import Hassles from './assets/images/Save Hassles.png';
 import Why from './assets/images/Why Get.png';
 import WhyUs from './assets/images/Why Choose US.png';
 import image from './assets/images/Testimonials.png';
-import Input from './common/Input';
+
 
 
 
 function App() {
+  const CarouselRef = useRef(null);
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -117,10 +120,10 @@ function App() {
         <div className='flex justify-between'>
           <p className='text-[35px] font-bold leading-none text-white '>Essential Gadgets <br /> Protection Plans</p>
           <div className='self-center flex'>
-            <button className='self-center' onClick={() => Carousel.previous()}>
+            <button className='self-center' onClick={() => CarouselRef.current.previous()}>
               <img src={left} className='w-10 h-10 mr-4' alt='left' />
             </button>
-            <button className='self-center' onClick={() => Carousel.next()}>
+            <button className='self-center' onClick={() => CarouselRef.current.next()}>
               <img src={right} className='w-10 h-10 mr-4' alt='right' />
             </button>
           </div>
@@ -130,7 +133,7 @@ function App() {
             responsive={responsive}
             arrows={false}
             renderDotsOutside={true}
-            ref={(el) => (Carousel = el)} // Assigning ref to control the carousel
+            ref={CarouselRef}
           >
             <div className='mx-3'>
               <div className='bg-Mobile bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
@@ -284,7 +287,7 @@ function App() {
         </div>
       </div>
 
-      <div className='w-1366 mx-auto pb-32'>
+      <div className='w-1366 mx-auto pb-32' id='aboutUs'>
         <div className='bg-About bg-cover bg-no-repeat text-center p-16 rounded-[16px]'>
           <h1 className='text-white text-3xl font-bold mb-5'>About Us</h1>
           <p className='text-center w-[73%] text-[20px] mx-auto text-[#B8AEDA]'><span className='text-white font-bold'> GetCover </span> is an InsureTech leader, delivering innovative warranty and technology solutions for businesses and individuals. Backed by the resources and global expertise of Newpoint Financial Group, we ensure reliable and efficient services across North America, Europe, Africa, and the Middle East. Our mission is to offer peace of mind with comprehensive and dependable coverage.</p>
