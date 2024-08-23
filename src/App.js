@@ -304,9 +304,9 @@ function App() {
         </FadeIn>
         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto py-12'>
           <p className='text-[35px] font-bold leading-none text-white '>Get Cover truly  <br /> cares for you</p>
-          <div className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 my-12 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center'>
-            <div className=' 2xl:flex xl:flex lg:flex md:block sm:block s:block col-span-1 '>
-              <div className='2xl:w-[25%] xl:w-[25%] lg:w-[25%] md:w-full sm:w-full s:w-full self-center '>
+          <div className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 my-12 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center'>
+            <div className=' 2xl:flex xl:flex lg:flex md:flex sm:block s:block col-span-1 '>
+              <div className='2xl:w-[25%] xl:w-[25%] lg:w-[25%] md:w-[25%] sm:w-full s:w-full self-center '>
                 <img className='mx-auto' src={Time} alt='Save Time' />
               </div>
               <div>
@@ -314,8 +314,8 @@ function App() {
                 <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent text-[14px] font-bold mb-3'>One click is all it <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> takes. We take <br className='2xl:hidden xl:hidden lg:hidden md:block sm:block s:block' /> care  of <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> the rest</p>
               </div>
             </div>
-            <div className='2xl:flex xl:flex lg:flex md:block sm:block s:block 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center col-span-1'>
-              <div className='2xl:w-[25%] xl:w-[25%] lg:w-[25%] md:w-full sm:w-full s:w-full self-center'>
+            <div className='2xl:flex xl:flex lg:flex md:flex sm:flex s:block 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center col-span-1'>
+              <div className='2xl:w-[25%] xl:w-[25%] lg:w-[25%] md:w-[25%] sm:w-full s:w-full self-center'>
                 <img className='mx-auto' src={Money} alt='Save Money' />
               </div>
               <div>
@@ -323,8 +323,8 @@ function App() {
                 <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent text-[14px] font-bold mb-3'>Avoid heavy <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repair <br className='2xl:hidden xl:hidden lg:hidden md:block sm:block s:block' /> & replacement<br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> costs</p>
               </div>
             </div>
-            <div className='2xl:flex xl:flex lg:flex md:block sm:block s:block 2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-2 sm:col-span-1 s:col-span-1'>
-              <div className='2xl:w-[25%] xl:w-[25%] lg:w-[25%] md:w-full sm:w-full s:w-full 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center self-center'>
+            <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block 2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 s:col-span-1'>
+              <div className='2xl:w-[25%] xl:w-[25%] lg:w-[25%] md:w-[25%] sm:w-full s:w-full 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center self-center'>
                 <img className='mx-auto' src={Hassles} alt='Save Hassles' />
               </div>
               <div>
@@ -336,9 +336,9 @@ function App() {
           </div>
         </FadeIn>
         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto py-12'>
-          <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 gap-4'>
-            <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-6 sm:col-span-6 2xl:order-1 xl:order-1 lg:order-1 md:order-2 sm:order-2 s:order-2 self-center'>
-              <div className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden'>
+          <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4'>
+            <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-5 sm:col-span-6 2xl:order-1 xl:order-1 lg:order-1 md:order-1 sm:order-2 s:order-2 self-center'>
+              <div className='2xl:block xl:block lg:block md:block sm:hidden s:hidden'>
                 <h1 className='text-[35px] font-bold leading-[40px] text-white mb-3'>Why Get Device <br /> Protection Plans?</h1>
                 <p className='text-lg text-[#B8AEDA] leading-[24px] mb-8'>One major benefit of having a device <br /> protection plan is saving money on expensive <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repairs that safeguards against damage, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> loss, and malfunctions.</p>
               </div>
@@ -357,13 +357,15 @@ function App() {
                 </p>
               </div>
             </div>
-            <div className='2xl:col-span-7 xl:col-span-7 lg:col-span-7 md:col-span-6 sm:col-span-6 2xl:order-2 xl:order-2 lg:order-2 md:order-1	sm:order-1 s:order-1'>
-              <div className='2xl:hidden xl:hidden lg:hidden md:block sm:block s:block'>
-                <h1 className='text-[35px] font-bold leading-[40px] text-white mb-3'>Why Get Device <br /> Protection Plans?</h1>
-                <p className='text-lg text-[#B8AEDA] leading-[24px] mb-8'>One major benefit of having a device <br /> protection plan is saving money on expensive <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repairs that safeguards against damage, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> loss, and malfunctions.</p>
+            <div className='2xl:col-span-7 xl:col-span-7 lg:col-span-7 md:col-span-7 sm:col-span-6 2xl:order-2 xl:order-2 lg:order-2 md:order-2	sm:order-1 s:order-1'>
+              <div className='self-center'>
+                <div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block s:block'>
+                  <h1 className='text-[35px] font-bold leading-[40px] text-white mb-3'>Why Get Device <br /> Protection Plans?</h1>
+                  <p className='text-lg text-[#B8AEDA] leading-[24px] mb-8'>One major benefit of having a device <br /> protection plan is saving money on expensive <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repairs that safeguards against damage, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> loss, and malfunctions.</p>
+                </div>
+                <img className='mx-auto' src={Why} alt='Why Get' />
+                <div id='about-us'></div>
               </div>
-              <img className='mx-auto' src={Why} alt='Why Get' />
-              <div id='about-us'></div>
             </div>
           </div>
         </FadeIn>
@@ -375,23 +377,23 @@ function App() {
           </FadeIn>
         </FadeIn>
         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto py-16'>
-          <div className='2xl:flex xl:flex lg:flex md:block sm:block s:block 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center justify-between py-10 ' id="why-us">
+          <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center justify-between py-10 ' id="why-us">
             <h1 className='text-[40px] font-bold leading-[48px] text-[#B8AEDB]'>To experience the <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> <span className='text-white'> GetCover </span> difference.</h1>
-            <div className='h-[1px] 2xl:my-0 xl:my-0 lg:my-0 md:my-3 sm:my-3 s:my-5 self-center mx-auto bg-[#B8AEDA] w-[40%] xl:ml-2'></div>
+            <div className='h-[1px] 2xl:my-0 xl:my-0 lg:my-0 md:my-0 sm:my-3 s:my-5 self-center mx-auto bg-[#B8AEDA] w-[40%] xl:ml-2'></div>
             <div className='self-center'>
               <button className='font-semibold text-[#323148] bg-white text-sm rounded-lg px-5 py-4 ml-5'>Book An Appointment</button>
             </div>
           </div>
-          <div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 py-12 gap-4' >
-            <div>
-              <div className='2xl:hidden xl:hidden lg:hidden md:block sm:block s:block'>
+          <div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 py-12 gap-4' >
+            <div className='self-center'>
+              <div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block s:block'>
                 <h1 className='text-[35px] font-bold leading-[40px] text-white mb-3'>Why Choose US</h1>
                 <p className='text-lg text-[#B8AEDA] leading-[24px] mb-8'>Get Cover protection plans are transparent and based on what you value most. We offer a  true technology solution backed by the strength of Newpoint Financial Group.</p>
               </div>
               <img className='mx-auto' src={WhyUs} alt='Why Us' />
             </div>
             <div>
-              <div className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden'>
+              <div className='2xl:block xl:block lg:block md:block sm:hidden s:hidden'>
                 <h1 className='text-[35px] font-bold leading-[40px] text-white mb-3'>Why Choose US</h1>
                 <p className='text-lg text-[#B8AEDA] leading-[24px] mb-8'>Get Cover protection plans are transparent and based on what you value most. We offer a  true technology solution backed by the strength of Newpoint Financial Group.</p>
               </div>
@@ -413,9 +415,9 @@ function App() {
         </FadeIn>
         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto py-14'>
           <h1 className='text-[40px] font-bold text-center leading-[48px] text-white'>Testimonials</h1>
-          <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 gap-4 my-8'>
-            <div className='col-span-2'></div>
-            <div className='col-span-4 self-center'>
+          <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4 my-8'>
+
+            <div className='col-span-6 self-center 2xl:order-1 xl:order-1 lg:order-1 md:order-1	sm:order-2 s:order-2'>
               <div>
                 <p className='text-[#B8AEDA]'>“ I’ve used many warranty services but my experience with
                   Get Cover was very fast and easy to understand ”</p>
@@ -426,10 +428,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className='col-span-4'>
+            <div className='col-span-6 2xl:order-2 xl:order-2 lg:order-2 md:order-2	sm:order-1 s:order-1'>
               <img src={image} className='w-[200px] mx-auto' alt='Images' />
             </div>
-            <div className='col-span-2'></div>
           </div>
           <div id='contact-us'></div>
         </FadeIn>

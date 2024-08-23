@@ -28,11 +28,11 @@ function Footer() {
                     <div className='self-center'>
                         <img src={logo} className='mx-auto' alt='logo' />
                     </div>
-                    <div className='flex '>
-                        <img src={Linked} alt='Linked' />
-                        <img src={FaceBook} alt='FaceBook' />
-                        <img src={Twitter} alt='Twitter' />
-                        <img src={Insta} alt='Insta' />
+                    <div className='flex justify-around my-3'>
+                        <img src={Linked} className='w-14 h-14' alt='Linked' />
+                        <img src={FaceBook} className='w-14 h-14' alt='FaceBook' />
+                        <img src={Twitter} className='w-14 h-14' alt='Twitter' />
+                        <img src={Insta} className='w-14 h-14' alt='Insta' />
                     </div>
                 </div>
                 <div className=' text-center mt-4'>
