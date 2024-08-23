@@ -32,8 +32,8 @@ const Input = ({
                 value={value}
                 id={name}
                 onBlur={onBlur}
-                className={`block px-4 py-4  w-full text-base font-semibold rounded-lg bg-[#323148] appearance-none peer ${className1} ${error ? "border-[red]" : ""
-                    } ${disabled ? "text-[#5D6E66]" : "text-white"}`}
+                className={`block px-4 py-4  w-full text-base outline-none font-medium rounded-lg bg-[#323148] appearance-none peer ${className1} ${error ? "border-[red]" : ""
+                    } placeholder-white text-white`}
                 onChange={handleChange}
                 disabled={disabled}
                 required={required}
