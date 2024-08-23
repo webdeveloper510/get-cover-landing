@@ -369,7 +369,7 @@ function App() {
         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto py-16' >
           <FadeIn className='bg-About bg-cover bg-no-repeat text-center 2xl:p-16 xl:p-16 lg:p-16 md:p-12 sm:p-8 s:p-8 rounded-[16px]'>
             <h1 className='text-white text-3xl font-bold mb-5'>About Us</h1>
-            <p className='text-center 2xl:w-[73%] xl:w-[73%] lg:w-[73%] md:[80%] sm:w-[95%] s:w-[95%] text-[20px] mx-auto text-[#B8AEDA]'><span className='text-white font-bold'> GetCover </span> is an InsureTech leader, delivering innovative warranty and technology solutions for businesses and individuals. Backed by the resources and global expertise of <a href="https://nfgsa.com/" className='text-[#c1c1c1] ' target='_blank'> Newpoint Financial Group </a> , we ensure reliable and efficient services across North America, Europe, Africa, and the Middle East. Our mission is to offer peace of mind with comprehensive and dependable coverage.</p>
+            <p className='text-center 2xl:w-[73%] xl:w-[73%] lg:w-[73%] md:[80%] sm:w-[95%] s:w-[95%] text-[20px] mx-auto text-[#B8AEDA]'><span className='text-white font-bold'> GetCover </span> is an InsureTech leader, delivering innovative warranty and technology solutions for businesses and individuals. Backed by the resources and global expertise of <a href="https://nfgsa.com/" className='text-[#fff] ' target='_blank'> Newpoint Financial Group </a> , we ensure reliable and efficient services across North America, Europe, Africa, and the Middle East. Our mission is to offer peace of mind with comprehensive and dependable coverage.</p>
           </FadeIn>
         </FadeIn>
         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto py-16'>
