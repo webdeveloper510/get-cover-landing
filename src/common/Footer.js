@@ -7,7 +7,7 @@ import Twitter from './../assets/images/icons/twitter.svg';
 
 function Footer() {
     return (
-        <div className='flex justify-between py-6 pr-5 border-t border-[#B8AEDA]'>
+        <div className='2xl:flex xl:flex lg:flex md:flex sm:hidden s:hidden justify-between py-6 pr-5 border-t border-[#B8AEDA]'>
             <div className='self-center'>
                 <img src={logo} alt='logo' />
             </div>

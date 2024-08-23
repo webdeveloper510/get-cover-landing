@@ -11,6 +11,8 @@ module.exports = {
       },
       backgroundImage: {
         'full-bg': "url('/src/assets/images/BG-Image.png')",
+        'tab-bg': "url('/src/assets/images/tab.png')",
+        'mobile-bg': "url('/src/assets/images/bg-mobile.png')",
         'Mobile': "url('/src/assets/images/MobileBackground.png')",
         'Power': "url('/src/assets/images/PowerBackground.png')",
         'Laptop': "url('/src/assets/images/LaptopBackground.png')",
