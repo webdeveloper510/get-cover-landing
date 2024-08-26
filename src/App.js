@@ -116,7 +116,7 @@ function App() {
             </div>
             <div className='2xl:col-span-1 xl:col-span-1 lg:col-span-2 md:col-span-2 sm:col-span-1 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden '></div>
           </FadeIn>
-          <FadeIn className='grid 2xl:grid-cols-3 mt-10 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4'>
+          <FadeIn className='grid 2xl:grid-cols-3 mt-10 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 s:grid-cols-1 gap-4'>
             <div className='col-span-1'>
               <div className='pr-5'>
                 <img className='mb-3' src={plainImage} alt='plainImage' />
@@ -145,6 +145,7 @@ function App() {
               </div>
             </div>
           </FadeIn>
+
         </div>
         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8'>
           <div className='flex justify-between'>
@@ -326,7 +327,7 @@ function App() {
         </FadeIn>
         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-12 xl:py-12 lg:py-12 md:py-10 sm:py-8 s:py-8'>
           <p className='text-[35px] font-bold leading-none text-white '>Get Cover truly  <br /> cares for you</p>
-          <div className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 my-12 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center'>
+          <div className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 s:grid-cols-1 gap-4 my-12 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center'>
             <div className=' 2xl:flex xl:flex lg:flex md:flex sm:block s:block col-span-1 '>
               <div className='self-center '>
                 <img className='w-[90px] h-[90px] mx-auto' src={Time} alt='Save Time' />
@@ -345,7 +346,7 @@ function App() {
                 <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent text-[14px] font-bold mb-3'>Avoid heavy <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repair <br className='2xl:hidden xl:hidden lg:hidden md:block sm:block s:block' /> & replacement<br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> costs</p>
               </div>
             </div>
-            <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block 2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-2 sm:col-span-1 s:col-span-1 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center self-center'>
+            <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block 2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-2 sm:col-span-2 s:col-span-1 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center self-center'>
               <div className='self-center'>
                 <img className='w-[90px] h-[90px] mx-auto' src={Hassles} alt='Save Hassles' />
               </div>

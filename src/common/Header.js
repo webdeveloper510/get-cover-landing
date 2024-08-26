@@ -33,11 +33,11 @@ const Header = ({ className }) => {
                         <div className='fixed top-0 left-0 w-full h-screen bg-[#323148fa] backdrop-blur-2xl'>
                             <img src={cross} onClick={openDiv} className='ml-5 mt-5' alt='cross' />
                             <div className='mt-28  w-full  mx-auto'>
-                                <p className='text-center my-5 text-white'><a href='#plan' className=' text-center text-base w-full'>Our Plans</a></p>
-                                <p className='text-center mb-5 text-white'><a href='#about-us' className=' text-center text-base'> About Us</a></p>
-                                <p className='text-center mb-5 text-white'><a href='#why-us' className=' text-center text-base'>Why Us</a></p>
-                                <p className='text-center mb-5 text-white'><a href='#contact-us' className=' text-center text-base'>Contact Us</a></p>
-                                <p className='text-center my-5'><a href="https://app.getcoverusa.com/" target='_blank' className='text-[#323148] text-sm font-semibold bg-white rounded-lg p-3'>LOGIN</a></p>
+                                <p className='text-center my-5 text-white' onClick={openDiv}><a href='#plan' className=' text-center text-base w-full'>Our Plans</a></p>
+                                <p className='text-center mb-5 text-white' onClick={openDiv}><a href='#about-us' className=' text-center text-base'> About Us</a></p>
+                                <p className='text-center mb-5 text-white' onClick={openDiv}><a href='#why-us' className=' text-center text-base'>Why Us</a></p>
+                                <p className='text-center mb-5 text-white' onClick={openDiv}><a href='#contact-us' className=' text-center text-base'>Contact Us</a></p>
+                                <p className='text-center my-5' onClick={openDiv}><a href="https://app.getcoverusa.com/" target='_blank' className='text-[#323148] text-sm font-semibold bg-white rounded-lg p-3'>LOGIN</a></p>
                             </div>
                         </div>
                     )}
