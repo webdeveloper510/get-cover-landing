@@ -24,7 +24,9 @@ const Header = ({ className }) => {
                         <a href='#plan' className='ml-5 self-center text-base'>Our Plans</a>
                         <a href='#about-us' className='ml-5 self-center text-base'> About Us</a>
                         <a href='#why-us' className='ml-5 self-center text-base'>Why Us</a>
-                        <a href="#contact-us" className='text-[#323148] text-sm font-semibold bg-white rounded-lg p-3 ml-5'>Contact Us</a>
+                        <a href="#contact-us" className='ml-5 self-center text-base'>Contact Us</a>
+                        <a href="https://app.getcoverusa.com/" target='_blank' className='text-[#323148] text-sm font-semibold bg-white rounded-lg p-3 ml-5'>LOGIN</a>
+
                     </div>
 
                     {isVisible && (
@@ -34,7 +36,8 @@ const Header = ({ className }) => {
                                 <p className='text-center my-5 text-white'><a href='#plan' className=' text-center text-base w-full'>Our Plans</a></p>
                                 <p className='text-center mb-5 text-white'><a href='#about-us' className=' text-center text-base'> About Us</a></p>
                                 <p className='text-center mb-5 text-white'><a href='#why-us' className=' text-center text-base'>Why Us</a></p>
-                                <p className='text-center my-5'><a href="#contact-us" className='text-[#323148] text-sm font-semibold bg-white rounded-lg p-3'>Contact Us</a></p>
+                                <p className='text-center mb-5 text-white'><a href='#contact-us' className=' text-center text-base'>Contact Us</a></p>
+                                <p className='text-center my-5'><a href="https://app.getcoverusa.com/" target='_blank' className='text-[#323148] text-sm font-semibold bg-white rounded-lg p-3'>LOGIN</a></p>
                             </div>
                         </div>
                     )}

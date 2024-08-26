@@ -38,6 +38,7 @@ import FadeIn from './common/FadeIn';
 
 function App() {
   const CarouselRef = useRef(null);
+  const CarouselRef1 = useRef(null);
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -80,12 +81,12 @@ function App() {
 
           </div>
         </FadeIn>
-        <FadeIn className=' mb-16'>
+        <FadeIn className=' 2xl:mb-16 xl:mb-16 lg:mb-16 md:mb-12 sm:mb-8 s:mb-8 '>
           <img className='object-cover w-full' src={overlay} alt='Overlay' />
           <div id='plan'></div>
         </FadeIn>
-        <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto py-16' >
-          <div className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4'>
+        <div className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8' >
+          <FadeIn className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4'>
             <div className='2xl:col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-1'>
               <h1 className='text-[35px] font-bold leading-none my-4 text-white'>Our Featured <br /> Protection Plans</h1>
               <p className='text-[#B8AEDA] text-xl leading-1 w-[75%]'>Our protection plans are designed to cover a wide range of products, from corporate equipment to home essentials.</p>
@@ -95,6 +96,8 @@ function App() {
               </div>
             </div>
             <div className='2xl:col-span-1 xl:col-span-1 lg:col-span-2 md:col-span-2 sm:col-span-1 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden '></div>
+          </FadeIn>
+          <FadeIn className='grid 2xl:grid-cols-3 mt-10 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4'>
             <div className='col-span-1'>
               <div className='pr-5'>
                 <img className='mb-3' src={plainImage} alt='plainImage' />
@@ -122,9 +125,9 @@ function App() {
                 <a href="#contact-us" className='text-white text-[11px] border border-[#AB9CC0] py-2 px-5 mt-3 rounded-lg'> Get Started Today</a>
               </div>
             </div>
-          </div>
-        </FadeIn>
-        <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto py-16'>
+          </FadeIn>
+        </div>
+        <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8'>
           <div className='flex justify-between'>
             <p className='text-[35px] font-bold leading-none text-white '>Essential Gadgets <br /> Protection Plans</p>
             <div className='self-center flex 2xl:block xl:block lg:block md:hidden sm:hidden s:hidden'>
@@ -225,7 +228,7 @@ function App() {
                 arrows={false}
                 infinite={true}
                 renderDotsOutside={true}
-                ref={CarouselRef}
+                ref={CarouselRef1}
               >
                 <div className='mx-3'>
                   <div className='bg-Mobile bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
@@ -302,7 +305,7 @@ function App() {
           </div>
 
         </FadeIn>
-        <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto py-12'>
+        <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-12 xl:py-12 lg:py-12 md:py-10 sm:py-8 s:py-8'>
           <p className='text-[35px] font-bold leading-none text-white '>Get Cover truly  <br /> cares for you</p>
           <div className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 my-12 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center'>
             <div className=' 2xl:flex xl:flex lg:flex md:flex sm:block s:block col-span-1 '>
@@ -335,7 +338,7 @@ function App() {
             </div>
           </div>
         </FadeIn>
-        <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto py-12'>
+        <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-12 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8'>
           <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4'>
             <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-5 sm:col-span-6 2xl:order-1 xl:order-1 lg:order-1 md:order-1 sm:order-2 s:order-2 self-center'>
               <div className='2xl:block xl:block lg:block md:block sm:hidden s:hidden'>
@@ -370,21 +373,21 @@ function App() {
           </div>
         </FadeIn>
 
-        <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto py-16' >
-          <FadeIn className='bg-About bg-cover bg-no-repeat text-center 2xl:p-16 xl:p-16 lg:p-16 md:p-12 sm:p-8 s:p-8 rounded-[16px]'>
+        <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8' >
+          <div className='bg-About bg-cover bg-no-repeat text-center 2xl:p-16 xl:p-16 lg:p-16 md:p-12 sm:p-8 s:p-8 rounded-[16px]'>
             <h1 className='text-white text-3xl font-bold mb-5'>About Us</h1>
             <p className='text-center 2xl:w-[73%] xl:w-[73%] lg:w-[73%] md:[80%] sm:w-[95%] s:w-[95%] text-[20px] mx-auto text-[#B8AEDA]'><span className='text-white font-bold'> GetCover </span> is an InsureTech leader, delivering innovative warranty and technology solutions for businesses and individuals. Backed by the resources and global expertise of <a href="https://nfgsa.com/" className='text-[#fff] ' target='_blank'> Newpoint Financial Group </a> , we ensure reliable and efficient services across North America, Europe, Africa, and the Middle East. Our mission is to offer peace of mind with comprehensive and dependable coverage.</p>
-          </FadeIn>
+          </div>
         </FadeIn>
-        <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto py-16'>
-          <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center justify-between py-10 ' id="why-us">
+        <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8 ' >
+          <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center justify-between py-10 ' >
             <h1 className='text-[40px] font-bold leading-[48px] text-[#B8AEDB]'>To experience the <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> <span className='text-white'> GetCover </span> difference.</h1>
             <div className='h-[1px] 2xl:my-0 xl:my-0 lg:my-0 md:my-0 sm:my-3 s:my-5 self-center mx-auto bg-[#B8AEDA] w-[40%] xl:ml-2'></div>
             <div className='self-center'>
               <button className='font-semibold text-[#323148] bg-white text-sm rounded-lg px-5 py-4 ml-5'>Book An Appointment</button>
             </div>
           </div>
-          <div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 py-12 gap-4' >
+          <div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 py-12 gap-4' id="why-us" >
             <div className='self-center'>
               <div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block s:block'>
                 <h1 className='text-[35px] font-bold leading-[40px] text-white mb-3'>Why Choose US</h1>
@@ -413,9 +416,9 @@ function App() {
             </div>
           </div>
         </FadeIn>
-        <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto py-14'>
+        <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-14 xl:py-14 lg:py-14 md:py-10 sm:py-8 s:py-8'>
           <h1 className='text-[40px] font-bold text-center leading-[48px] text-white'>Testimonials</h1>
-          <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4 my-8'>
+          <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4 2xl:my-8 xl:my-8 lg:my-8 md:my-6 sm:my-4 s:my-4'>
 
             <div className='col-span-6 self-center 2xl:order-1 xl:order-1 lg:order-1 md:order-1	sm:order-2 s:order-2'>
               <div>
@@ -434,9 +437,9 @@ function App() {
           </div>
           <div id='contact-us'></div>
         </FadeIn>
-        <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto py-14' >
+        <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto 2xl:py-14 xl:py-14 lg:py-14 md:py-10 sm:py-8 s:py-8' >
           <div className='bg-Contact bg-cover bg-no-repeat rounded-[16px]'>
-            <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 gap-4 p-12'>
+            <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 gap-4 2xl:p-12 xl:p-12 lg:p-12 md:p-10 sm:p-8 s:p-8'>
               <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-6 sm:col-span-6  self-center'>
                 <p className='2xl:text-[50px] xl:text-[45px] lg:text-[45px] md:text-[32px] sm:text-[28px] s:text-[28px] text-white 2xl:leading-[55px] xl:leading-[50px] lg:leading-[50px] md:leading-[37px] sm:leading-[32px] s:leading-[32px]  font-bold'>Are you ready to Get Covered? Contact Us</p>
               </div>
