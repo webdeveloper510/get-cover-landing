@@ -21,11 +21,11 @@ const Header = ({ className }) => {
                         <img src={menu} onClick={openDiv} alt='menu' />
                     </div>
                     <div className='justify-between text-white self-center 2xl:flex xl:flex lg:flex md:flex sm:hidden s:hidden'>
-                        <a href='#plan' className='ml-5 self-center text-base'>Our Plans</a>
-                        <a href='#about-us' className='ml-5 self-center text-base'> About Us</a>
-                        <a href='#why-us' className='ml-5 self-center text-base'>Why Us</a>
-                        <a href="#contact-us" className='ml-5 self-center text-base'>Contact Us</a>
-                        <a href="https://app.getcoverusa.com/" target='_blank' className='text-[#323148] text-sm font-semibold bg-white rounded-lg p-3 ml-5'>LOGIN</a>
+                        <a href='#plan' className='ml-5 self-center 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Our Plans</a>
+                        <a href='#about-us' className='ml-5 self-center 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'> About Us</a>
+                        <a href='#why-us' className='ml-5 self-center 4xl:text-[22px] 3xl:text-[20px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Why Us</a>
+                        <a href="#contact-us" className='ml-5 self-center 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Contact Us</a>
+                        <a href="https://app.getcoverusa.com/" target='_blank' className='text-[#323148] 4xl:text-[20px] 3xl:text-[20px] 2xl:text-[12px] xl:text-[12px] lg:text-[12px] md:text-[12px] sm:text-[12px] s:text-[12px] font-semibold bg-white rounded-lg p-3 ml-5'>LOGIN</a>
 
                     </div>
 
