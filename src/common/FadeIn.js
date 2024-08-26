@@ -7,10 +7,8 @@ const FadeIn = ({ children, className = '', ...props }) => {
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
+                if (entry.isIntersecting && !isVisible) {
                     setIsVisible(true);
-                } else {
-                    setIsVisible(false);
                 }
             });
         });
@@ -18,7 +16,7 @@ const FadeIn = ({ children, className = '', ...props }) => {
         observer.observe(domRef.current);
 
         return () => observer.disconnect();
-    }, []);
+    }, [isVisible]);
 
     return (
         <div
