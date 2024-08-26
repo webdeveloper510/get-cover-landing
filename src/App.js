@@ -39,6 +39,7 @@ import FadeIn from './common/FadeIn';
 function App() {
   const CarouselRef = useRef(null);
   const CarouselRef1 = useRef(null);
+  const CarouselRef2 = useRef(null);
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -51,6 +52,25 @@ function App() {
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+
+  const responsive1 = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -81,10 +101,10 @@ function App() {
 
           </div>
         </FadeIn>
-        <FadeIn className=' 2xl:mb-16 xl:mb-16 lg:mb-16 md:mb-12 sm:mb-8 s:mb-8 ' id='plan'>
+        <FadeIn className=' 2xl:mb-16 xl:mb-16 lg:mb-16 md:mb-12 sm:mb-8 s:mb-8 ' >
           <img className='object-cover w-full' src={overlay} alt='Overlay' />
         </FadeIn>
-        <div className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8' >
+        <div id='plan' className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8' >
           <FadeIn className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4'>
             <div className='2xl:col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-1'>
               <h1 className='text-[35px] font-bold leading-none my-4 text-white'>Our Featured <br /> Protection Plans</h1>
@@ -416,23 +436,118 @@ function App() {
         </FadeIn>
         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-14 xl:py-14 lg:py-14 md:py-10 sm:py-8 s:py-8'>
           <h1 className='text-[40px] font-bold text-center leading-[48px] text-white'>Testimonials</h1>
-          <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4 2xl:my-8 xl:my-8 lg:my-8 md:my-6 sm:my-4 s:my-4'>
+          <Carousel
+            responsive={responsive1}
+            arrows={false}
+            infinite={true}
+            renderDotsOutside={true}
+            ref={CarouselRef2}
+          >
 
-            <div className='col-span-6 self-center 2xl:order-1 xl:order-1 lg:order-1 md:order-1	sm:order-2 s:order-2'>
-              <div>
-                <p className='text-[#B8AEDA]'>“ I’ve used many warranty services but my experience with
-                  Get Cover was very fast and easy to understand ”</p>
-                <h1 className='my-5 text-lg text-white font-bold'>Patricia</h1>
-                <div className='self-center flex'>
-                  <img src={left} className='w-4 h-4 mr-4 cursor-pointer opacity-50 hover:opacity-100' alt='left' />
-                  <img src={right} className='w-4 h-4 mr-4 cursor-pointer opacity-50 hover:opacity-100' alt='right' />
+            <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4 2xl:my-8 xl:my-8 lg:my-8 md:my-6 sm:my-4 s:my-4'>
+
+              <div className='col-span-6 self-center 2xl:order-1 xl:order-1 lg:order-1 md:order-1	sm:order-2 s:order-2'>
+                <div>
+                  <p className='text-[#B8AEDA]'>“ I’ve used many warranty services but my experience with
+                    Get Cover was very fast and easy to understand ”</p>
+                  <h1 className='my-5 text-lg text-white font-bold'>Patricia</h1>
+                  <div className='self-center flex'>
+                    <img src={left} onClick={() => CarouselRef2.current.previous()} className='w-4 h-4 mr-4 cursor-pointer opacity-50 hover:opacity-100' alt='left' />
+                    <img src={right} onClick={() => CarouselRef2.current.next()} className='w-4 h-4 mr-4 cursor-pointer opacity-50 hover:opacity-100' alt='right' />
+                  </div>
                 </div>
               </div>
+              <div className='col-span-6 2xl:order-2 xl:order-2 lg:order-2 md:order-2	sm:order-1 s:order-1'>
+                <img src={image} className='w-[200px] mx-auto' alt='Images' />
+              </div>
             </div>
-            <div className='col-span-6 2xl:order-2 xl:order-2 lg:order-2 md:order-2	sm:order-1 s:order-1'>
-              <img src={image} className='w-[200px] mx-auto' alt='Images' />
+            <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4 2xl:my-8 xl:my-8 lg:my-8 md:my-6 sm:my-4 s:my-4'>
+
+              <div className='col-span-6 self-center 2xl:order-1 xl:order-1 lg:order-1 md:order-1	sm:order-2 s:order-2'>
+                <div>
+                  <p className='text-[#B8AEDA]'>“ I’ve used many warranty services but my experience with
+                    Get Cover was very fast and easy to understand ”</p>
+                  <h1 className='my-5 text-lg text-white font-bold'>Patricia</h1>
+                  <div className='self-center flex'>
+                    <img src={left} onClick={() => CarouselRef2.current.previous()} className='w-4 h-4 mr-4 cursor-pointer opacity-50 hover:opacity-100' alt='left' />
+                    <img src={right} onClick={() => CarouselRef2.current.next()} className='w-4 h-4 mr-4 cursor-pointer opacity-50 hover:opacity-100' alt='right' />
+                  </div>
+                </div>
+              </div>
+              <div className='col-span-6 2xl:order-2 xl:order-2 lg:order-2 md:order-2	sm:order-1 s:order-1'>
+                <img src={image} className='w-[200px] mx-auto' alt='Images' />
+              </div>
             </div>
-          </div>
+            <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4 2xl:my-8 xl:my-8 lg:my-8 md:my-6 sm:my-4 s:my-4'>
+
+              <div className='col-span-6 self-center 2xl:order-1 xl:order-1 lg:order-1 md:order-1	sm:order-2 s:order-2'>
+                <div>
+                  <p className='text-[#B8AEDA]'>“ I’ve used many warranty services but my experience with
+                    Get Cover was very fast and easy to understand ”</p>
+                  <h1 className='my-5 text-lg text-white font-bold'>Patricia</h1>
+                  <div className='self-center flex'>
+                    <img src={left} onClick={() => CarouselRef2.current.previous()} className='w-4 h-4 mr-4 cursor-pointer opacity-50 hover:opacity-100' alt='left' />
+                    <img src={right} onClick={() => CarouselRef2.current.next()} className='w-4 h-4 mr-4 cursor-pointer opacity-50 hover:opacity-100' alt='right' />
+                  </div>
+                </div>
+              </div>
+              <div className='col-span-6 2xl:order-2 xl:order-2 lg:order-2 md:order-2	sm:order-1 s:order-1'>
+                <img src={image} className='w-[200px] mx-auto' alt='Images' />
+              </div>
+            </div>
+            <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4 2xl:my-8 xl:my-8 lg:my-8 md:my-6 sm:my-4 s:my-4'>
+
+              <div className='col-span-6 self-center 2xl:order-1 xl:order-1 lg:order-1 md:order-1	sm:order-2 s:order-2'>
+                <div>
+                  <p className='text-[#B8AEDA]'>“ I’ve used many warranty services but my experience with
+                    Get Cover was very fast and easy to understand ”</p>
+                  <h1 className='my-5 text-lg text-white font-bold'>Patricia</h1>
+                  <div className='self-center flex'>
+                    <img src={left} onClick={() => CarouselRef2.current.previous()} className='w-4 h-4 mr-4 cursor-pointer opacity-50 hover:opacity-100' alt='left' />
+                    <img src={right} onClick={() => CarouselRef2.current.next()} className='w-4 h-4 mr-4 cursor-pointer opacity-50 hover:opacity-100' alt='right' />
+                  </div>
+                </div>
+              </div>
+              <div className='col-span-6 2xl:order-2 xl:order-2 lg:order-2 md:order-2	sm:order-1 s:order-1'>
+                <img src={image} className='w-[200px] mx-auto' alt='Images' />
+              </div>
+            </div>
+            <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4 2xl:my-8 xl:my-8 lg:my-8 md:my-6 sm:my-4 s:my-4'>
+
+              <div className='col-span-6 self-center 2xl:order-1 xl:order-1 lg:order-1 md:order-1	sm:order-2 s:order-2'>
+                <div>
+                  <p className='text-[#B8AEDA]'>“ I’ve used many warranty services but my experience with
+                    Get Cover was very fast and easy to understand ”</p>
+                  <h1 className='my-5 text-lg text-white font-bold'>Patricia</h1>
+                  <div className='self-center flex'>
+                    <img src={left} onClick={() => CarouselRef2.current.previous()} className='w-4 h-4 mr-4 cursor-pointer opacity-50 hover:opacity-100' alt='left' />
+                    <img src={right} onClick={() => CarouselRef2.current.next()} className='w-4 h-4 mr-4 cursor-pointer opacity-50 hover:opacity-100' alt='right' />
+                  </div>
+                </div>
+              </div>
+              <div className='col-span-6 2xl:order-2 xl:order-2 lg:order-2 md:order-2	sm:order-1 s:order-1'>
+                <img src={image} className='w-[200px] mx-auto' alt='Images' />
+              </div>
+            </div>
+            <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4 2xl:my-8 xl:my-8 lg:my-8 md:my-6 sm:my-4 s:my-4'>
+
+              <div className='col-span-6 self-center 2xl:order-1 xl:order-1 lg:order-1 md:order-1	sm:order-2 s:order-2'>
+                <div>
+                  <p className='text-[#B8AEDA]'>“ I’ve used many warranty services but my experience with
+                    Get Cover was very fast and easy to understand ”</p>
+                  <h1 className='my-5 text-lg text-white font-bold'>Patricia</h1>
+                  <div className='self-center flex'>
+                    <img src={left} onClick={() => CarouselRef2.current.previous()} className='w-4 h-4 mr-4 cursor-pointer opacity-50 hover:opacity-100' alt='left' />
+                    <img src={right} onClick={() => CarouselRef2.current.next()} className='w-4 h-4 mr-4 cursor-pointer opacity-50 hover:opacity-100' alt='right' />
+                  </div>
+                </div>
+              </div>
+              <div className='col-span-6 2xl:order-2 xl:order-2 lg:order-2 md:order-2	sm:order-1 s:order-1'>
+                <img src={image} className='w-[200px] mx-auto' alt='Images' />
+              </div>
+            </div>
+          </Carousel>
+
           <div id='contact-us'></div>
         </FadeIn>
         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto 2xl:py-14 xl:py-14 lg:py-14 md:py-10 sm:py-8 s:py-8' >
