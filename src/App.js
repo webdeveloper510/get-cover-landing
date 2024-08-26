@@ -81,9 +81,8 @@ function App() {
 
           </div>
         </FadeIn>
-        <FadeIn className=' 2xl:mb-16 xl:mb-16 lg:mb-16 md:mb-12 sm:mb-8 s:mb-8 '>
+        <FadeIn className=' 2xl:mb-16 xl:mb-16 lg:mb-16 md:mb-12 sm:mb-8 s:mb-8 ' id='plan'>
           <img className='object-cover w-full' src={overlay} alt='Overlay' />
-          <div id='plan'></div>
         </FadeIn>
         <div className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8' >
           <FadeIn className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4'>
@@ -120,7 +119,7 @@ function App() {
               <div className=''>
                 <img className='mb-3' src={plainImage2} alt='plainImage' />
                 <p className='bg-gradient-to-r from-[#FFC7AD] capitalize to-[#FF9E9C] bg-clip-text text-transparent mt-6 text-[14px] font-bold mb-3'>Reseller Extended Warranty</p>
-                <h1 className='text-xl font-semibold text-white leading-tight capitalize'>Getcover Offers Comprehensive <br /> Protection Plans for Resellers to <br /> Resell Under Your Own Brand.</h1>
+                <h1 className='text-xl font-semibold text-white leading-tight capitalize'>Getcover Offers Comprehensive <br className='2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> Protection Plans for Resellers to <br className='2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> Resell Under Your Own Brand.</h1>
                 <p className='bg-gradient-to-r mb-3 from-[#ACA1DF] to-[#D8BCD2] capitalize bg-clip-text text-transparent text-base'>Multiple Plans, Complete <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> Coverage, and a Hassle-Free <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> Claims Process.</p>
                 <a href="#contact-us" className='text-white text-[11px] border border-[#AB9CC0] py-2 px-5 mt-3 rounded-lg'> Get Started Today</a>
               </div>
@@ -309,31 +308,31 @@ function App() {
           <p className='text-[35px] font-bold leading-none text-white '>Get Cover truly  <br /> cares for you</p>
           <div className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 my-12 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center'>
             <div className=' 2xl:flex xl:flex lg:flex md:flex sm:block s:block col-span-1 '>
-              <div className='2xl:w-[25%] xl:w-[25%] lg:w-[25%] md:w-[25%] sm:w-full s:w-full self-center '>
-                <img className='mx-auto' src={Time} alt='Save Time' />
+              <div className='self-center '>
+                <img className='w-[90px] h-[90px] mx-auto' src={Time} alt='Save Time' />
               </div>
-              <div>
+              <div className='self-center'>
                 <h1 className='text-white font-semibold text-lg'>Save Time</h1>
                 <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent text-[14px] font-bold mb-3'>One click is all it <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> takes. We take <br className='2xl:hidden xl:hidden lg:hidden md:block sm:block s:block' /> care  of <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> the rest</p>
               </div>
             </div>
-            <div className='2xl:flex xl:flex lg:flex md:flex sm:flex s:block 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center col-span-1'>
-              <div className='2xl:w-[25%] xl:w-[25%] lg:w-[25%] md:w-[25%] sm:w-full s:w-full self-center'>
-                <img className='mx-auto' src={Money} alt='Save Money' />
+            <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center col-span-1'>
+              <div className='self-center '>
+                <img className='w-[90px] h-[90px] mx-auto' src={Money} alt='Save Money' />
               </div>
-              <div>
+              <div className='self-center'>
                 <h1 className='text-white font-semibold text-lg'>Save Money</h1>
                 <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent text-[14px] font-bold mb-3'>Avoid heavy <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repair <br className='2xl:hidden xl:hidden lg:hidden md:block sm:block s:block' /> & replacement<br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> costs</p>
               </div>
             </div>
-            <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block 2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 s:col-span-1'>
-              <div className='2xl:w-[25%] xl:w-[25%] lg:w-[25%] md:w-[25%] sm:w-full s:w-full 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center self-center'>
-                <img className='mx-auto' src={Hassles} alt='Save Hassles' />
+            <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block 2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-2 sm:col-span-1 s:col-span-1 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center self-center'>
+              <div className='self-center'>
+                <img className='w-[90px] h-[90px] mx-auto' src={Hassles} alt='Save Hassles' />
               </div>
-              <div>
+              <div className='w-[75%] self-center 2xl:mx-0 xl:mx-0 lg:mx-0 md:mx-0 sm:mx-auto s:mx-auto'>
                 <h1 className='text-white font-semibold text-lg'>Save Hassles</h1>
-                <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent text-[14px] font-bold mb-3'>No more waiting on hold or running <br /> around finding out of
-                  the area repair <br /> centers in case things go wrong</p>
+                <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent text-[14px] font-bold mb-3'>No more waiting on hold or running <br className='2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> around finding out of
+                  the area repair <br className='2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> centers in case things go wrong</p>
               </div>
             </div>
           </div>
@@ -367,19 +366,18 @@ function App() {
                   <p className='text-lg text-[#B8AEDA] leading-[24px] mb-8'>One major benefit of having a device <br /> protection plan is saving money on expensive <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repairs that safeguards against damage, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> loss, and malfunctions.</p>
                 </div>
                 <img className='mx-auto' src={Why} alt='Why Get' />
-                <div id='about-us'></div>
               </div>
             </div>
           </div>
         </FadeIn>
-
+        <div id='about-us'></div>
         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8' >
           <div className='bg-About bg-cover bg-no-repeat text-center 2xl:p-16 xl:p-16 lg:p-16 md:p-12 sm:p-8 s:p-8 rounded-[16px]'>
             <h1 className='text-white text-3xl font-bold mb-5'>About Us</h1>
             <p className='text-center 2xl:w-[73%] xl:w-[73%] lg:w-[73%] md:[80%] sm:w-[95%] s:w-[95%] text-[20px] mx-auto text-[#B8AEDA]'><span className='text-white font-bold'> GetCover </span> is an InsureTech leader, delivering innovative warranty and technology solutions for businesses and individuals. Backed by the resources and global expertise of <a href="https://nfgsa.com/" className='text-[#fff] ' target='_blank'> Newpoint Financial Group </a> , we ensure reliable and efficient services across North America, Europe, Africa, and the Middle East. Our mission is to offer peace of mind with comprehensive and dependable coverage.</p>
           </div>
         </FadeIn>
-        <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8 ' >
+        <FadeIn id="why-us" className='  2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8 ' >
           <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center justify-between py-10 ' >
             <h1 className='text-[40px] font-bold leading-[48px] text-[#B8AEDB]'>To experience the <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> <span className='text-white'> GetCover </span> difference.</h1>
             <div className='h-[1px] 2xl:my-0 xl:my-0 lg:my-0 md:my-0 sm:my-3 s:my-5 self-center mx-auto bg-[#B8AEDA] w-[40%] xl:ml-2'></div>
@@ -387,7 +385,7 @@ function App() {
               <button className='font-semibold text-[#323148] bg-white text-sm rounded-lg px-5 py-4 ml-5'>Book An Appointment</button>
             </div>
           </div>
-          <div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 py-12 gap-4' id="why-us" >
+          <div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 py-12 gap-4' >
             <div className='self-center'>
               <div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block s:block'>
                 <h1 className='text-[35px] font-bold leading-[40px] text-white mb-3'>Why Choose US</h1>
