@@ -1,13 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import logo from './../assets/images/logo.png';
 import menu from './../assets/images/icons/menu.svg';
 import cross from './../assets/images/icons/cross.svg';
+
 const Header = ({ className }) => {
     const [isVisible, setIsVisible] = useState(false);
 
     const openDiv = () => {
-        console.log('open');
         setIsVisible(!isVisible);
+    };
+
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            const headerOffset = 100; // Adjust this value based on your header height
+            const elementPosition = section.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth',
+            });
+
+            setIsVisible(false); // Close the mobile menu after click
+        }
     };
 
     return (
@@ -21,23 +37,22 @@ const Header = ({ className }) => {
                         <img src={menu} onClick={openDiv} alt='menu' />
                     </div>
                     <div className='justify-between text-white self-center 2xl:flex xl:flex lg:flex md:flex sm:hidden s:hidden'>
-                        <a href='#plan' className='ml-5 self-center 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Our Plans</a>
-                        <a href='#about-us' className='ml-5 self-center 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'> About Us</a>
-                        <a href='#why-us' className='ml-5 self-center 4xl:text-[22px] 3xl:text-[20px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Why Us</a>
-                        <a href="#contact-us" className='ml-5 self-center 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Contact Us</a>
+                        <a onClick={() => scrollToSection('plan')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Our Plans</a>
+                        <a onClick={() => scrollToSection('about-us')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'> About Us</a>
+                        <a onClick={() => scrollToSection('why-us')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[20px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Why Us</a>
+                        <a onClick={() => scrollToSection('contact-us')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Contact Us</a>
                         <a href="https://app.getcoverusa.com/" target='_blank' className='text-[#323148] 4xl:text-[20px] 3xl:text-[20px] 2xl:text-[12px] xl:text-[12px] lg:text-[12px] md:text-[12px] sm:text-[12px] s:text-[12px] font-semibold bg-white rounded-lg p-3 ml-5'>LOGIN</a>
-
                     </div>
 
                     {isVisible && (
                         <div className='fixed top-0 left-0 w-full h-screen bg-[#323148fa] backdrop-blur-2xl'>
                             <img src={cross} onClick={openDiv} className='ml-5 mt-5' alt='cross' />
                             <div className='mt-28  w-full  mx-auto'>
-                                <p className='text-center my-5 text-white' onClick={openDiv}><a href='#plan' className=' text-center text-base w-full'>Our Plans</a></p>
-                                <p className='text-center mb-5 text-white' onClick={openDiv}><a href='#about-us' className=' text-center text-base'> About Us</a></p>
-                                <p className='text-center mb-5 text-white' onClick={openDiv}><a href='#why-us' className=' text-center text-base'>Why Us</a></p>
-                                <p className='text-center mb-5 text-white' onClick={openDiv}><a href='#contact-us' className=' text-center text-base'>Contact Us</a></p>
-                                <p className='text-center my-5' onClick={openDiv}><a href="https://app.getcoverusa.com/" target='_blank' className='text-[#323148] text-sm font-semibold bg-white rounded-lg p-3'>LOGIN</a></p>
+                                <p className='text-center my-5 text-white cursor-pointer' onClick={() => scrollToSection('plan')}>Our Plans</p>
+                                <p className='text-center mb-5 text-white cursor-pointer' onClick={() => scrollToSection('about-us')}> About Us</p>
+                                <p className='text-center mb-5 text-white cursor-pointer' onClick={() => scrollToSection('why-us')}>Why Us</p>
+                                <p className='text-center mb-5 text-white cursor-pointer' onClick={() => scrollToSection('contact-us')}>Contact Us</p>
+                                <p className='text-center my-5'><a href="https://app.getcoverusa.com/" target='_blank' className='text-[#323148] text-sm font-semibold bg-white rounded-lg p-3'>LOGIN</a></p>
                             </div>
                         </div>
                     )}
@@ -47,4 +62,4 @@ const Header = ({ className }) => {
     )
 }
 
-export default Header
+export default Header;

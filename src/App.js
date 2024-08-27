@@ -553,8 +553,8 @@ function App() {
             </div>
           </Carousel>
 
-          <div id='contact-us'></div>
         </FadeIn>
+        <div id='contact-us'></div>
         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto 2xl:py-14 xl:py-14 lg:py-14 md:py-10 sm:py-8 s:py-8' >
           <div className='bg-Contact bg-cover bg-no-repeat rounded-[16px]'>
             <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 gap-4 2xl:p-12 xl:p-12 lg:p-12 md:p-10 sm:p-8 s:p-8'>
