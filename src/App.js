@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './App.css';
@@ -37,6 +37,12 @@ import FadeIn from './common/FadeIn';
 
 
 function App() {
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [description, setDescription] = useState('');
+  const [show, setShow] = useState('');
+
   const CarouselRef = useRef(null);
   const CarouselRef1 = useRef(null);
   const CarouselRef2 = useRef(null);
@@ -75,6 +81,45 @@ function App() {
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const payload = {
+      firstName,
+      lastName,
+      email,
+      description,
+    };
+
+    try {
+      const response = await fetch('https://api.getcoverusa.com/api-v1/user/contact-us', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        const errorDetails = await response.json();
+        console.error('Failed to send message:', errorDetails);
+        alert('Failed to send message. Please try again.');
+        return;
+      }
+
+      const result = await response.json();
+      console.log('Message sent successfully!', result);
+      setShow(true);
+      setFirstName('');
+      setLastName('');
+      setEmail('');
+      setDescription('');
+    } catch (error) {
+      console.error('Error occurred while sending message:', error);
+      alert('An error occurred. Please try again later.');
     }
   };
   return (
@@ -562,23 +607,52 @@ function App() {
                 <p className='2xl:text-[50px] xl:text-[45px] lg:text-[45px] md:text-[32px] sm:text-[28px] s:text-[28px] text-white 2xl:leading-[55px] xl:leading-[50px] lg:leading-[50px] md:leading-[37px] sm:leading-[32px] s:leading-[32px]  font-bold'>Are you ready to Get Covered? Contact Us</p>
               </div>
               <div className='2xl:col-span-7 xl:col-span-7 lg:col-span-7 md:col-span-6 sm:col-span-6 '>
-                <div className='grid grid-cols-2 gap-4'>
-                  <div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-2 s:col-span-2'>
-                    <Input placeholder="First Name" />
+                <form onSubmit={handleSubmit}>
+                  <div className='grid grid-cols-2 gap-4'>
+                    <div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-2 s:col-span-2'>
+                      <Input
+                        name='firstName'
+                        value={firstName}
+                        required
+                        type='text'
+                        onChange={(e) => setFirstName(e.target.value)}
+                        placeholder="First Name" />
+                    </div>
+                    <div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-2 s:col-span-2'>
+                      <Input
+                        type='text'
+                        name='lastName'
+                        required
+                        placeholder="Last Name"
+                        value={lastName}
+                        onChange={(e) => setLastName(e.target.value)}
+                      />
+                    </div>
+                    <div className='col-span-2'>
+                      <Input
+                        type='email'
+                        name='email'
+                        required
+                        placeholder="Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
+                    </div>
+                    <div className='col-span-2'>
+                      <Input
+                        type='text'
+                        name='description'
+                        placeholder="How We Can Help You?"
+                        value={description}
+                        onChange={(e) => setDescription(e.target.value)}
+                      />
+                    </div>
+                    <div className='2xl:col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-2 s:col-span-2 flex'>
+                      <button type='submit' className='font-semibold text-[#323148] bg-white rounded-lg 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px]  px-5 py-4'>Send Message</button>
+                      {show && <p className='self-center pl-5 text-[#feb0a3] text-lg' >Message sent successfully!</p>}
+                    </div>
                   </div>
-                  <div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-2 s:col-span-2'>
-                    <Input placeholder="Last Name" />
-                  </div>
-                  <div className='col-span-2'>
-                    <Input placeholder="Email" />
-                  </div>
-                  <div className='col-span-2'>
-                    <Input placeholder="How We Can Help You?" />
-                  </div>
-                  <div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-2 sm:col-span-2 s:col-span-2'>
-                    <button className='font-semibold text-[#323148] bg-white rounded-lg 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px]  px-5 py-4'>Send Message</button>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>

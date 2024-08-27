@@ -14,7 +14,7 @@ function Footer() {
                 </div>
                 <div className=' self-center'>
                     <p className='self-center text-base text-[#B8AEDA]'>Copyright © 2023-2024 GetCover Company. All rights reserved.</p>
-                    <p className="text-base text-[#B8AEDA] font-medium text-center " style={{ bottom: '20px' }}>Design, Develop & Maintain by <a href="https://codenomad.net/" className='text-[#fff] ' target="_blank">Codenomad India </a></p>
+                    <p className="text-base text-[#B8AEDA] font-medium text-center " style={{ bottom: '20px' }}>Design, Develop & Maintain by <a rel="noreferrer" href="https://codenomad.net/" className='text-[#fff] ' target="_blank">Codenomad India </a></p>
                 </div>
                 <div className='flex'>
                     <img src={Linked} alt='Linked' />
@@ -37,7 +37,7 @@ function Footer() {
                 </div>
                 <div className=' text-center mt-4'>
                     <p className='self-center text-base text-[#B8AEDA]'>Copyright © 2023-2024 GetCover Company. All rights reserved.</p>
-                    <p className="text-base text-[#B8AEDA] font-medium text-center " style={{ bottom: '20px' }}>Design, Develop & Maintain by <a href="https://codenomad.net/" className='!text-[#ffff] ' target="_blank">Codenomad India </a></p>
+                    <p className="text-base text-[#B8AEDA] font-medium text-center " style={{ bottom: '20px' }}>Design, Develop & Maintain by <a href="https://codenomad.net/" rel="noreferrer" className='!text-[#ffff] ' target="_blank">Codenomad India </a></p>
                 </div>
             </div>
         </>
