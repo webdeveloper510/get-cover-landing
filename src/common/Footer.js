@@ -13,8 +13,8 @@ function Footer() {
                     <img src={logo} alt='logo' />
                 </div>
                 <div className=' self-center'>
-                    <p className='self-center text-base text-[#B8AEDA]'>Copyright © 2023-2024 GetCover Company. All rights reserved.</p>
-                    <p className="text-base text-[#B8AEDA] font-medium text-center " style={{ bottom: '20px' }}>Design, Develop & Maintain by <a rel="noreferrer" href="https://codenomad.net/" className='text-[#fff] ' target="_blank">Codenomad India </a></p>
+                    <p className='self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] text-[#B8AEDA]'>Copyright © 2023-2024 GetCover Company. All rights reserved.</p>
+                    <p className="4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] text-[#B8AEDA] font-medium text-center " style={{ bottom: '20px' }}>Design, Develop & Maintain by <a rel="noreferrer" href="https://codenomad.net/" className='text-[#fff] ' target="_blank">Codenomad India </a></p>
                 </div>
                 <div className='flex'>
                     <img src={Linked} alt='Linked' />

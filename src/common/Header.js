@@ -37,11 +37,11 @@ const Header = ({ className }) => {
                         <img src={menu} onClick={openDiv} alt='menu' />
                     </div>
                     <div className='justify-between text-white self-center 2xl:flex xl:flex lg:flex md:flex sm:hidden s:hidden'>
-                        <a onClick={() => scrollToSection('plan')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Our Plans</a>
-                        <a onClick={() => scrollToSection('about-us')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'> About Us</a>
-                        <a onClick={() => scrollToSection('why-us')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[20px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Why Us</a>
-                        <a onClick={() => scrollToSection('contact-us')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Contact Us</a>
-                        <a href="https://app.getcoverusa.com/" target='_blank' className='text-[#323148] 4xl:text-[20px] 3xl:text-[20px] 2xl:text-[12px] xl:text-[12px] lg:text-[12px] md:text-[12px] sm:text-[12px] s:text-[12px] font-semibold bg-white rounded-lg p-3 ml-5'>LOGIN</a>
+                        <a onClick={() => scrollToSection('plan')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Our Plans</a>
+                        <a onClick={() => scrollToSection('about-us')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'> About Us</a>
+                        <a onClick={() => scrollToSection('why-us')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Why Us</a>
+                        <a onClick={() => scrollToSection('contact-us')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Contact Us</a>
+                        <a href="https://app.getcoverusa.com/" target='_blank' className='text-[#323148] 4xl:text-[20px] 3xl:text-[19px] 2xl:text-[12px] xl:text-[12px] lg:text-[12px] md:text-[12px] sm:text-[12px] s:text-[12px] font-semibold bg-white rounded-lg p-3 ml-5'>LOGIN</a>
                     </div>
 
                     {isVisible && (

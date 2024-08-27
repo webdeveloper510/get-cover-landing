@@ -41,7 +41,7 @@ function App() {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [description, setDescription] = useState('');
-  const [loading, setLoading] = useState('');
+  const [loading, setLoading] = useState(true);
   const [show, setShow] = useState('');
 
   const CarouselRef = useRef(null);
@@ -125,11 +125,25 @@ function App() {
   };
 
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 4000);
   }, []);
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const headerOffset = 100; // Adjust this value based on your header height
+      const elementPosition = section.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <>
       {loading ? <>
@@ -144,18 +158,18 @@ function App() {
 
             <div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4'>
               <div className='self-center 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center'>
-                <h1 className='4xl:text-[104px] 3xl:text-[104px] 2xl:text-[60px] xl:text-[60px] lg:text-[60px] md:text-[52px] sm:text-[42px] s:text-[38px] font-bold leading-none text-white'><span className='text-[#dacdffda]'> A New Era <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> of </span> <br className='2xl:hidden xl:hidden lg:hidden md:block sm:hidden s:hidden' />  Warranty <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> Assurance</h1>
-                <p className='text-[#dacdffda] 4xl:text-[50px] 3xl:text-[50px] 2xl:text-[28px] xl:text-[28px] lg:text-[28px] md:text-[28px] sm:text-[28px] s:text-[28px] font-bold leading-none my-4'>Expertise You Can Trust, Assurance  <br className='2xl:block xl:block lg:hidden md:block sm:hidden s:hidden' />  You Can Rely On</p>
-                <p className='text-[#dacdffda] 4xl:text-[40px] 3xl:text-[40px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] mb-8'>Premium Technology and Warranty Solutions,<br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> Enhanced <br className='2xl:hidden xl:hidden lg:hidden md:block sm:hidden s:hidden' /> by Financial Strength </p>
-                <div className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden'>
-                  <a href='#plan' className='bg-gradient 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] font-semibold text-[#323148] py-4 px-12 rounded-lg '>Explore More</a>
+                <h1 className='4xl:text-[104px] 3xl:text-[72px] 2xl:text-[60px] xl:text-[60px] lg:text-[60px] md:text-[52px] sm:text-[42px] s:text-[38px] font-bold leading-none text-white'><span className='text-[#dacdffda]'> A New Era <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> of </span> <br className='2xl:hidden xl:hidden lg:hidden md:block sm:hidden s:hidden' />  Warranty <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> Assurance</h1>
+                <p className='text-[#dacdffda] 4xl:text-[50px] 3xl:text-[38px] 2xl:text-[28px] xl:text-[28px] lg:text-[28px] md:text-[28px] sm:text-[28px] s:text-[28px] font-bold leading-none my-4'>Expertise You Can Trust, Assurance  <br className='2xl:block xl:block lg:hidden md:block sm:hidden s:hidden' />  You Can Rely On</p>
+                <p className='text-[#dacdffda] 4xl:text-[40px] 3xl:text-[28px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] mb-8'>Premium Technology and Warranty Solutions,<br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> Enhanced <br className='2xl:hidden xl:hidden lg:hidden md:block sm:hidden s:hidden' /> by Financial Strength </p>
+                <div className='2xl:flex xl:flex lg:flex md:hidden sm:hidden s:hidden'>
+                  <p onClick={() => scrollToSection('plan')} className='bg-gradient 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] font-semibold text-[#323148] py-4 px-12 rounded-lg '>Explore More</p>
                 </div>
               </div>
               <div>
                 <img className='mx-auto 2xl:w-auto xl:w-auto lg:w-auto md:w-[320px] sm:w-[320px] s:w-auto' src={banner} alt='Banner' />
               </div>
-              <div className='text-center 2xl:hidden xl:hidden lg:hidden md:block sm:block s:block pb-3'>
-                <a href='#plan' className='bg-gradient 4xl:text-[35px] 3xl:text-[35px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] font-semibold text-[#323148] py-4 px-12 rounded-lg'>Explore More</a>
+              <div className='text-center 2xl:hidden xl:hidden lg:hidden md:flex sm:flex s:flex pb-3 justify-center'>
+                <p onClick={() => scrollToSection('plan')} className='bg-gradient 4xl:text-[35px] 3xl:text-[35px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] font-semibold text-[#323148] py-4 px-12 rounded-lg'>Explore More</p>
               </div>
 
             </div>
@@ -182,7 +196,9 @@ function App() {
                   <p className='bg-gradient-to-r from-[#FFC7AD] capitalize to-[#FF9E9C] bg-clip-text text-transparent 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>K12 Education Plan</p>
                   <h1 className='4xl:text-[30px] 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-white leading-tight capitalize'>Protect your school’s <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> digital devices with our <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> K12 Education Plans.</h1>
                   <p className='bg-gradient-to-r mb-3 from-[#ACA1DF] to-[#D8BCD2] bg-clip-text capitalize text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Affordable plans, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> comprehensive protection, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> and reliable service.</p>
-                  <a href="#contact-us" className='text-white 4xl:text-[20px] 3xl:text-[20px] 2xl:text-[11px] xl:text-[11px] lg:text-[11px] md:text-[11px] sm:text-[11px] s:text-[11px] border border-[#AB9CC0] py-2 px-5  rounded-lg'> Get Started Today</a>
+                  <div className='flex'>
+                    <p onClick={() => scrollToSection('contact-us')} className='text-white 4xl:text-[20px] 3xl:text-[20px] 2xl:text-[11px] xl:text-[11px] lg:text-[11px] md:text-[11px] sm:text-[11px] s:text-[11px] border border-[#AB9CC0] py-2 px-5  rounded-lg'> Get Started Today</p>
+                  </div>
                 </div>
               </div>
               <div className='col-span-1'>
@@ -191,7 +207,9 @@ function App() {
                   <p className='bg-gradient-to-r from-[#FFC7AD] capitalize to-[#FF9E9C] bg-clip-text text-transparent 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Manufacturing Industry</p>
                   <h1 className='4xl:text-[30px] 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-white capitalize leading-tight'>Let Get Cover handle your <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> manufacturer's warranty, <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> including product registration.</h1>
                   <p className='bg-gradient-to-r mb-3 from-[#ACA1DF] to-[#D8BCD2] bg-clip-text capitalize text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Various plans, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> Comprehensive protection, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> and Easy Claim Process.</p>
-                  <a href="#contact-us" className='text-white 4xl:text-[20px] 3xl:text-[20px] 2xl:text-[11px] xl:text-[11px] lg:text-[11px] md:text-[11px] sm:text-[11px] s:text-[11px] border border-[#AB9CC0] py-2 px-5 mt-3 rounded-lg'> Get Started Today</a>
+                  <div className='flex'>
+                    <p onClick={() => scrollToSection('contact-us')} className='text-white 4xl:text-[20px] 3xl:text-[20px] 2xl:text-[11px] xl:text-[11px] lg:text-[11px] md:text-[11px] sm:text-[11px] s:text-[11px] border border-[#AB9CC0] py-2 px-5 mt-3 rounded-lg'> Get Started Tody</p>
+                  </div>
                 </div>
               </div>
               <div className='col-span-1'>
@@ -200,7 +218,9 @@ function App() {
                   <p className='bg-gradient-to-r from-[#FFC7AD] capitalize to-[#FF9E9C] bg-clip-text text-transparent mt-6 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Reseller Extended Warranty</p>
                   <h1 className='4xl:text-[30px] 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-white leading-tight capitalize'>Getcover Offers Comprehensive <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> Protection Plans for Resellers to <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> Resell Under Your Own Brand.</h1>
                   <p className='bg-gradient-to-r mb-3 from-[#ACA1DF] to-[#D8BCD2] capitalize bg-clip-text text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Multiple Plans, Complete <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> Coverage, and a Hassle-Free <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> Claims Process.</p>
-                  <a href="#contact-us" className='text-white 4xl:text-[20px] 3xl:text-[20px] 2xl:text-[11px] xl:text-[11px] lg:text-[11px] md:text-[11px] sm:text-[11px] s:text-[11px] border border-[#AB9CC0] py-2 px-5 mt-3 rounded-lg'> Get Started Today</a>
+                  <div className='flex'>
+                    <div onClick={() => scrollToSection('contact-us')} className='text-white 4xl:text-[20px] w-auto mr-auto 3xl:text-[20px] 2xl:text-[11px] xl:text-[11px] lg:text-[11px] md:text-[11px] sm:text-[11px] s:text-[11px] border border-[#AB9CC0] py-2 px-5 mt-3 rounded-lg'> Get Started Tody</div>
+                  </div>
                 </div>
               </div>
             </FadeIn>
@@ -233,7 +253,7 @@ function App() {
                         <div className='self-center w-[30%]'>
                           <img className='mx-auto' src={MobileIcon} alt='mobile' />
                         </div>
-                        <p className='text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px] '>Mobile Protection <br /> Plans</p>
+                        <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px] '>Mobile Protection <br /> Plans</p>
                       </div>
                     </div>
                     <div className='bg-Headphone bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
@@ -241,7 +261,7 @@ function App() {
                         <div className='self-center w-[30%]'>
                           <img className='mx-auto' src={HeadphoneIcon} alt='Headphone' />
                         </div>
-                        <p className='text-white  4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Headphone  <br /> Protection</p>
+                        <p className='text-white  4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Headphone  <br /> Protection</p>
                       </div>
                     </div>
                   </div>
@@ -251,7 +271,7 @@ function App() {
                         <div className='self-center w-[30%]'>
                           <img className='mx-auto' src={PowerIcon} alt='Power' />
                         </div>
-                        <p className='text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Power Tool  <br /> Protection</p>
+                        <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Power Tool  <br /> Protection</p>
                       </div>
                     </div>
                     <div className='bg-Smartwatch bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
@@ -259,7 +279,7 @@ function App() {
                         <div className='self-center w-[30%]'>
                           <img className='mx-auto' src={SmartwatchIcon} alt='Smartwatch' />
                         </div>
-                        <p className='text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Smartwatch  <br /> Protection</p>
+                        <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Smartwatch  <br /> Protection</p>
                       </div>
                     </div>
                   </div>
@@ -269,7 +289,7 @@ function App() {
                         <div className='self-center w-[30%]'>
                           <img className='mx-auto' src={LaptopIcon} alt='Laptop' />
                         </div>
-                        <p className='text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Laptop  <br /> Protection</p>
+                        <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Laptop  <br /> Protection</p>
                       </div>
                     </div>
                     <div className='bg-Fitness bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
@@ -277,7 +297,7 @@ function App() {
                         <div className='self-center w-[30%]'>
                           <img className='mx-auto' src={FitnessIcon} alt='Fitness' />
                         </div>
-                        <p className='text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Fitness Equipment  <br /> Protection</p>
+                        <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Fitness Equipment  <br /> Protection</p>
                       </div>
                     </div>
                   </div>
@@ -287,7 +307,7 @@ function App() {
                         <div className='self-center w-[30%]'>
                           <img className='mx-auto' src={GamingIcon} alt='Gaming' />
                         </div>
-                        <p className='text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Gaming Console  <br /> Protection</p>
+                        <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Gaming Console  <br /> Protection</p>
                       </div>
                     </div>
                     <div className='bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
@@ -295,7 +315,7 @@ function App() {
                         <div className='self-center w-[30%]'>
                           <img className='mx-auto' src={MajorIcon} alt='Major' />
                         </div>
-                        <p className='text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Major Appliance  <br /> Protection</p>
+                        <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Major Appliance  <br /> Protection</p>
                       </div>
                     </div>
                   </div>
@@ -315,7 +335,7 @@ function App() {
                         <div className='self-center w-[30%]'>
                           <img className='mx-auto' src={MobileIcon} alt='mobile' />
                         </div>
-                        <p className='text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Mobile Protection <br /> Plans</p>
+                        <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Mobile Protection <br /> Plans</p>
                       </div>
                     </div>
                     <div className='bg-Headphone bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
@@ -323,7 +343,7 @@ function App() {
                         <div className='self-center w-[30%]'>
                           <img className='mx-auto' src={HeadphoneIcon} alt='Headphone' />
                         </div>
-                        <p className='text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Headphone  <br /> Protection</p>
+                        <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Headphone  <br /> Protection</p>
                       </div>
                     </div>
 
@@ -332,7 +352,7 @@ function App() {
                         <div className='self-center w-[30%]'>
                           <img className='mx-auto' src={PowerIcon} alt='Power' />
                         </div>
-                        <p className='text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Power Tool  <br /> Protection</p>
+                        <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Power Tool  <br /> Protection</p>
                       </div>
                     </div>
                     <div className='bg-Smartwatch bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
@@ -340,7 +360,7 @@ function App() {
                         <div className='self-center w-[30%]'>
                           <img className='mx-auto' src={SmartwatchIcon} alt='Smartwatch' />
                         </div>
-                        <p className='text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Smartwatch  <br /> Protection</p>
+                        <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Smartwatch  <br /> Protection</p>
                       </div>
                     </div>
                   </div>
@@ -394,8 +414,8 @@ function App() {
                   mx-auto' src={Time} alt='Save Time' />
                 </div>
                 <div className='self-center'>
-                  <h1 className='text-white font-semibold 4xl:text-[40px] 3xl:text-[40px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px]'>Save Time</h1>
-                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>One click is all it <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> takes. We take <br className='2xl:hidden xl:hidden lg:hidden md:block sm:block s:block' /> care  of <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> the rest</p>
+                  <h1 className='text-white font-semibold 4xl:text-[40px] 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px]'>Save Time</h1>
+                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[26px] 3xl:text-[19px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>One click is all it <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> takes. We take <br className='2xl:hidden xl:hidden lg:hidden md:block sm:block s:block' /> care  of <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> the rest</p>
                 </div>
               </div>
               <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center col-span-1'>
@@ -404,8 +424,8 @@ function App() {
                   4xl:h-[120px] 3xl:h-[120px] 2xl:h-[90px] xl:h-[90px] lg:h-[90px] md:h-[90px] sm:h-[90px] s:h-[90px] mx-auto' src={Money} alt='Save Money' />
                 </div>
                 <div className='self-center'>
-                  <h1 className='text-white font-semibold 4xl:text-[40px] 3xl:text-[40px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px]'>Save Money</h1>
-                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Avoid heavy <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repair <br className='2xl:hidden xl:hidden lg:hidden md:block sm:block s:block' /> & replacement<br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> costs</p>
+                  <h1 className='text-white font-semibold 4xl:text-[40px] 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px]'>Save Money</h1>
+                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[26px] 3xl:text-[19px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Avoid heavy <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repair <br className='2xl:hidden xl:hidden lg:hidden md:block sm:block s:block' /> & replacement<br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> costs</p>
                 </div>
               </div>
               <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block 2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-2 sm:col-span-2 s:col-span-1 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center self-center'>
@@ -414,8 +434,8 @@ function App() {
                   4xl:h-[120px] 3xl:h-[120px] 2xl:h-[90px] xl:h-[90px] lg:h-[90px] md:h-[90px] sm:h-[90px] s:h-[90px] mx-auto' src={Hassles} alt='Save Hassles' />
                 </div>
                 <div className='w-[75%] self-center 2xl:mx-0 xl:mx-0 lg:mx-0 md:mx-0 sm:mx-auto s:mx-auto'>
-                  <h1 className='text-white font-semibold 4xl:text-[40px] 3xl:text-[40px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px]'>Save Hassles</h1>
-                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>No more waiting on hold or running <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> around finding out of
+                  <h1 className='text-white font-semibold 4xl:text-[40px] 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px]'>Save Hassles</h1>
+                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[26px] 3xl:text-[19px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>No more waiting on hold or running <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> around finding out of
                     the area repair <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> centers in case things go wrong</p>
                 </div>
               </div>
@@ -426,19 +446,19 @@ function App() {
               <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-5 sm:col-span-6 2xl:order-1 xl:order-1 lg:order-1 md:order-1 sm:order-2 s:order-2 self-center'>
                 <div className='2xl:block xl:block lg:block md:block sm:hidden s:hidden'>
                   <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold 4xl:leading-[55px] 3xl:leading-[55px] 2xl:leading-[40px] xl:leading-[40px] lg:leading-[40px] md:leading-[40px] sm:leading-[40px] s:leading-[40px] text-white mb-3'>Why Get Device <br /> Protection Plans?</h1>
-                  <p className='4xl:text-[30px] 3xl:text-[30px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[35px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8'>One major benefit of having a device <br /> protection plan is saving money on expensive <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repairs that safeguards against damage, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> loss, and malfunctions.</p>
+                  <p className='4xl:text-[30px] 3xl:text-[24px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[30px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8'>One major benefit of having a device <br /> protection plan is saving money on expensive <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repairs that safeguards against damage, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> loss, and malfunctions.</p>
                 </div>
                 <div className='mb-6'>
                   <h1 className='text-white 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[21px] xl:text-[21px] lg:text-[21px] md:text-[21px] sm:text-[21px] s:text-[21px] font-bold'>Repair Plans</h1>
-                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[24px] 3xl:text-[24px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Efficient and effective solutions for fixing your <br /> products, ensuring they work like new.</p>
+                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Efficient and effective solutions for fixing your <br /> products, ensuring they work like new.</p>
                 </div>
                 <div className='mb-6'>
                   <h1 className='text-white 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[21px] xl:text-[21px] lg:text-[21px] md:text-[21px] sm:text-[21px] s:text-[21px] font-bold'>Replacement Plans</h1>
-                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent  4xl:text-[24px] 3xl:text-[24px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Get Cover offers warranty programs that <br /> replace products versus repair.</p>
+                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent  4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Get Cover offers warranty programs that <br /> replace products versus repair.</p>
                 </div>
                 <div className='mb-6'>
                   <h1 className='text-white 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[21px] xl:text-[21px] lg:text-[21px] md:text-[21px] sm:text-[21px] s:text-[21px] font-bold'>Accidental Damage Plans</h1>
-                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[24px] 3xl:text-[24px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Finding skilled and experienced technicians <br /> for appliance repairs can be
+                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Finding skilled and experienced technicians <br /> for appliance repairs can be
                     difficult.
                   </p>
                 </div>
