@@ -43,10 +43,16 @@ function App() {
   const [description, setDescription] = useState('');
   const [loading, setLoading] = useState(true);
   const [show, setShow] = useState('');
-
   const CarouselRef = useRef(null);
   const CarouselRef1 = useRef(null);
   const CarouselRef2 = useRef(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
+
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -123,12 +129,6 @@ function App() {
       alert('An error occurred. Please try again later.');
     }
   };
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 4000);
-  }, []);
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -224,7 +224,6 @@ function App() {
                 </div>
               </div>
             </FadeIn>
-
           </div>
           <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8'>
             <div className='flex justify-between'>
@@ -489,7 +488,10 @@ function App() {
                 <button className='font-semibold text-[#323148] bg-white 4xl:text-[26px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] rounded-lg px-5 py-4 ml-5'>Book An Appointment</button>
               </div>
             </div>
-            <div id="why-us" className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 py-12 gap-4' >
+          </FadeIn>
+          <div id="why-us"></div>
+          <FadeIn className='pt-12'>
+            <div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pb-12 gap-4' >
               <div className='self-center'>
                 <div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block s:block'>
                   <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold leading-[40px] text-white mb-3'>Why Choose US</h1>

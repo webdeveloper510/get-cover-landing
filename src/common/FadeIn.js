@@ -1,14 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const FadeIn = ({ children, className = '', ...props }) => {
+const FadeInSection = ({ children, className = '', ...props }) => {
     const [isVisible, setIsVisible] = useState(false);
     const domRef = useRef();
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting && !isVisible) {
+                if (entry.isIntersecting) {
                     setIsVisible(true);
+                } else if (entry.boundingClientRect.top > 0) {
+                    setIsVisible(false);
                 }
             });
         });
@@ -16,7 +18,7 @@ const FadeIn = ({ children, className = '', ...props }) => {
         observer.observe(domRef.current);
 
         return () => observer.disconnect();
-    }, [isVisible]);
+    }, []);
 
     return (
         <div
@@ -29,4 +31,4 @@ const FadeIn = ({ children, className = '', ...props }) => {
     );
 };
 
-export default FadeIn;
+export default FadeInSection;
