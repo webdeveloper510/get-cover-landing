@@ -58,20 +58,26 @@ function App() {
         img.onload = () => {
           imagesLoaded++;
           if (imagesLoaded === images.length) {
-            setLoading(false);
+            setTimeout(() => {
+              setLoading(false);
+            }, 2000);
           }
         };
         img.onerror = () => {
           imagesLoaded++;
           if (imagesLoaded === images.length) {
-            setLoading(false);
+            setTimeout(() => {
+              setLoading(false);
+            }, 2000);
           }
         };
       }
     });
 
     if (imagesLoaded === images.length) {
-      setLoading(false);
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
     }
   }, []);
 
