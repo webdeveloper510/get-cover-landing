@@ -48,17 +48,31 @@ function App() {
   const CarouselRef2 = useRef(null);
 
   useEffect(() => {
-    const handleLoad = () => {
-      setTimeout(() => {
-        setLoading(false);
-      }, 4000);
-    };
+    const images = document.querySelectorAll("img");
+    let imagesLoaded = 0;
 
-    window.addEventListener("load", handleLoad);
+    images.forEach((img) => {
+      if (img.complete) {
+        imagesLoaded++;
+      } else {
+        img.onload = () => {
+          imagesLoaded++;
+          if (imagesLoaded === images.length) {
+            setLoading(false);
+          }
+        };
+        img.onerror = () => {
+          imagesLoaded++;
+          if (imagesLoaded === images.length) {
+            setLoading(false);
+          }
+        };
+      }
+    });
 
-    return () => {
-      window.removeEventListener("load", handleLoad);
-    };
+    if (imagesLoaded === images.length) {
+      setLoading(false);
+    }
   }, []);
 
   const responsive = {
