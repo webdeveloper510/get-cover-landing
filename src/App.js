@@ -486,7 +486,7 @@ function App() {
               <h1 className='text-[40px] font-bold leading-[48px] text-[#B8AEDB]'>To experience the <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> <span className='text-white'> GetCover </span> difference.</h1>
               <div className='h-[1px] 2xl:my-0 xl:my-0 lg:my-0 md:my-0 sm:my-3 s:my-5 self-center mx-auto bg-[#B8AEDA] w-[40%] xl:ml-2'></div>
               <div className='self-center'>
-                <button className='font-semibold text-[#323148] bg-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] rounded-lg px-5 py-4 ml-5'>Book An Appointment</button>
+                <button className='font-semibold text-[#323148] bg-white 4xl:text-[26px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] rounded-lg px-5 py-4 ml-5'>Book An Appointment</button>
               </div>
             </div>
             <div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 py-12 gap-4' >
@@ -514,7 +514,7 @@ function App() {
                   <h1 className='text-white 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[21px] xl:text-[21px] lg:text-[21px] md:text-[21px] sm:text-[21px] s:text-[21px] font-bold'>Multiple Option Plans</h1>
                   <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Enjoy multiple option warranty plans with a variety of terms and coverage, including accidental damage from handling ADH</p>
                 </div>
-                <button className='font-semibold text-[#323148] bg-white rounded-lg 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] px-5 py-4'>Learn More</button>
+                <button className='font-semibold text-[#323148] bg-white rounded-lg 4xl:text-[26px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] px-5 py-4'>Learn More</button>
               </div>
             </div>
           </FadeIn>
@@ -682,7 +682,7 @@ function App() {
                         />
                       </div>
                       <div className='2xl:col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-2 s:col-span-2 flex'>
-                        <button type='submit' className='font-semibold text-[#323148] bg-white rounded-lg 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px]  px-5 py-4'>Send Message</button>
+                        <button type='submit' className='font-semibold text-[#323148] bg-white rounded-lg 4xl:text-[26px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px]  px-5 py-4'>Send Message</button>
                         {show && <p className='self-center pl-5 text-[#feb0a3] text-lg' >Message sent successfully!</p>}
                       </div>
                     </div>
