@@ -48,9 +48,15 @@ function App() {
   const CarouselRef2 = useRef(null);
 
   useEffect(() => {
-    // setTimeout(() => {
-    //   setLoading(false);
-    // }, 4000);
+    const handleLoad = () => {
+      setLoading(false);
+    };
+
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
   }, []);
 
   const responsive = {
