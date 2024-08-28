@@ -518,7 +518,7 @@ function App() {
             </div>
           </FadeIn>
           <div id="why-us"></div>
-          <FadeIn className='pt-12'>
+          <FadeIn className='pt-12 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto'>
             <div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pb-12 gap-4' >
               <div className='self-center'>
                 <div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block s:block'>
