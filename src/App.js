@@ -39,6 +39,7 @@ import loader from './assets/images/loader.gif';
 function App() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
+  const [phonenumber, setPhonenumber] = useState('');
   const [email, setEmail] = useState('');
   const [description, setDescription] = useState('');
   const [loading, setLoading] = useState(true);
@@ -119,6 +120,42 @@ function App() {
     }
   };
 
+  const handleEmailChange = (e) => {
+    const emailValue = e.target.value;
+    setEmail(emailValue);
+
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailPattern.test(emailValue)) {
+      console.error("Invalid email format");
+      // You can set an error state or show an error message to the user
+    } else {
+      // Clear any existing errors if the email is valid
+    }
+  };
+
+  const handlePhoneChange = (e) => {
+    let phoneValue = e.target.value;
+
+    // Remove all non-digit characters
+    phoneValue = phoneValue.replace(/\D/g, '');
+
+    // Format the number as (XXX) XXX-XXXX
+    if (phoneValue.length <= 10) {
+      phoneValue = phoneValue.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+    }
+
+    setPhonenumber(phoneValue);
+
+    // Simple validation to check if the phone number is valid
+    const phonePattern = /^\(\d{3}\) \d{3}-\d{4}$/;
+    if (!phonePattern.test(phoneValue)) {
+      console.error("Invalid phone number format");
+      // Set an error state or show an error message to the user
+    } else {
+      // Clear any existing errors if the phone number is valid
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -126,6 +163,7 @@ function App() {
       firstName,
       lastName,
       email,
+      phonenumber,
       description,
     };
 
@@ -692,14 +730,24 @@ function App() {
                           onChange={(e) => setLastName(e.target.value)}
                         />
                       </div>
-                      <div className='col-span-2'>
+                      <div className='col-span-1'>
                         <Input
                           type='email'
                           name='email'
                           required
                           placeholder="Email"
                           value={email}
-                          onChange={(e) => setEmail(e.target.value)}
+                          onChange={(e) => handleEmailChange(e)}
+                        />
+                      </div>
+                      <div className='col-span-1'>
+                        <Input
+                          type='number'
+                          name='phonenumber'
+                          required
+                          placeholder="Phone #"
+                          value={phonenumber}
+                          onChange={(e) => handlePhoneChange(e)}
                         />
                       </div>
                       <div className='col-span-2'>
