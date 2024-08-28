@@ -48,9 +48,9 @@ function App() {
   const CarouselRef2 = useRef(null);
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 4000);
+    // setTimeout(() => {
+    //   setLoading(false);
+    // }, 4000);
   }, []);
 
   const responsive = {
