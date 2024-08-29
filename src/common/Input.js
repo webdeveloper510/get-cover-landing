@@ -6,16 +6,18 @@ const Input = ({
     value,
     onBlur,
     name,
+    maxLength,
+    minLength,
     required,
     className1,
     disabled,
     placeholder,
     classBox,
-    onChange, // Pass the onChange prop to the component
+    onChange,
 }) => {
     const handleChange = (e) => {
         if (onChange) {
-            onChange(e); // Call the onChange function passed from the parent
+            onChange(e);
         }
     };
 
@@ -27,6 +29,9 @@ const Input = ({
                 value={value} // Controlled component
                 id={name}
                 onBlur={onBlur}
+                minLength={minLength}
+                pattern={type === "number" ? "[0-9]*" : undefined}
+                maxLength={maxLength}
                 className={`block px-4 py-4  w-full text-base outline-none font-medium rounded-lg bg-[#323148] appearance-none peer ${className1} ${error ? "border-[red]" : ""
                     } placeholder-white text-white`}
                 onChange={handleChange} // Use the handleChange function

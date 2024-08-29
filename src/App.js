@@ -138,19 +138,22 @@ function App() {
   };
 
   const handlePhoneChange = (e) => {
-    const phoneValue = e.target.value;
+    // Extract digits from the input
+    let digitsOnly = e.target.value.replace(/\D/g, '');
 
-    // Set the raw input value without removing non-digit characters
-    setPhonenumber(phoneValue);
+    // Limit to 10 digits
+    if (digitsOnly.length > 10) {
+      digitsOnly = digitsOnly.slice(0, 10);
+    }
 
-    // Extract digits from the input for validation
-    const digitsOnly = phoneValue.replace(/\D/g, '');
+    // Set the raw input value
+    setPhonenumber(e.target.value.slice(0, 10));
 
     // Format the number as (XXX) XXX-XXXX if it contains 10 digits
     if (digitsOnly.length === 10) {
       const formattedPhone = digitsOnly.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
       // Optionally, you could display this formatted number instead of the raw input
-      //= setPhonenumber(formattedPhone);
+      // setPhonenumber(formattedPhone);
     }
 
     // Validate the phone number only if it contains 10 digits
@@ -160,6 +163,7 @@ function App() {
       setPhoneError('');
     }
   };
+
 
 
   const handleSubmit = async (e) => {
@@ -206,11 +210,9 @@ function App() {
       }
 
       const result = await response.json();
-      console.log('Message sent successfully!', result);
+      // console.log('Message sent successfully!', result);
       setShow(true);
-      setText(result.message);
-
-      // Clear the message after 10 seconds
+      setText('Message sent successfully!');
       setTimeout(() => {
         setText('');
       }, 10000);
@@ -776,8 +778,8 @@ function App() {
                           type='number'
                           name='phoneNumber'
                           required
-                          minlength={'9'}
-                          maxlength={'10'}
+                          minLength={9}
+                          maxLength={10}
                           placeholder="Phone #"
                           value={phoneNumber}
                           onChange={(e) => handlePhoneChange(e)}
