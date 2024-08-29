@@ -39,7 +39,10 @@ import loader from './assets/images/loader.gif';
 function App() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  const [phonenumber, setPhonenumber] = useState('');
+  const [phoneNumber, setPhonenumber] = useState('');
+  const [text, setText] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [phoneError, setPhoneError] = useState('');
   const [email, setEmail] = useState('');
   const [description, setDescription] = useState('');
   const [loading, setLoading] = useState(true);
@@ -120,50 +123,62 @@ function App() {
     }
   };
 
+
+
   const handleEmailChange = (e) => {
     const emailValue = e.target.value;
     setEmail(emailValue);
 
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailPattern.test(emailValue)) {
-      console.error("Invalid email format");
-      // You can set an error state or show an error message to the user
+      setEmailError('Invalid email format');
     } else {
-      // Clear any existing errors if the email is valid
+      setEmailError('');
     }
   };
 
   const handlePhoneChange = (e) => {
-    let phoneValue = e.target.value;
+    const phoneValue = e.target.value;
 
-    // Remove all non-digit characters
-    phoneValue = phoneValue.replace(/\D/g, '');
-
-    // Format the number as (XXX) XXX-XXXX
-    if (phoneValue.length <= 10) {
-      phoneValue = phoneValue.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
-    }
-
+    // Set the raw input value without removing non-digit characters
     setPhonenumber(phoneValue);
 
-    // Simple validation to check if the phone number is valid
-    const phonePattern = /^\(\d{3}\) \d{3}-\d{4}$/;
-    if (!phonePattern.test(phoneValue)) {
-      console.error("Invalid phone number format");
-      // Set an error state or show an error message to the user
+    // Extract digits from the input for validation
+    const digitsOnly = phoneValue.replace(/\D/g, '');
+
+    // Format the number as (XXX) XXX-XXXX if it contains 10 digits
+    if (digitsOnly.length === 10) {
+      const formattedPhone = digitsOnly.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+      // Optionally, you could display this formatted number instead of the raw input
+      //= setPhonenumber(formattedPhone);
+    }
+
+    // Validate the phone number only if it contains 10 digits
+    if (digitsOnly.length !== 10) {
+      setPhoneError('Phone number must be 10 digits.');
     } else {
-      // Clear any existing errors if the phone number is valid
+      setPhoneError('');
     }
   };
 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (emailError || phoneError) {
+      setShow(true);
+      setText('Please fix the validation errors before submitting.');
+      setTimeout(() => {
+        setText('');
+      }, 4000);
+      return;
+    }
 
     const payload = {
       firstName,
       lastName,
       email,
-      phonenumber,
+      phoneNumber,
       description,
     };
 
@@ -179,23 +194,38 @@ function App() {
       if (!response.ok) {
         const errorDetails = await response.json();
         console.error('Failed to send message:', errorDetails);
-        alert('Failed to send message. Please try again.');
+        setShow(true);
+        setText(errorDetails.message);
+
+        // Clear the message after 10 seconds
+        setTimeout(() => {
+          setText('');
+        }, 10000);
+
         return;
       }
 
       const result = await response.json();
       console.log('Message sent successfully!', result);
       setShow(true);
+      setText(result.message);
+
+      // Clear the message after 10 seconds
+      setTimeout(() => {
+        setText('');
+      }, 10000);
+
+      // Clear form fields
       setFirstName('');
       setLastName('');
       setEmail('');
+      setPhonenumber('');
       setDescription('');
     } catch (error) {
       console.error('Error occurred while sending message:', error);
       alert('An error occurred. Please try again later.');
     }
   };
-
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -739,16 +769,20 @@ function App() {
                           value={email}
                           onChange={(e) => handleEmailChange(e)}
                         />
+                        {emailError && <div className="text-sm text-red-600 ">{emailError}</div>}
                       </div>
                       <div className='col-span-1'>
                         <Input
                           type='number'
-                          name='phonenumber'
+                          name='phoneNumber'
                           required
+                          minlength={'9'}
+                          maxlength={'10'}
                           placeholder="Phone #"
-                          value={phonenumber}
+                          value={phoneNumber}
                           onChange={(e) => handlePhoneChange(e)}
                         />
+                        {phoneError && <div className="text-sm text-red-600">{phoneError}</div>}
                       </div>
                       <div className='col-span-2'>
                         <Input
@@ -761,7 +795,7 @@ function App() {
                       </div>
                       <div className='2xl:col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-2 s:col-span-2 flex'>
                         <button type='submit' className='font-semibold text-[#323148] bg-white rounded-lg 4xl:text-[26px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px]  px-5 py-4'>Send Message</button>
-                        {show && <p className='self-center pl-5 text-[#feb0a3] text-lg' >Message sent successfully!</p>}
+                        {show && <p className='self-center pl-5 text-[#feb0a3] text-lg' >{text}</p>}
                       </div>
                     </div>
                   </form>
