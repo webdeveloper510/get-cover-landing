@@ -33,7 +33,7 @@ const Header = ({ className }) => {
                     <div className='self-center'>
                         <img src={logo} alt='logo' />
                     </div>
-                    <div className='self-center 2xl:hidden xl:hidden lg:hidden md:hidden sm:block s:block'>
+                    {/* <div className='self-center 2xl:hidden xl:hidden lg:hidden md:hidden sm:block s:block'>
                         <img src={menu} onClick={openDiv} alt='menu' />
                     </div>
                     <div className='justify-between text-white self-center 2xl:flex xl:flex lg:flex md:flex sm:hidden s:hidden'>
@@ -55,7 +55,7 @@ const Header = ({ className }) => {
                                 <p className='text-center my-5'><a href="https://app.getcoverusa.com/" target='_blank' className='text-[#323148] text-sm font-semibold bg-white rounded-lg p-3'>LOGIN</a></p>
                             </div>
                         </div>
-                    )}
+                    )} */}
                 </div>
             </div>
         </div>
