@@ -619,7 +619,7 @@ function App() {
               </div>
             </div>
           </FadeIn>
-          <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-14 xl:py-14 lg:py-14 md:py-10 sm:py-8 s:py-8'>
+          {/* <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-14 xl:py-14 lg:py-14 md:py-10 sm:py-8 s:py-8'>
             <h1 className='text-[40px] font-bold text-center leading-[48px] text-white'>Testimonials</h1>
             <Carousel
               responsive={responsive1}
@@ -733,7 +733,7 @@ function App() {
               </div>
             </Carousel>
 
-          </FadeIn>
+          </FadeIn> */}
           <div id='contact-us'></div>
           <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto 2xl:py-14 xl:py-14 lg:py-14 md:py-10 sm:py-8 s:py-8' >
             <div className='bg-Contact bg-cover bg-no-repeat rounded-[16px]'>
