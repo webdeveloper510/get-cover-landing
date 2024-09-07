@@ -12,6 +12,8 @@ import Footer from './common/Footer';
 // -------------Media Images imported
 import banner from './assets/images/banner.png';
 import overlay from './assets/images/overlay.png';
+import AboutUs from './assets/images/aboutUs.png';
+import WHY_Get from './assets/images/about.png';
 import plainImage from './assets/images/K12 Education Plan.png';
 import plainImage1 from './assets/images/Manufacturing Industry.png';
 import plainImage2 from './assets/images/Reseller Extended Warranty.png';
@@ -257,9 +259,10 @@ function App() {
             <div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4'>
               <div className='self-center 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center'>
                 {/* <h1 className='4xl:text-[104px] 3xl:text-[72px] 2xl:text-[60px] xl:text-[60px] lg:text-[60px] md:text-[52px] sm:text-[42px] s:text-[38px] font-bold leading-none text-white'> Check Back <br /> <span className='text-[#dacdffda]'> Soon </span> </h1> */}
-                <h1 className='4xl:text-[104px] 3xl:text-[72px] 2xl:text-[60px] xl:text-[60px] lg:text-[60px] md:text-[52px] sm:text-[42px] s:text-[38px] font-bold leading-none text-white'><span className='text-[#dacdffda]'> A New Era <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> of </span> <br className='2xl:hidden xl:hidden lg:hidden md:block sm:hidden s:hidden' />  Warranty <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> Assurance</h1>
-                <p className='text-[#dacdffda] 4xl:text-[50px] 3xl:text-[38px] 2xl:text-[28px] xl:text-[28px] lg:text-[28px] md:text-[28px] sm:text-[28px] s:text-[28px] font-bold leading-none my-4'>Expertise You Can Trust, Assurance  <br className='2xl:block xl:block lg:hidden md:block sm:hidden s:hidden' />  You Can Rely On</p>
-                <p className='text-[#dacdffda] 4xl:text-[40px] 3xl:text-[28px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] mb-8'>Premium Technology and Warranty Solutions,<br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> Enhanced <br className='2xl:hidden xl:hidden lg:hidden md:block sm:hidden s:hidden' /> by Financial Strength </p>
+                <p className='bg-gradient-to-r from-[#FFC7AD] capitalize to-[#FF9E9C] bg-clip-text text-transparent 4xl:text-[36px] 3xl:text-[36px] 2xl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] sm:text-[24px] s:text-[24px] font-bold mb-2'>Device Protection Simplified</p>
+                <h1 className='4xl:text-[104px] 3xl:text-[72px] 2xl:text-[50px] xl:text-[50px] lg:text-[50px] md:text-[42px] sm:text-[38 px] s:text-[38px] font-bold leading-none text-white'><span className=''> Expecrtise You Can <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> Trust </span> <br className='2xl:hidden xl:hidden lg:hidden md:block sm:hidden s:hidden' />  Assurance <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> You Can Rely On.</h1>
+                {/* <p className='text-[#dacdffda] 4xl:text-[50px] 3xl:text-[38px] 2xl:text-[28px] xl:text-[28px] lg:text-[28px] md:text-[28px] sm:text-[28px] s:text-[28px] font-bold leading-none my-4'>Expertise You Can Trust, Assurance  <br className='2xl:block xl:block lg:hidden md:block sm:hidden s:hidden' />  You Can Rely On</p> */}
+                <p className='text-[#dacdffda] font-bold 4xl:text-[40px] 3xl:text-[34px] 2xl:text-[22px] xl:text-[22px] lg:text-[22px] md:text-[22px] sm:text-[22px] s:text-[18px] mb-8'> Warranty Cover Solutions, And Premium <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> Technology <br className='2xl:hidden xl:hidden lg:hidden md:block sm:hidden s:hidden' /> With Hassle-Free service To <br /> Maximize Our Customer's Experience </p>
                 <div className='2xl:flex xl:flex lg:flex md:hidden sm:hidden s:hidden'>
                   {/* <p onClick={() => scrollToSection('plan')} className='bg-gradient 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] font-semibold text-[#323148] py-4 px-12 rounded-lg '>Explore More</p> */}
                 </div>
@@ -275,6 +278,80 @@ function App() {
           </FadeIn>
           <FadeIn className=' 2xl:mb-16 xl:mb-16 lg:mb-16 md:mb-12 sm:mb-8 s:mb-8 ' >
             <img className='object-cover w-full' src={overlay} alt='Overlay' />
+          </FadeIn>
+          <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-12 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8'>
+            <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4'>
+
+              <div className='2xl:col-span-7 xl:col-span-7 lg:col-span-7 md:col-span-7 sm:col-span-6 '>
+                <div className='self-center'>
+                  <div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block s:block'>
+                    <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold leading-[40px] text-white mb-3'>Why Get Device <br /> Protection Plans?</h1>
+                    <p className='text-lg text-[#B8AEDA] leading-[24px] mb-8'>One major benefit of having a device <br /> protection plan is saving money on expensive <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repairs that safeguards against damage, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> loss, and malfunctions.</p>
+                  </div>
+                  <img className='mx-auto w-2/3' src={AboutUs} alt='Why Get' />
+                </div>
+              </div>
+              <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-5 sm:col-span-6  self-center'>
+                <div className='2xl:block xl:block lg:block md:block sm:hidden s:hidden'>
+                  <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold 4xl:leading-[55px] 3xl:leading-[55px] 2xl:leading-[40px] xl:leading-[40px] lg:leading-[40px] md:leading-[40px] sm:leading-[40px] s:leading-[40px] text-white mb-3'>About Us</h1>
+                  <p className='4xl:text-[30px] 3xl:text-[24px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[30px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8'>Get Cover is an InsureTech leader
+                    delivering warranty coverage solutions
+                    through its proprietary technology to both enterprise corporate organizations
+                    (B2B) and individuals (B2C) clients.
+                    <br />
+                    <br />
+                    Get Cover LLC is a subsidiary of NFG SA. a London based global private
+                    investment firm focused on private equity and structured finance
+                    investments into operating companies engaged in the insurance, financial
+                    services, energy, infrastructure and real estate sectors.</p>
+                </div>
+              </div>
+              <div className='col-span-12'>
+                <p className='w-2/3 mx-auto  mt-3 4xl:text-[30px] 3xl:text-[24px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[30px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8 text-center'>With more than $2.5 billion in firm capital and a focus on
+                  transformative business combinations across our target industry sectors
+                  throughout North America, Europe, Africa, and the Middle East creating a
+                  strategic international presence, coupled with a deep understanding of the
+                  importance of capital, NFG has the experience, expertise, and financial
+                  capability to fund bespoke structured finance transactions creating
+                  efficient and cost- effective financing programs <br />
+                  that drive long term value
+                  creation.
+                </p>
+              </div>
+            </div>
+          </FadeIn>
+          <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-12 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8'>
+            <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4'>
+              <div className='2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-6 2xl:order-1 xl:order-1 lg:order-1 md:order-1 sm:order-2 s:order-2 self-center'>
+                <div className='2xl:block xl:block lg:block md:block sm:hidden s:hidden'>
+                  <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold 4xl:leading-[55px] 3xl:leading-[55px] 2xl:leading-[40px] xl:leading-[40px] lg:leading-[40px] md:leading-[40px] sm:leading-[40px] s:leading-[40px] text-white mb-3'>Why Get Device <br /> Protection Plans?</h1>
+                  <p className='4xl:text-[30px] 3xl:text-[24px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[30px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8'>One major benefit of having a device <br /> protection plan is saving money on expensive <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repairs that safeguards against damage, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> loss, and malfunctions.</p>
+                </div>
+                <div className='mb-6'>
+                  <h1 className='text-white 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[21px] xl:text-[21px] lg:text-[21px] md:text-[21px] sm:text-[21px] s:text-[21px] font-bold'>Repair Plans</h1>
+                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Efficient and effective solutions for fixing your <br /> products, ensuring they work like new.</p>
+                </div>
+                <div className='mb-6'>
+                  <h1 className='text-white 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[21px] xl:text-[21px] lg:text-[21px] md:text-[21px] sm:text-[21px] s:text-[21px] font-bold'>Replacement Plans</h1>
+                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent  4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Get Cover offers warranty programs that <br /> replace products versus repair.</p>
+                </div>
+                <div className='mb-6'>
+                  <h1 className='text-white 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[21px] xl:text-[21px] lg:text-[21px] md:text-[21px] sm:text-[21px] s:text-[21px] font-bold'>Accidental Damage Plans</h1>
+                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Finding skilled and experienced technicians <br /> for appliance repairs can be
+                    difficult.
+                  </p>
+                </div>
+              </div>
+              <div className='2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-6 2xl:order-2 xl:order-2 lg:order-2 md:order-2	sm:order-1 s:order-1'>
+                <div className='self-center'>
+                  <div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block s:block'>
+                    <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold leading-[40px] text-white mb-3'>Why Get Device <br /> Protection Plans?</h1>
+                    <p className='text-lg text-[#B8AEDA] leading-[24px] mb-8'>One major benefit of having a device <br /> protection plan is saving money on expensive <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repairs that safeguards against damage, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> loss, and malfunctions.</p>
+                  </div>
+                  <img className='mx-auto' src={WHY_Get} alt='Why Get' />
+                </div>
+              </div>
+            </div>
           </FadeIn>
           <div id='plan' className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8' >
             <FadeIn className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4'>
@@ -539,46 +616,8 @@ function App() {
               </div>
             </div>
           </FadeIn>
-          <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-12 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8'>
-            <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4'>
-              <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-5 sm:col-span-6 2xl:order-1 xl:order-1 lg:order-1 md:order-1 sm:order-2 s:order-2 self-center'>
-                <div className='2xl:block xl:block lg:block md:block sm:hidden s:hidden'>
-                  <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold 4xl:leading-[55px] 3xl:leading-[55px] 2xl:leading-[40px] xl:leading-[40px] lg:leading-[40px] md:leading-[40px] sm:leading-[40px] s:leading-[40px] text-white mb-3'>Why Get Device <br /> Protection Plans?</h1>
-                  <p className='4xl:text-[30px] 3xl:text-[24px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[30px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8'>One major benefit of having a device <br /> protection plan is saving money on expensive <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repairs that safeguards against damage, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> loss, and malfunctions.</p>
-                </div>
-                <div className='mb-6'>
-                  <h1 className='text-white 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[21px] xl:text-[21px] lg:text-[21px] md:text-[21px] sm:text-[21px] s:text-[21px] font-bold'>Repair Plans</h1>
-                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Efficient and effective solutions for fixing your <br /> products, ensuring they work like new.</p>
-                </div>
-                <div className='mb-6'>
-                  <h1 className='text-white 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[21px] xl:text-[21px] lg:text-[21px] md:text-[21px] sm:text-[21px] s:text-[21px] font-bold'>Replacement Plans</h1>
-                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent  4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Get Cover offers warranty programs that <br /> replace products versus repair.</p>
-                </div>
-                <div className='mb-6'>
-                  <h1 className='text-white 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[21px] xl:text-[21px] lg:text-[21px] md:text-[21px] sm:text-[21px] s:text-[21px] font-bold'>Accidental Damage Plans</h1>
-                  <p className='bg-gradient-to-r from-[#9B91C8] capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3'>Finding skilled and experienced technicians <br /> for appliance repairs can be
-                    difficult.
-                  </p>
-                </div>
-              </div>
-              <div className='2xl:col-span-7 xl:col-span-7 lg:col-span-7 md:col-span-7 sm:col-span-6 2xl:order-2 xl:order-2 lg:order-2 md:order-2	sm:order-1 s:order-1'>
-                <div className='self-center'>
-                  <div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block s:block'>
-                    <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold leading-[40px] text-white mb-3'>Why Get Device <br /> Protection Plans?</h1>
-                    <p className='text-lg text-[#B8AEDA] leading-[24px] mb-8'>One major benefit of having a device <br /> protection plan is saving money on expensive <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repairs that safeguards against damage, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> loss, and malfunctions.</p>
-                  </div>
-                  <img className='mx-auto' src={Why} alt='Why Get' />
-                </div>
-              </div>
-            </div>
-          </FadeIn>
+
           <div id='about-us'></div>
-          <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8' >
-            <div className='bg-About bg-cover bg-no-repeat text-center 2xl:p-16 xl:p-16 lg:p-16 md:p-12 sm:p-8 s:p-8 rounded-[16px]'>
-              <h1 className='text-white 4xl:text-[45px] 3xl:text-[45px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[30px] s:text-[30px] font-bold mb-5'>About Us</h1>
-              <p className='text-center 4xl:w-[83%] 3xl:w-[83%] 2xl:w-[73%] xl:w-[73%] lg:w-[73%] md:[80%] sm:w-[95%] s:w-[95%] 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] mx-auto text-[#B8AEDA]'><span className='text-white font-bold'> GetCover </span> is an InsureTech leader, delivering innovative warranty and technology solutions for businesses and individuals. Backed by the resources and global expertise of <a href="https://nfgsa.com/" className='text-[#fff] ' target='_blank'> Newpoint Financial Group </a> , we ensure reliable and efficient services across North America, Europe, Africa, and the Middle East. Our mission is to offer peace of mind with comprehensive and dependable coverage.</p>
-            </div>
-          </FadeIn>
           <FadeIn className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8 ' >
             <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center justify-between py-10 ' >
               <h1 className='text-[40px] font-bold leading-[48px] text-[#B8AEDB]'>To experience the <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> <span className='text-white'> GetCover </span> difference.</h1>
