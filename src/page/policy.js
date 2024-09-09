@@ -7,13 +7,14 @@ import Email from '../assets/images/Email.png';
 import Phone from '../assets/images/phone.png';
 import Address from '../assets/images/Address.png';
 import Contact from '../common/contact';
-function TAndC() {
+
+function Policy() {
     return (
         <div>
             <Header className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto' />
             <div className='2xl:bg-full-bg xl:bg-full-bg lg:bg-tab-bg md:bg-tab-bg sm:bg-mobile-bg bg-mobile-bg bg-cover bg-no-repeat pt-[90px] 2xl:px-0 xl:px-0 lg:px-0 md:px-10 sm:px-6 s:px-6 '>
                 <FadeIn className='pt-16 pb-3'>
-                    <h1 className='4xl:text-[104px] 3xl:text-[72px] 2xl:text-[50px] xl:text-[50px] lg:text-[50px] md:text-[42px] sm:text-[38 px] s:text-[38px] font-bold leading-none text-center text-white'>Terms and Conditions</h1>
+                    <h1 className='4xl:text-[104px] 3xl:text-[72px] 2xl:text-[50px] xl:text-[50px] lg:text-[50px] md:text-[42px] sm:text-[38 px] s:text-[38px] font-bold leading-none text-center text-white'>Privacy Policy</h1>
                 </FadeIn>
                 <FadeIn className=' 2xl:mb-12 xl:mb-12 lg:mb-12 md:mb-12 sm:mb-8 s:mb-8 ' >
                     <img className='object-cover w-full' src={overlay} alt='Overlay' />
@@ -176,4 +177,4 @@ function TAndC() {
     )
 }
 
-export default TAndC
+export default Policy

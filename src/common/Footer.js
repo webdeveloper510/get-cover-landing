@@ -10,7 +10,7 @@ function Footer() {
         <>
             <div className='flex justify-end py-3'>
                 <a href='/T&C' className='text-[#B8AEDA] border-r-2 border-[#B8AEDA] pr-5'>Terms & Conditions  </a>
-                <a href='#' className='text-[#B8AEDA] pl-5'> Privacy Policy</a>
+                <a href='/Privacy-Policy' className='text-[#B8AEDA] pl-5'> Privacy Policy</a>
             </div>
             <div className='2xl:flex xl:flex lg:flex md:hidden sm:hidden s:hidden justify-between py-6 pr-5 border-t border-[#B8AEDA]'>
                 <div className='self-center'>
