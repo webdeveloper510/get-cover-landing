@@ -3,7 +3,7 @@ import open from '../assets/images/open.png';
 import close from '../assets/images/close.png';
 
 const AccordionItem = ({ title, content, isOpen, onClick }) => (
-  <div className={`accordion-item text-white mb-2  rounded-[15px] cursor-pointer bg-cover bg-no-repeat p-3 ${!isOpen ? 'bg-open-bg' : 'bg-close-bg'}`}>
+  <div className={`accordion-item text-white mb-2 rounded-[15px] cursor-pointer bg-cover bg-center bg-no-repeat p-3 ${!isOpen ? 'bg-open-bg' : 'bg-close-bg'}`}>
     <div className={`accordion-header flex justify-between text-lg font-Lufga text-[#fff]`} onClick={onClick}>
       <span className='self-center'>{title}</span>
       <span>{!isOpen ? <img src={close} alt="close" /> : <img src={open} alt="open" />}</span>

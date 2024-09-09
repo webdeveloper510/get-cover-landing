@@ -38,11 +38,11 @@ const Header = ({ className }) => {
                     </div>
                     <div className='justify-between text-white self-center 2xl:flex xl:flex lg:flex md:flex sm:hidden s:hidden'>
                         <a onClick={() => scrollToSection('about-us')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'> About Us</a>
-                        <a onClick={() => scrollToSection('plan')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Technology</a>
-                        <a onClick={() => scrollToSection('about-us')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Programs</a>
-                        <a onClick={() => scrollToSection('why-us')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Enterprise</a>
-                        <a onClick={() => scrollToSection('why-us')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>APP</a>
-                        <a onClick={() => scrollToSection('contact-us')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Faq</a>
+                        <a onClick={() => scrollToSection('technology')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Technology</a>
+                        <a onClick={() => scrollToSection('programs')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Programs</a>
+                        <a onClick={() => scrollToSection('enterprise')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Enterprise</a>
+                        <a onClick={() => scrollToSection('app')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>APP</a>
+                        <a onClick={() => scrollToSection('faq')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] cursor-pointer'>Faq</a>
                         <a href="https://app.getcoverusa.com/" target='_blank' className='text-[#323148] 4xl:text-[20px] 3xl:text-[19px] 2xl:text-[12px] xl:text-[12px] lg:text-[12px] md:text-[12px] sm:text-[12px] s:text-[12px] font-semibold bg-white rounded-lg p-3 ml-5'>LOGIN</a>
                     </div>
 
@@ -50,11 +50,11 @@ const Header = ({ className }) => {
                         <div className='fixed top-0 left-0 w-full h-screen bg-[#323148fa] backdrop-blur-2xl'>
                             <img src={cross} onClick={openDiv} className='ml-5 mt-5' alt='cross' />
                             <div className='mt-28  w-full  mx-auto'>
-                                <p className='text-center my-5 text-white cursor-pointer' onClick={() => scrollToSection('plan')}>About Us</p>
-                                <p className='text-center mb-5 text-white cursor-pointer' onClick={() => scrollToSection('about-us')}> Technology</p>
-                                <p className='text-center my-5 text-white cursor-pointer' onClick={() => scrollToSection('plan')}>Programs</p>
-                                <p className='text-center mb-5 text-white cursor-pointer' onClick={() => scrollToSection('about-us')}> Enterprise</p>
-                                <p className='text-center mb-5 text-white cursor-pointer' onClick={() => scrollToSection('why-us')}>APP</p>
+                                <p className='text-center my-5 text-white cursor-pointer' onClick={() => scrollToSection('about-us')}>About Us</p>
+                                <p className='text-center mb-5 text-white cursor-pointer' onClick={() => scrollToSection('technology')}> Technology</p>
+                                <p className='text-center my-5 text-white cursor-pointer' onClick={() => scrollToSection('programs')}>Programs</p>
+                                <p className='text-center mb-5 text-white cursor-pointer' onClick={() => scrollToSection('enterprise')}> Enterprise</p>
+                                <p className='text-center mb-5 text-white cursor-pointer' onClick={() => scrollToSection('app')}>APP</p>
                                 <p className='text-center mb-5 text-white cursor-pointer' onClick={() => scrollToSection('faq')}>FAQ</p>
                                 <p className='text-center my-5'><a href="https://app.getcoverusa.com/" target='_blank' className='text-[#323148] text-sm font-semibold bg-white rounded-lg p-3'>LOGIN</a></p>
                             </div>

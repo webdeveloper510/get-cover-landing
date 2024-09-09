@@ -286,7 +286,7 @@ function App() {
                 {/* <p className='text-[#dacdffda] 4xl:text-[50px] 3xl:text-[38px] 2xl:text-[28px] xl:text-[28px] lg:text-[28px] md:text-[28px] sm:text-[28px] s:text-[28px] font-bold leading-none my-4'>Expertise You Can Trust, Assurance  <br className='2xl:block xl:block lg:hidden md:block sm:hidden s:hidden' />  You Can Rely On</p> */}
                 <p className='text-[#dacdffda] font-bold 4xl:text-[40px] 3xl:text-[34px] 2xl:text-[22px] xl:text-[22px] lg:text-[22px] md:text-[22px] sm:text-[22px] s:text-[18px] mb-8'> Warranty Cover Solutions, And Premium <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> Technology <br className='2xl:hidden xl:hidden lg:hidden md:block sm:hidden s:hidden' /> With Hassle-Free service To <br /> Maximize Our Customer's Experience </p>
                 <div className='2xl:flex xl:flex lg:flex md:hidden sm:hidden s:hidden'>
-                  {/* <p onClick={() => scrollToSection('plan')} className='bg-gradient 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] font-semibold text-[#323148] py-4 px-12 rounded-lg '>Explore More</p> */}
+                  <p onClick={() => scrollToSection('plan')} className='bg-gradient 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] font-semibold text-[#323148] py-4 px-12 rounded-lg '>Explore More</p>
                 </div>
               </div>
               <div>
@@ -301,6 +301,7 @@ function App() {
           <FadeIn className=' 2xl:mb-16 xl:mb-16 lg:mb-16 md:mb-12 sm:mb-8 s:mb-8 ' >
             <img className='object-cover w-full' src={overlay} alt='Overlay' />
           </FadeIn>
+          <div id='about-us'></div>
           <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-12 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8'>
             <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4'>
 
@@ -342,6 +343,7 @@ function App() {
               </div>
             </div>
           </FadeIn>
+          <div id='technology'></div>
           <div className='bg-tech-bg bg-contain bg-center bg-no-repeat'>
             <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-12 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8'>
               <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4'>
@@ -358,17 +360,17 @@ function App() {
                 </div>
                 <div className='2xl:col-span-7 xl:col-span-7 lg:col-span-7 md:col-span-6 sm:col-span-6  self-center pl-8'>
                   <div className='grid grid-cols-2 gap-4'>
-                    <div className='flex justify-between mb-4'>
+                    <div className='flex  mb-4'>
                       <img src={check} className='w-[45px] h-[45px] self-center' alt='check' />
-                      <p className='text-white text-xl ml-3'>Automated Claims Processing</p>
+                      <p className='text-white text-xl ml-3'>Automated Claims <br /> Processing</p>
                     </div>
-                    <div className='flex justify-between mb-4'>
+                    <div className='flex mb-4'>
                       <img src={check} className='w-[45px] h-[45px] self-center' alt='check' />
-                      <p className='text-white text-xl ml-3'>Advanced Data Analytics</p>
+                      <p className='text-white text-xl ml-3'>Advanced Data <br /> Analytics</p>
                     </div>
-                    <div className='flex justify-between mb-4'>
+                    <div className='flex mb-4'>
                       <img src={check} className='w-[45px] h-[45px] self-center' alt='check' />
-                      <p className='text-white text-xl ml-3'>Real-Time Warranty Tracking</p>
+                      <p className='text-white text-xl ml-3'>Real-Time Warranty<br /> Tracking</p>
                     </div>
                     <div className='flex  mb-4'>
                       <img src={check} className='w-[45px] h-[45px] self-center' alt='check' />
@@ -379,6 +381,7 @@ function App() {
               </div>
             </FadeIn>
           </div>
+          <div id='programs'></div>
           <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-12 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8 '>
             <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4'>
 
@@ -592,7 +595,10 @@ function App() {
             </div>
 
           </FadeIn>
-          <div id='plan' className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8' >
+
+
+          <div id='enterprise'></div>
+          <div className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8' >
             <FadeIn className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4'>
               <div className='2xl:col-span-3 xl:col-span-3 lg:col-span-2 md:col-span-2 sm:col-span-1'>
                 <h1 className=' 4xl:text-[45px] 3xl:text-[45px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[30px] s:text-[30px] font-bold leading-none my-4 text-white text-center'>Enterprise</h1>
@@ -645,12 +651,13 @@ function App() {
               </div>
             </FadeIn>
           </div>
+          <div id='app'></div>
           <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto mt-20 2xl:py-14 xl:py-14 lg:py-14 md:py-10 sm:py-8 s:py-8' >
             <div className='bg-soon-bg bg-cover bg-no-repeat rounded-[16px]'>
               <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 gap-4 2xl:px-12 xl:px-12 lg:px-12 md:px-10 sm:px-8 s:px-8'>
                 <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-6 sm:col-span-6  self-center'>
-                  <p className='2xl:text-[90px] xl:text-[85px] lg:text-[45px] md:text-[32px] sm:text-[28px] s:text-[28px] leading-[1] text-white pl-14 font-bold'>Coming <br /> Soon!</p>
-                  <p className='pl-14 text-[#B8AEDA]'>Check Back Soon to download <br />
+                  <p className='4xl:text-[140px] 3xl:text-[130px] 2xl:text-[90px] xl:text-[85px] lg:text-[45px] md:text-[32px] sm:text-[28px] s:text-[28px] leading-[1] text-white pl-14 font-bold'>Coming <br /> Soon!</p>
+                  <p className='pl-14 text-[#B8AEDA] !leading-normal 4xl:text-[30px] 3xl:text-[30px] 2xl:text-base xl:text-base lg:text-base md:text-base sm:text-base s:text-base'>Check Back Soon to download <br />
                     <span className='text-white'> the Get Cover APP.   </span> </p>
                 </div>
                 <div className='2xl:col-span-7 xl:col-span-7 lg:col-span-7 md:col-span-6 sm:col-span-6 '>
