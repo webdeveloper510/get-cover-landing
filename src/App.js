@@ -303,13 +303,22 @@ function App() {
           </FadeIn>
           <div id='about-us'></div>
           <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-12 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8'>
-            <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4'>
+            <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 s:grid-cols-6 gap-4 s:gap-2 sm:gap-2'>
 
-              <div className='2xl:col-span-7 xl:col-span-7 lg:col-span-7 md:col-span-7 sm:col-span-6 '>
+              <div className='2xl:col-span-7 xl:col-span-7 lg:col-span-7 md:col-span-7 sm:col-span-6 s:col-span-6'>
                 <div className='self-center'>
                   <div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block s:block'>
-                    <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold leading-[40px] text-white mb-3'>Why Get Device <br /> Protection Plans?</h1>
-                    <p className='text-lg text-[#B8AEDA] leading-[24px] mb-8'>One major benefit of having a device <br /> protection plan is saving money on expensive <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repairs that safeguards against damage, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> loss, and malfunctions.</p>
+                    <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold 4xl:leading-[55px] 3xl:leading-[55px] 2xl:leading-[40px] xl:leading-[40px] lg:leading-[40px] md:leading-[40px] sm:leading-[40px] s:leading-[40px] text-white mb-3 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center'>About Us</h1>
+                    <p className='4xl:text-[30px] 3xl:text-[24px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[30px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center'>Get Cover is an InsureTech leader
+                      delivering warranty coverage solutions
+                      through its proprietary technology to both enterprise corporate organizations
+                      (B2B) and individuals (B2C) clients.
+                      <br />
+                      <br />
+                      Get Cover LLC is a subsidiary of NFG SA. a London based global private
+                      investment firm focused on private equity and structured finance
+                      investments into operating companies engaged in the insurance, financial
+                      services, energy, infrastructure and real estate sectors.</p>
                   </div>
                   <img className='mx-auto w-2/3' src={AboutUs} alt='Why Get' />
                 </div>
@@ -350,17 +359,17 @@ function App() {
 
                 <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-6 sm:col-span-6'>
                   <div className='self-center'>
-                    <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold 4xl:leading-[55px] 3xl:leading-[55px] 2xl:leading-[40px] xl:leading-[40px] lg:leading-[40px] md:leading-[40px] sm:leading-[40px] s:leading-[40px] text-white mb-3'>Cutting-edge Solution  with Innovation</h1>
-                    <p className='4xl:text-[30px] 3xl:text-[24px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[30px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8'>At Get Cover, we leverage cutting-edge, proprietary technology to simplify warranty management for our customers. Our advanced systems automate claims and provide real-time data tracking, ensuring seamless interactions and minimizing manual effort. Serving both individual (B2C) and corporate (B2B) clients, we deliver innovative, efficient warranty solutions
+                    <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold 4xl:leading-[55px] 3xl:leading-[55px] 2xl:leading-[40px] xl:leading-[40px] lg:leading-[40px] md:leading-[40px] sm:leading-[40px] s:leading-[40px] text-white mb-3 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center'>Cutting-edge Solution  with Innovation</h1>
+                    <p className='4xl:text-[30px] 3xl:text-[24px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[30px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center'>At Get Cover, we leverage cutting-edge, proprietary technology to simplify warranty management for our customers. Our advanced systems automate claims and provide real-time data tracking, ensuring seamless interactions and minimizing manual effort. Serving both individual (B2C) and corporate (B2B) clients, we deliver innovative, efficient warranty solutions
                       across industries.</p>
-                    <div className='text-left'>
+                    <div className='text-left 2xl:block xl:block lg:block md:hidden sm:hidden s:hidden'>
                       <button className='bg-white 4xl:text-[35px] 3xl:text-[35px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] font-semibold text-[#323148] py-4 px-12 rounded-lg'>Learn More</button>
                     </div>
                   </div>
                 </div>
                 <div className='2xl:col-span-7 xl:col-span-7 lg:col-span-7 md:col-span-6 sm:col-span-6  self-center pl-8'>
-                  <div className='grid grid-cols-2 gap-4'>
-                    <div className='flex  mb-4'>
+                  <div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 s:grid-cols-1 gap-4'>
+                    <div className='flex  my-4'>
                       <img src={check} className='w-[45px] h-[45px] self-center' alt='check' />
                       <p className='text-white text-xl ml-3'>Automated Claims <br /> Processing</p>
                     </div>
@@ -376,6 +385,9 @@ function App() {
                       <img src={check} className='w-[45px] h-[45px] self-center' alt='check' />
                       <p className='text-white text-xl ml-3'>Sales <br /> Enhancement</p>
                     </div>
+                    <div className='text-left 2xl:hidden xl:hidden lg:hidden md:block sm:block s:block'>
+                      <button className='bg-white 4xl:text-[35px] 3xl:text-[35px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] font-semibold text-[#323148] py-4 px-12 rounded-lg'>Learn More</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -388,8 +400,8 @@ function App() {
               <div className='2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-6'>
                 <div className='self-center'>
                   <div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block s:block'>
-                    <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold leading-[40px] text-white mb-3'>Why Get Device <br /> Protection Plans?</h1>
-                    <p className='text-lg text-[#B8AEDA] leading-[24px] mb-8'>One major benefit of having a device <br /> protection plan is saving money on expensive <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repairs that safeguards against damage, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> loss, and malfunctions.</p>
+                    <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold leading-[40px] text-white mb-3 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center'>Why Get Device <br /> Protection Plans?</h1>
+                    <p className='text-lg text-[#B8AEDA] leading-[24px] mb-8 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center'>One major benefit of having a device <br /> protection plan is saving money on expensive <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repairs that safeguards against damage, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> loss, and malfunctions.</p>
                   </div>
                   <img className='mx-auto' src={WHY_Get} alt='Why Get' />
                 </div>
@@ -605,7 +617,7 @@ function App() {
                 <p className='text-[#B8AEDA] 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] leading-1 text-center'>Enterprise programs are available for the following channels:</p>
               </div>
             </FadeIn>
-            <FadeIn className='grid 2xl:grid-cols-4 mt-16 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-1 sm:grid-cols-1 s:grid-cols-1 gap-4'>
+            <FadeIn className='grid 2xl:grid-cols-4 mt-16 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 s:grid-cols-1 gap-4'>
               <div className='col-span-1'>
                 <div className='pr-5'>
                   <img className='mb-3' src={plainImage} alt='plainImage' />
@@ -653,15 +665,15 @@ function App() {
           </div>
           <div id='app'></div>
           <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto mt-20 2xl:py-14 xl:py-14 lg:py-14 md:py-10 sm:py-8 s:py-8' >
-            <div className='bg-soon-bg bg-cover bg-no-repeat rounded-[16px]'>
+            <div className='bg-soon-bg bg-cover bg-no-repeat rounded-[16px] '>
               <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 gap-4 2xl:px-12 xl:px-12 lg:px-12 md:px-10 sm:px-8 s:px-8'>
-                <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-6 sm:col-span-6  self-center'>
-                  <p className='4xl:text-[140px] 3xl:text-[130px] 2xl:text-[90px] xl:text-[85px] lg:text-[45px] md:text-[32px] sm:text-[28px] s:text-[28px] leading-[1] text-white pl-14 font-bold'>Coming <br /> Soon!</p>
+                <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-6 sm:col-span-6  self-center pt-8'>
+                  <p className='4xl:text-[140px] 3xl:text-[130px] 2xl:text-[90px] xl:text-[85px] lg:text-[45px] md:text-[32px] sm:text-[28px] s:text-[28px] leading-[1] text-white pl-14 font-bold'>Coming <br className='2xl:block xl:block lg:block md:block sm:hidden s:hidden' /> Soon!</p>
                   <p className='pl-14 text-[#B8AEDA] !leading-normal 4xl:text-[30px] 3xl:text-[30px] 2xl:text-base xl:text-base lg:text-base md:text-base sm:text-base s:text-base'>Check Back Soon to download <br />
-                    <span className='text-white'> the Get Cover APP.   </span> </p>
+                    <span className='text-white'> the Get Cover APP. </span> </p>
                 </div>
                 <div className='2xl:col-span-7 xl:col-span-7 lg:col-span-7 md:col-span-6 sm:col-span-6 '>
-                  <img src={Hand} className='-mt-24' alt='mobile Hand' />
+                  <img src={Hand} className='2xl:-mt-24 xl:-mt-24 lg:-mt-24 md:-mt-0 sm:-mt-0 s:mt-0 mx-auto' alt='mobile Hand' />
                 </div>
               </div>
             </div>
@@ -677,13 +689,13 @@ function App() {
           <div id='contact-us'></div>
           <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto 2xl:py-14 xl:py-14 lg:py-14 md:py-10 sm:py-8 s:py-8' >
             <div className='bg-Contact bg-cover bg-no-repeat rounded-[16px]'>
-              <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 gap-4 2xl:p-12 xl:p-12 lg:p-12 md:p-10 sm:p-8 s:p-8'>
-                <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-6 sm:col-span-6  self-center px-6'>
-                  <p className='2xl:text-[50px] xl:text-[45px] lg:text-[45px] md:text-[32px] sm:text-[28px] s:text-[28px] text-white 2xl:leading-[55px] xl:leading-[50px] lg:leading-[50px] md:leading-[37px] sm:leading-[32px] s:leading-[32px]  font-bold'>Are you ready to Get Covered? Contact Us</p>
+              <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 s:grid-cols-6 gap-4 2xl:p-12 xl:p-12 lg:p-12 md:p-10 sm:p-8 s:p-8'>
+                <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-6 sm:col-span-6 s:col-span-6 self-center px-6'>
+                  <p className='2xl:text-[50px] xl:text-[45px] lg:text-[45px] md:text-[32px] sm:text-[28px] s:text-[28px] text-white 2xl:leading-[55px] xl:leading-[50px] lg:leading-[50px] md:leading-[37px] sm:leading-[32px] s:leading-[32px]  font-bold 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center'>Are you ready to Get Covered? Contact Us</p>
                   <div className='my-4'>
-                    <div className='flex'>
-                      <img src={Address} className='w-[30px] h-[30px]' alt='Address' />
-                      <div className='pl-5'>
+                    <div className='  2xl:flex xl:flex lg:flex md:flex sm:block s:block text-center'>
+                      <img src={Address} className='w-[30px] h-[30px] 2xl:mx-0 xl:mx-0 lg:mx-0 md:mx-0 sm:mx-auto s:mx-auto' alt='Address' />
+                      <div className=' 2xl:pl-5 xl:pl-5 lg:pl-5 md:pl-5 sm:pl-0 s:pl-0  2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center'>
                         <p className='text-white font-semibold'>Address</p>
                         <p className='bg-gradient-to-r from-[#ACA1DF] capitalize to-[#D8BCD2] bg-clip-text text-transparent'>9701 Wilshire Blvd., Suite 930, Beverly Hills, CA
                           90212</p>
@@ -692,9 +704,9 @@ function App() {
 
                   </div>
                   <div className='mb-4'>
-                    <div className='flex'>
-                      <img src={Phone} className='w-[30px] h-[30px]' alt='Phone' />
-                      <div className='pl-5'>
+                    <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block text-center'>
+                      <img src={Phone} className='w-[30px] h-[30px] 2xl:mx-0 xl:mx-0 lg:mx-0 md:mx-0 sm:mx-auto s:mx-auto' alt='Phone' />
+                      <div className=' 2xl:pl-5 xl:pl-5 lg:pl-5 md:pl-5 sm:pl-0 s:pl-0  2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center'>
                         <p className='text-white font-semibold'>Phone</p>
                         <p className='bg-gradient-to-r from-[#ACA1DF] capitalize to-[#D8BCD2] bg-clip-text text-transparent'> <a href='tel:3107730033' > 310-773-0033 </a>     or    <a href='tel:8882095598' >888-209-5598</a> </p>
                       </div>
@@ -702,18 +714,18 @@ function App() {
 
                   </div>
                   <div className='mb-4'>
-                    <div className='flex'>
-                      <img src={Email} className='w-[30px] h-[23px]' alt='Email' />
-                      <div className='pl-5'>
+                    <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block text-center'>
+                      <img src={Email} className='w-[30px] h-[23px] 2xl:mx-0 xl:mx-0 lg:mx-0 md:mx-0 sm:mx-auto s:mx-auto' alt='Email' />
+                      <div className=' 2xl:pl-5 xl:pl-5 lg:pl-5 md:pl-5 sm:pl-0 s:pl-0  2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center'>
                         <p className='text-white font-semibold'>Email</p>
-                        <p className='bg-gradient-to-r from-[#ACA1DF] capitalize to-[#D8BCD2]  bg-clip-text text-transparent underline'><a href='mailto:info@getcover.com' className='undeline' >info@getcover.com </a> <br />
-                          <a href='mailto:customerservice@getcover.com' className='undeline' > customerservice@getcover.com </a></p>
+                        <p className='bg-gradient-to-r from-[#ACA1DF] to-[#D8BCD2] break-words bg-clip-text text-transparent underline'><a href='mailto:info@getcover.com' className='undeline' >info@getcover.com </a> <br />
+                          <a href='mailto:customerservice@getcover.com' className='undeline break-words w-full' > customerservice@getcover.com </a></p>
                       </div>
                     </div>
 
                   </div>
                 </div>
-                <div className='2xl:col-span-7 self-center xl:col-span-7 lg:col-span-7 md:col-span-6 sm:col-span-6 '>
+                <div className='2xl:col-span-7 self-center xl:col-span-7 lg:col-span-7 md:col-span-6 sm:col-span-6 s:col-span-6'>
                   <form onSubmit={handleSubmit}>
                     <div className='grid grid-cols-2 gap-4'>
                       <div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-2 s:col-span-2'>
@@ -735,7 +747,7 @@ function App() {
                           onChange={(e) => setLastName(e.target.value)}
                         />
                       </div>
-                      <div className='col-span-1'>
+                      <div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-2 s:col-span-2'>
                         <Input
                           type='email'
                           name='email'
@@ -746,7 +758,7 @@ function App() {
                         />
                         {emailError && <div className="text-sm text-red-600 ">{emailError}</div>}
                       </div>
-                      <div className='col-span-1'>
+                      <div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-2 s:col-span-2'>
                         <Input
                           type='number'
                           name='phoneNumber'
