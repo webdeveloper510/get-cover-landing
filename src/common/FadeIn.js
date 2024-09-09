@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const FadeInSection = ({ children, className = '', ...props }) => {
+const FadeIn = ({ children, className = '', ...props }) => {
     const [isVisible, setIsVisible] = useState(false);
     const domRef = useRef();
 
@@ -31,4 +31,4 @@ const FadeInSection = ({ children, className = '', ...props }) => {
     );
 };
 
-export default FadeInSection;
+export default FadeIn;
