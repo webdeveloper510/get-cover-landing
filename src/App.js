@@ -659,6 +659,7 @@ function App() {
               </div>
             </div>
           </FadeIn>
+          <div id='faq'></div>
           <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto 2xl:py-14 xl:py-14 lg:py-14 md:py-10 sm:py-8 s:py-8' >
             <div className='lg:w-[80%] md:w-[90%] sm:w-[90%] s:w-[90%] mx-auto'>
               <p className='capitalize font-bold text-white text-[30px] text-center'>frequently asked questions</p>

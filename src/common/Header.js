@@ -55,7 +55,7 @@ const Header = ({ className }) => {
                                 <p className='text-center my-5 text-white cursor-pointer' onClick={() => scrollToSection('plan')}>Programs</p>
                                 <p className='text-center mb-5 text-white cursor-pointer' onClick={() => scrollToSection('about-us')}> Enterprise</p>
                                 <p className='text-center mb-5 text-white cursor-pointer' onClick={() => scrollToSection('why-us')}>APP</p>
-                                <p className='text-center mb-5 text-white cursor-pointer' onClick={() => scrollToSection('contact-us')}>FAQ</p>
+                                <p className='text-center mb-5 text-white cursor-pointer' onClick={() => scrollToSection('faq')}>FAQ</p>
                                 <p className='text-center my-5'><a href="https://app.getcoverusa.com/" target='_blank' className='text-[#323148] text-sm font-semibold bg-white rounded-lg p-3'>LOGIN</a></p>
                             </div>
                         </div>
