@@ -670,7 +670,7 @@ function Home() {
                                     <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-6 sm:col-span-6  self-center pt-8'>
                                         <p className='4xl:text-[140px] 3xl:text-[130px] 2xl:text-[90px] xl:text-[85px] lg:text-[45px] md:text-[32px] sm:text-[55px] s:text-[55px] leading-[1] text-white pl-14 font-bold'>Coming <br /> Soon!</p>
                                         <p className='pl-14 text-[#B8AEDA] !leading-normal 4xl:text-[30px] 3xl:text-[30px] 2xl:text-base xl:text-base lg:text-base md:text-base sm:text-base s:text-base'>Check Back Soon to download <br />
-                                            <span className='text-white'> the Get Cover APP. </span> </p>
+                                            <span className='text-white'> The Get Cover Mobile APP. </span> </p>
                                     </div>
                                     <div className='2xl:col-span-7 xl:col-span-7 lg:col-span-7 md:col-span-6 sm:col-span-6 '>
                                         <img src={Hand} className='2xl:-mt-24 xl:-mt-24 lg:-mt-24 md:-mt-0 sm:-mt-0 s:mt-0 mx-auto' alt='mobile Hand' />
