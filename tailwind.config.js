@@ -12,6 +12,8 @@ module.exports = {
       },
       backgroundImage: {
         'full-bg': "url('/src/assets/images/BG-Image.png')",
+        'tech-bg': "url('/src/assets/images/Techno.png')",
+        'soon-bg': "url('/src/assets/images/Coming Soon.png')",
         'tab-bg': "url('/src/assets/images/tab.png')",
         'mobile-bg': "url('/src/assets/images/bg-mobile.png')",
         'Mobile': "url('/src/assets/images/MobileBackground.png')",
@@ -24,6 +26,8 @@ module.exports = {
         'Major': "url('/src/assets/images/MajorBackground.png')",
         'About': "url('/src/assets/images/AboutBackground.png')",
         'Contact': "url('/src/assets/images/ContectBackground.png')",
+        'open-bg': "url('/src/assets/images/Background.png')",
+        'close-bg': "url('/src/assets/images/Card.png')",
       },
       dropShadow: {
         '3xl': '0 4px 84px rgba(0, 0, 0, 0.25)',

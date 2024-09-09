@@ -28,3 +28,7 @@ input[type=number] {
 .bg-gradient {
     background: linear-gradient(182.72deg, #FFC7AD 1.98%, #FF9E9C 97.46%);
 }
+
+.bg-gradient1 {
+    background: linear-gradient(90deg, #ACA1DF 0%, #D8BCD2 100%);
+}
