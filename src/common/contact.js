@@ -85,7 +85,7 @@ function Contact() {
         };
 
         try {
-            const response = await fetch('https://api.getcoverusa.com/api-v1/user/contact-us', {
+            const response = await fetch('https://api.getcover.com/api-v1/user/contact-us', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
