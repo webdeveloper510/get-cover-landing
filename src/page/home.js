@@ -95,7 +95,7 @@ function Home() {
     const accordionItems = [
         {
             title: 'Q: Is a proof of purchase necessary for me to warranty my item?',
-            content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+            content: 'If at time of purchase we have pregistered your product, proof of purchase is not necessary, otherwise you will need to register your product.'
         },
         {
             title: 'Q: What is considered proof of purchase?',
@@ -103,15 +103,15 @@ function Home() {
         },
         {
             title: 'Q: What type of repairs are covered under the warranty?',
-            content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+            content: 'Mechanical Breakdown, Accidental damage, if purchased. Additionally, some products qualify for replacement versus repair.'
         },
         {
             title: 'Q: When will my coverage start after I purchase my warranty?',
-            content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+            content: 'Coverage terms start from the date of purchase with accidental damage repairs starting from day 1 and mechanical breakdown commencing on the expiration of the manufactures warranty.'
         },
         {
             title: 'Q: How long does the repair process take?',
-            content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+            content: 'Depending on the type of service provided, depot mail-in, on-site, or carry-in the average time of repair or replacement varies from 2 to 5 days from product receipt'
         },
     ];
 
