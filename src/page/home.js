@@ -187,7 +187,9 @@ function Home() {
                                                 investments into operating companies engaged in the insurance, financial
                                                 services, energy, infrastructure and real estate sectors.</p>
                                         </div>
-                                        <img className='mx-auto w-2/3' src={AboutUs} alt='Why Get' />
+                                        <div className='flex'>
+                                            <img className='mx-auto w-2/3 self-center' src={AboutUs} alt='Why Get' />
+                                        </div>
                                     </div>
                                 </div>
                                 <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-5 sm:col-span-6 s:col-span-6 self-center'>
@@ -269,7 +271,9 @@ function Home() {
                                             <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold leading-[40px] text-white mb-3 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center'>Why Get Device <br /> Protection Plans?</h1>
                                             <p className='text-lg text-[#B8AEDA] leading-[24px] mb-8 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center'>One major benefit of having a device <br /> protection plan is saving money on expensive <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> repairs that safeguards against damage, <br className='2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> loss, and malfunctions.</p>
                                         </div>
-                                        <img className='mx-auto' src={WHY_Get} alt='Why Get' />
+                                        <div className='flex'>
+                                            <img className='mx-auto self-center' src={WHY_Get} alt='Why Get' />
+                                        </div>
                                     </div>
                                 </div>
                                 <div className='2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-6  self-center pl-8'>
