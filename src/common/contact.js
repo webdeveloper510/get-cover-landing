@@ -24,6 +24,7 @@ function Contact() {
         { value: 'corporate-accounts', label: 'Corporate Accounts' },
         { value: 'government-programs', label: 'Government Programs' },
         { value: 'brokers-and-distributors', label: 'Brokers and Distributors' },
+        { value: 'general-inquiry', label: 'General Inquiry' },
     ]);
 
     const handleEmailChange = (e) => {
