@@ -172,7 +172,7 @@ function Home() {
                         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-12 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8'>
                             <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 s:grid-cols-6 gap-4 s:gap-2 sm:gap-2'>
 
-                                <div className='2xl:col-span-7 xl:col-span-7 lg:col-span-7 md:col-span-7 sm:col-span-6 s:col-span-6'>
+                                <div className='2xl:col-span-7 xl:col-span-7 lg:col-span-7 flex md:col-span-7 sm:col-span-6 s:col-span-6'>
                                     <div className='self-center'>
                                         <div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block s:block'>
                                             <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold 4xl:leading-[55px] 3xl:leading-[55px] 2xl:leading-[40px] xl:leading-[40px] lg:leading-[40px] md:leading-[40px] sm:leading-[40px] s:leading-[40px] text-white mb-3 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center'>About Us</h1>
