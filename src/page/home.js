@@ -20,14 +20,25 @@ import plainImage1 from '../assets/images/Government Programs.png';
 import plainImage3 from '../assets/images/Brokers and Distributors.png';
 import left from '../assets/images/icons/left.svg';
 import right from '../assets/images/icons/right.svg';
-import MobileIcon from '../assets/images/Mobile.png';
-import PowerIcon from '../assets/images/Power.png';
-import LaptopIcon from '../assets/images/Laptop.png';
-import GamingIcon from '../assets/images/Gaming.png';
-import HeadphoneIcon from '../assets/images/Headphone.png';
-import SmartwatchIcon from '../assets/images/Smartwatch.png';
-import FitnessIcon from '../assets/images/Fitness.png';
-import MajorIcon from '../assets/images/Major.png';
+import MobileIcon from '../assets/images/cover/Mobile.png';
+import PowerIcon from '../assets/images/cover/Power.png';
+import LaptopIcon from '../assets/images/cover/Laptop.png';
+import GamingIcon from '../assets/images/cover/Gaming.png';
+import HeadphoneIcon from '../assets/images/cover/Headphone.png';
+import SmartwatchIcon from '../assets/images/cover/Smartwatch.png';
+import FitnessIcon from '../assets/images/cover/Fitness.png';
+import MajorIcon from '../assets/images/cover/Major.png';
+import Tablets from '../assets/images/cover/Tablets.png';
+import Television from '../assets/images/cover/Television.png';
+import Camera from '../assets/images/cover/Camera.png';
+import Desktop from '../assets/images/cover/Desktop.png';
+import Automobile from '../assets/images/cover/Automobile.png';
+import Cycling from '../assets/images/cover/Cycling.png';
+import DVD from '../assets/images/cover/DVD.png';
+import Floor from '../assets/images/cover/Floor.png';
+import Furniture from '../assets/images/cover/Furniture.png';
+import Golf from '../assets/images/cover/Golf.png';
+import House from '../assets/images/cover/House.png';
 import check from '../assets/images/check.png';
 import FadeIn from '../common/FadeIn';
 import loader from '../assets/images/loader.gif';
@@ -265,7 +276,7 @@ function Home() {
                         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-12 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8 '>
                             <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4'>
 
-                                <div className='2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-6'>
+                                <div className='2xl:col-span-6 xl:col-span-6 flex lg:col-span-6 md:col-span-6 sm:col-span-6'>
                                     <div className='self-center'>
                                         <div className='2xl:hidden xl:hidden lg:hidden md:hidden sm:block s:block'>
                                             <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold leading-[40px] text-white mb-3 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center'>Why Get Device <br /> Protection Plans?</h1>
@@ -389,6 +400,114 @@ function Home() {
                                                         <img className='mx-auto' src={MajorIcon} alt='Major' />
                                                     </div>
                                                     <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Major Appliance  <br /> Protection</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='mx-3'>
+                                            <div className='bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
+                                                <div className='flex pl-4'>
+                                                    <div className='self-center w-[30%]'>
+                                                        <img className='mx-auto' src={Tablets} alt='Gaming' />
+                                                    </div>
+                                                    <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Tablets  <br /> Protection</p>
+                                                </div>
+                                            </div>
+                                            <div className='bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
+                                                <div className='flex pl-4'>
+                                                    <div className='self-center w-[30%]'>
+                                                        <img className='mx-auto' src={Television} alt='Major' />
+                                                    </div>
+                                                    <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Television  <br /> Protection</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='mx-3'>
+                                            <div className='bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
+                                                <div className='flex pl-4'>
+                                                    <div className='self-center w-[30%]'>
+                                                        <img className='mx-auto' src={Camera} alt='Gaming' />
+                                                    </div>
+                                                    <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Camera  <br /> Protection</p>
+                                                </div>
+                                            </div>
+                                            <div className='bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
+                                                <div className='flex pl-4'>
+                                                    <div className='self-center w-[30%]'>
+                                                        <img className='mx-auto' src={Desktop} alt='Major' />
+                                                    </div>
+                                                    <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Desktop  <br /> Protection</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='mx-3'>
+                                            <div className='bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
+                                                <div className='flex pl-4'>
+                                                    <div className='self-center w-[30%]'>
+                                                        <img className='mx-auto' src={Automobile} alt='Gaming' />
+                                                    </div>
+                                                    <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Automobile  <br /> Protection</p>
+                                                </div>
+                                            </div>
+                                            <div className='bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
+                                                <div className='flex pl-4'>
+                                                    <div className='self-center w-[30%]'>
+                                                        <img className='mx-auto' src={Cycling} alt='Major' />
+                                                    </div>
+                                                    <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Cycling  <br /> Protection</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='mx-3'>
+                                            <div className='bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
+                                                <div className='flex pl-4'>
+                                                    <div className='self-center w-[30%]'>
+                                                        <img className='mx-auto' src={DVD} alt='Gaming' />
+                                                    </div>
+                                                    <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>DVD Media  <br /> Protection</p>
+                                                </div>
+                                            </div>
+                                            <div className='bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
+                                                <div className='flex pl-4'>
+                                                    <div className='self-center w-[30%]'>
+                                                        <img className='mx-auto' src={Floor} alt='Major' />
+                                                    </div>
+                                                    <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Floor Care  <br /> Protection</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='mx-3'>
+                                            <div className='bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
+                                                <div className='flex pl-4'>
+                                                    <div className='self-center w-[30%]'>
+                                                        <img className='mx-auto' src={Furniture} alt='Gaming' />
+                                                    </div>
+                                                    <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Furniture  <br /> Protection</p>
+                                                </div>
+                                            </div>
+                                            <div className='bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
+                                                <div className='flex pl-4'>
+                                                    <div className='self-center w-[30%]'>
+                                                        <img className='mx-auto' src={Golf} alt='Major' />
+                                                    </div>
+                                                    <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Golf  <br /> Protection</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='mx-3'>
+                                            <div className='bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
+                                                <div className='flex pl-4'>
+                                                    <div className='self-center w-[30%]'>
+                                                        <img className='mx-auto' src={House} alt='Gaming' />
+                                                    </div>
+                                                    <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>House security  <br /> Protection</p>
+                                                </div>
+                                            </div>
+                                            <div className='bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
+                                                <div className='flex pl-4'>
+                                                    <div className='self-center w-[30%]'>
+                                                        <img className='mx-auto' src={Golf} alt='Major' />
+                                                    </div>
+                                                    <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Golf  <br /> Protection</p>
                                                 </div>
                                             </div>
                                         </div>
