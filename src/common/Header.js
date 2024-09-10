@@ -31,7 +31,9 @@ const Header = ({ className }) => {
             <div className={`${className}`}>
                 <div className='flex justify-between py-6  2xl:pr-5 xl:pr-5 lg:pr-5 md:pr-5 sm:pr-0 s:pr-0'>
                     <div className='self-center'>
-                        <img src={logo} alt='logo' />
+                        <a href='/'>
+                            <img src={logo} alt='logo' />
+                        </a>
                     </div>
                     <div className='self-center 2xl:hidden xl:hidden lg:hidden md:hidden sm:block s:block'>
                         <img src={menu} onClick={openDiv} alt='menu' />

@@ -4,8 +4,8 @@ import Policy from '../page/policy';
 
 const routes = [
     { path: "/", element: <Home /> },
-    { path: "/T&C", element: <TAndC /> },
-    { path: "/Privacy-Policy", element: <Policy /> },
+    { path: "/terms-and-conditions", element: <TAndC /> },
+    { path: "/privacy-policy", element: <Policy /> },
 ];
 
 export default routes;

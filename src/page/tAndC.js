@@ -124,50 +124,7 @@ function TAndC() {
                         redress.</p>
                 </FadeIn>
                 <div id='contact-us'></div>
-                <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto 2xl:py-14 xl:py-14 lg:py-14 md:py-10 sm:py-8 s:py-8' >
-                    <div className='bg-Contact bg-cover bg-no-repeat rounded-[16px]'>
-                        <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 s:grid-cols-6 gap-4 2xl:p-12 xl:p-12 lg:p-12 md:p-10 sm:p-8 s:p-8'>
-                            <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-6 sm:col-span-6 s:col-span-6 self-center px-6'>
-                                <p className='2xl:text-[50px] xl:text-[45px] lg:text-[45px] md:text-[32px] sm:text-[28px] s:text-[28px] text-white 2xl:leading-[55px] xl:leading-[50px] lg:leading-[50px] md:leading-[37px] sm:leading-[32px] s:leading-[32px]  font-bold 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center'>Are you ready to Get Covered? Contact Us</p>
-                                <div className='my-4'>
-                                    <div className='  2xl:flex xl:flex lg:flex md:flex sm:block s:block text-center'>
-                                        <img src={Address} className='w-[30px] h-[30px] 2xl:mx-0 xl:mx-0 lg:mx-0 md:mx-0 sm:mx-auto s:mx-auto' alt='Address' />
-                                        <div className=' 2xl:pl-5 xl:pl-5 lg:pl-5 md:pl-5 sm:pl-0 s:pl-0  2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center'>
-                                            <p className='text-white font-semibold'>Address</p>
-                                            <p className='bg-gradient-to-r from-[#ACA1DF] capitalize to-[#D8BCD2] bg-clip-text text-transparent'>9701 Wilshire Blvd., Suite 930, Beverly Hills, CA
-                                                90212</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div className='mb-4'>
-                                    <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block text-center'>
-                                        <img src={Phone} className='w-[30px] h-[30px] 2xl:mx-0 xl:mx-0 lg:mx-0 md:mx-0 sm:mx-auto s:mx-auto' alt='Phone' />
-                                        <div className=' 2xl:pl-5 xl:pl-5 lg:pl-5 md:pl-5 sm:pl-0 s:pl-0  2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center'>
-                                            <p className='text-white font-semibold'>Phone</p>
-                                            <p className='bg-gradient-to-r from-[#ACA1DF] capitalize to-[#D8BCD2] bg-clip-text text-transparent'> <a href='tel:3107730033' > 310-773-0033 </a>     or    <a href='tel:8882095598' >888-209-5598</a> </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div className='mb-4'>
-                                    <div className='2xl:flex xl:flex lg:flex md:flex sm:block s:block text-center'>
-                                        <img src={Email} className='w-[30px] h-[23px] 2xl:mx-0 xl:mx-0 lg:mx-0 md:mx-0 sm:mx-auto s:mx-auto' alt='Email' />
-                                        <div className=' 2xl:pl-5 xl:pl-5 lg:pl-5 md:pl-5 sm:pl-0 s:pl-0  2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center'>
-                                            <p className='text-white font-semibold'>Email</p>
-                                            <p className='bg-gradient-to-r from-[#ACA1DF] to-[#D8BCD2] break-words bg-clip-text text-transparent underline'><a href='mailto:info@getcover.com' className='undeline' >info@getcover.com </a> <br />
-                                                <a href='mailto:customerservice@getcover.com' className='undeline break-words w-full' > customerservice@getcover.com </a></p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div className='2xl:col-span-7 self-center xl:col-span-7 lg:col-span-7 md:col-span-6 sm:col-span-6 s:col-span-6'>
-                                <Contact />
-                            </div>
-                        </div>
-                    </div>
-                </FadeIn>
+                <Contact />
                 <div className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto'>
                     <Footer />
                 </div>
