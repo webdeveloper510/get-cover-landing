@@ -6,7 +6,6 @@ import '../App.css';
 
 // -------------Component imported
 import Header from '../common/Header';
-import Input from '../common/Input';
 import Footer from '../common/Footer';
 
 // -------------Media Images imported
@@ -39,7 +38,6 @@ function Home() {
     const [loading, setLoading] = useState(true);
     const CarouselRef = useRef(null);
     const CarouselRef1 = useRef(null);
-    const CarouselRef2 = useRef(null);
 
     useEffect(() => {
         const images = document.querySelectorAll("img");
@@ -87,25 +85,6 @@ function Home() {
         tablet: {
             breakpoint: { max: 1024, min: 464 },
             items: 2
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1
-        }
-    };
-
-    const responsive1 = {
-        superLargeDesktop: {
-            breakpoint: { max: 4000, min: 3000 },
-            items: 1
-        },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 1
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 1
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },

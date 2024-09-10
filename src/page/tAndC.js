@@ -3,9 +3,6 @@ import Header from '../common/Header'
 import FadeIn from '../common/FadeIn'
 import overlay from '../assets/images/overlay.png';
 import Footer from '../common/Footer';
-import Email from '../assets/images/Email.png';
-import Phone from '../assets/images/phone.png';
-import Address from '../assets/images/Address.png';
 import Contact from '../common/contact';
 function TAndC() {
     return (

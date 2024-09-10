@@ -52,13 +52,6 @@ function Contact() {
         // Set the raw input value
         setPhoneNumber(e.target.value.slice(0, 10));
 
-        // Format the number as (XXX) XXX-XXXX if it contains 10 digits
-        if (digitsOnly.length === 10) {
-            const formattedPhone = digitsOnly.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
-            // Optionally, you could display this formatted number instead of the raw input
-            // setPhonenumber(formattedPhone);
-        }
-
         // Validate the phone number only if it contains 10 digits
         if (digitsOnly.length !== 10) {
             setPhoneError('Phone number must be 10 digits.');
