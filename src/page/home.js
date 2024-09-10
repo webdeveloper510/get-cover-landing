@@ -600,7 +600,7 @@ function Home() {
                                                     <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Tablets  <br /> Protection</p>
                                                 </div>
                                             </div>
-                                            <div className='bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
+                                            <div className='bg-Major bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
                                                 <div className='flex pl-4'>
                                                     <div className='self-center w-[30%]'>
                                                         <img className='mx-auto' src={Television} alt='Major' />
@@ -634,7 +634,7 @@ function Home() {
                                                     <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Automobile  <br /> Protection</p>
                                                 </div>
                                             </div>
-                                            <div className='bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
+                                            <div className='bg-Major bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
                                                 <div className='flex pl-4'>
                                                     <div className='self-center w-[30%]'>
                                                         <img className='mx-auto' src={Cycling} alt='Major' />
@@ -668,7 +668,7 @@ function Home() {
                                                     <p className='text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]'>Furniture  <br /> Protection</p>
                                                 </div>
                                             </div>
-                                            <div className='bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]'>
+                                            <div className='bg-Major bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]'>
                                                 <div className='flex pl-4'>
                                                     <div className='self-center w-[30%]'>
                                                         <img className='mx-auto' src={Golf} alt='Major' />
