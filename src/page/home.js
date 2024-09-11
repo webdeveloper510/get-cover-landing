@@ -844,7 +844,7 @@ function Home() {
                                     <div className='pr-5'>
                                         <img className='mb-3' src={plainImage} alt='plainImage' />
                                         <h1 className='4xl:text-[30px] 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-white leading-tight capitalize'>Education</h1>
-                                        <p className='bg-gradient-to-r mb-3 from-[#ACA1DF] to-[#D8BCD2] bg-clip-text capitalize text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Customized warranty plans for educational institutions, ensuring the protection of devices and equipment essential for learning environments.</p>
+                                        <p className='bg-gradient-to-r mb-3 from-[#ACA1DF] to-[#D8BCD2] bg-clip-text capitalize text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Comprehensive warranty solutions for educational institutions, protecting devices and equipment essential for learning.</p>
                                         <div className='flex'>
                                             <p onClick={() => scrollToSection('contact-us')} className='text-white 4xl:text-[20px] 3xl:text-[20px] 2xl:text-[11px] xl:text-[11px] lg:text-[11px] md:text-[11px] sm:text-[11px] s:text-[11px] border border-[#AB9CC0] py-2 px-5  rounded-lg'> Get Started Today</p>
                                         </div>
@@ -854,8 +854,7 @@ function Home() {
                                     <div className='pr-5'>
                                         <img className='mb-3' src={plainImage2} alt='plainImage' />
                                         <h1 className='4xl:text-[30px] mt-7 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-white leading-tight capitalize'>Corporate Accounts</h1>
-                                        <p className='bg-gradient-to-r mb-3 from-[#ACA1DF] to-[#D8BCD2] bg-clip-text capitalize text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Scalable warranty solutions for businesses of all sizes, enhancing asset protection and reducing downtime across various
-                                            <br /> sectors.</p>
+                                        <p className='bg-gradient-to-r mb-3 from-[#ACA1DF] to-[#D8BCD2] bg-clip-text capitalize text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Efficient warranty <br /> solutions for businesses, safeguarding assets and reducing operational disruptions.</p>
                                         <div className='flex'>
                                             <p onClick={() => scrollToSection('contact-us')} className='text-white 4xl:text-[20px] 3xl:text-[20px] 2xl:text-[11px] xl:text-[11px] lg:text-[11px] md:text-[11px] sm:text-[11px] s:text-[11px] border border-[#AB9CC0] py-2 px-5  rounded-lg'> Get Started Today</p>
                                         </div>
@@ -865,10 +864,8 @@ function Home() {
                                     <div className='pr-5'>
                                         <img className='mb-3' src={plainImage1} alt='plainImage' />
                                         <h1 className='4xl:text-[30px] mt-6 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-white capitalize leading-tight'>Government Programs</h1>
-                                        <p className='bg-gradient-to-r  from-[#ACA1DF] to-[#D8BCD2] bg-clip-text capitalize text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Specialized warranty management for government organizations, ensuring compliance
-                                            and streamlined
-                                            operations.</p>
-                                        <div className='flex mt-7'>
+                                        <p className='bg-gradient-to-r  from-[#ACA1DF] to-[#D8BCD2] bg-clip-text capitalize text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Specialized warranty <br /> solutions for government organizations, ensuring compliance and operational efficiency.</p>
+                                        <div className='flex '>
                                             <p onClick={() => scrollToSection('contact-us')} className='text-white 4xl:text-[20px] 3xl:text-[20px] 2xl:text-[11px] xl:text-[11px] lg:text-[11px] md:text-[11px] sm:text-[11px] s:text-[11px] border border-[#AB9CC0] py-2 px-5 mt-3 rounded-lg'> Get Started Tody</p>
                                         </div>
                                     </div>
@@ -877,8 +874,8 @@ function Home() {
                                     <div className=' h-full'>
                                         <img className='mb-3' src={plainImage3} alt='plainImage' />
                                         <h1 className='4xl:text-[30px] mt-4 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-white leading-tight capitalize'>Brokers and Distributors</h1>
-                                        <p className='bg-gradient-to-r mb-3 from-[#ACA1DF] to-[#D8BCD2] capitalize bg-clip-text text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Partner-focused warranty management, enabling smooth and effective service delivery.</p>
-                                        <div className='flex  2xl:mt-[74px] xl:mt-[74px] lg:mt-[74px] md:mt-[0px] sm:mt-[0px]'>
+                                        <p className='bg-gradient-to-r mb-3 from-[#ACA1DF] to-[#D8BCD2] capitalize bg-clip-text text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]'>Collaborative warranty <br /> solutions for brokers and distributors, enabling seamless service and support.</p>
+                                        <div className='flex '>
                                             <div onClick={() => scrollToSection('contact-us')} className='text-white 4xl:text-[20px] w-auto mr-auto 3xl:text-[20px] 2xl:text-[11px] xl:text-[11px] lg:text-[11px] md:text-[11px] sm:text-[11px] s:text-[11px] border border-[#AB9CC0] py-2 px-5 mt-3 rounded-lg'> Get Started Tody</div>
                                         </div>
                                     </div>
