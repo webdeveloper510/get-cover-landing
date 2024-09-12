@@ -4,13 +4,14 @@ import Linked from './../assets/images/icons/Link.svg';
 import Insta from './../assets/images/icons/Insta.svg';
 import FaceBook from './../assets/images/icons/faceBook.svg';
 import Twitter from './../assets/images/icons/twitter.svg';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
         <>
             <div className='flex justify-end py-3'>
-                <a href='/terms-and-conditions' className='text-[#B8AEDA] border-r-2 border-[#B8AEDA] pr-5'>Terms & Conditions  </a>
-                <a href='/privacy-policy' className='text-[#B8AEDA] pl-5'> Privacy Policy</a>
+                <Link to='/terms-and-conditions' className='text-[#B8AEDA] border-r-2 border-[#B8AEDA] pr-5'>Terms & Conditions  </Link>
+                <Link to='/privacy-policy' className='text-[#B8AEDA] pl-5'> Privacy Policy</Link>
             </div>
             <div className='2xl:flex xl:flex lg:flex md:hidden sm:hidden s:hidden justify-between py-6 pr-5 border-t border-[#B8AEDA]'>
                 <div className='self-center'>
