@@ -10,7 +10,8 @@ function Footer() {
     return (
         <>
             <div className='flex justify-end py-3'>
-                <Link to='/terms-and-conditions' className='text-[#B8AEDA] border-r-2 border-[#B8AEDA] pr-5'>Terms & Conditions  </Link>
+                <Link to='/financial' className='text-[#B8AEDA] border-r-2 border-[#B8AEDA] pr-5'>Financial </Link>
+                <Link to='/terms-and-conditions' className='text-[#B8AEDA] border-r-2 border-[#B8AEDA] px-5'>Terms & Conditions  </Link>
                 <Link to='/privacy-policy' className='text-[#B8AEDA] pl-5'> Privacy Policy</Link>
             </div>
             <div className='2xl:flex xl:flex lg:flex md:hidden sm:hidden s:hidden justify-between py-6 pr-5 border-t border-[#B8AEDA]'>

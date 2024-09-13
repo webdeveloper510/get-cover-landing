@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../common/Header'
-import FadeIn from '../common/FadeIn'
 import overlay from '../assets/images/overlay.png';
 import Footer from '../common/Footer';
-import Contact from '../common/contact';
 import loader from '../assets/images/loader.gif';
 import { Link } from 'react-router-dom';
 function Policy() {
@@ -60,7 +58,7 @@ function Policy() {
                         <div className=' 2xl:mb-12 xl:mb-12 lg:mb-12 md:mb-12 sm:mb-8 s:mb-8 ' >
                             <img className='object-cover w-full' src={overlay} alt='Overlay' />
                             <div className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto relative'>
-                                <p className='absolute right-2 text-white font-[600] -mt-7'><span className='text-[#B8AEDA]'> Effective Date: </span> September 1, 2024</p>
+                                <p className='text-white font-[600] text-right mt-2'><span className='text-[#B8AEDA]'> Effective Date: </span> September 1, 2024</p>
                             </div>
                         </div>
 
@@ -176,8 +174,6 @@ function Policy() {
                                 <br />
                                 By E-mail: to <Link to='mailto:customerservices@getcover.com' className='underline text-white'>Customerservices@getcover.com</Link></p>
                         </div>
-                        <div id='contact-us'></div>
-                        <Contact />
                         <div className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto'>
                             <Footer />
                         </div>

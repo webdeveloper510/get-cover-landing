@@ -131,7 +131,7 @@ function Contact() {
                                     <img src={Address} className='w-[30px] h-[30px] 2xl:mx-0 xl:mx-0 lg:mx-0 md:mx-0 sm:mx-auto s:mx-auto' alt='Address' />
                                     <div className=' 2xl:pl-5 xl:pl-5 lg:pl-5 md:pl-5 sm:pl-0 s:pl-0  2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center'>
                                         <p className='text-white font-semibold'>Address</p>
-                                        <p className='bg-gradient-to-r from-[#ACA1DF] capitalize to-[#D8BCD2] bg-clip-text text-transparent'>9701 Wilshire Blvd., Suite 930, <br /> Beverly Hills, CA
+                                        <p className='bg-gradient-to-r from-[#ACA1DF] capitalize to-[#D8BCD2] bg-clip-text text-transparent'>9701 Wilshire Blvd., Suite 930 <br /> Beverly Hills, CA
                                             90212</p>
                                     </div>
                                 </div>

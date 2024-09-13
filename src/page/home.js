@@ -161,13 +161,12 @@ function Home() {
 
                     window.scrollTo({
                         top: offsetPosition,
-                        behavior: 'smooth',
                     });
                 }
             };
 
             // Delay to ensure that the page content has fully rendered
-            setTimeout(scrollToSection, 500);
+            setTimeout(scrollToSection);
         }
     }, [loading, location]);
 
@@ -190,7 +189,7 @@ function Home() {
                                 <div className='self-center 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center'>
                                     {/* <h1 className='4xl:text-[104px] 3xl:text-[72px] 2xl:text-[60px] xl:text-[60px] lg:text-[60px] md:text-[52px] sm:text-[42px] s:text-[38px] font-bold leading-none text-white'> Check Back <br /> <span className='text-[#dacdffda]'> Soon </span> </h1> */}
                                     <p className='bg-gradient-to-r from-[#FFC7AD] capitalize to-[#FF9E9C] bg-clip-text text-transparent 4xl:text-[36px] 3xl:text-[36px] 2xl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] sm:text-[24px] s:text-[24px] font-bold mb-2'>Device Protection Simplified</p>
-                                    <h1 className='4xl:text-[104px] 3xl:text-[72px] 2xl:text-[50px] xl:text-[50px] lg:text-[50px] md:text-[42px] sm:text-[38 px] s:text-[38px] font-bold leading-none text-white'><span className=''> Expertise You Can <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> Trust </span> <br className='2xl:hidden xl:hidden lg:hidden md:block sm:hidden s:hidden' />  Assurance <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> You Can Rely On.</h1>
+                                    <h1 className='4xl:text-[104px] 3xl:text-[72px] 2xl:text-[50px] xl:text-[50px] lg:text-[50px] md:text-[42px] sm:text-[38 px] s:text-[38px] font-bold leading-none text-white'><span className=''> Expertise You Can <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> Trust,</span> <br className='2xl:hidden xl:hidden lg:hidden md:block sm:hidden s:hidden' />  Assurance <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:block md:hidden sm:hidden s:hidden' /> You Can Rely On</h1>
                                     {/* <p className='text-[#dacdffda] 4xl:text-[50px] 3xl:text-[38px] 2xl:text-[28px] xl:text-[28px] lg:text-[28px] md:text-[28px] sm:text-[28px] s:text-[28px] font-bold leading-none my-4'>Expertise You Can Trust, Assurance  <br className='2xl:block xl:block lg:hidden md:block sm:hidden s:hidden' />  You Can Rely On</p> */}
                                     <p className='text-[#dacdffda] font-bold 4xl:text-[40px] 3xl:text-[34px] 2xl:text-[22px] xl:text-[22px] lg:text-[22px] md:text-[22px] sm:text-[22px] s:text-[18px] mb-8'> Warranty Cover Solutions, And Premium <br className='4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden' /> Technology <br className='2xl:hidden xl:hidden lg:hidden md:block sm:hidden s:hidden' /> With Hassle-Free service To <br /> Maximize Our Customer's Experience </p>
                                     <div className='2xl:flex xl:flex lg:flex md:hidden sm:hidden s:hidden'>
@@ -221,12 +220,7 @@ function Home() {
                                                 delivering warranty coverage solutions
                                                 through its proprietary technology to both enterprise corporate organizations
                                                 (B2B) and individuals (B2C) clients.
-                                                <br />
-                                                <br />
-                                                Get Cover LLC is a subsidiary of NFG SA. a London based global private
-                                                investment firm focused on private equity and structured finance
-                                                investments into operating companies engaged in the insurance, financial
-                                                services, energy, infrastructure and real estate sectors.</p>
+                                            </p>
                                         </div>
                                         <div className='flex'>
                                             <img className='mx-auto w-2/3 self-center' src={AboutUs} alt='Why Get' />
@@ -236,30 +230,11 @@ function Home() {
                                 <div className='2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-5 sm:col-span-6 s:col-span-6 self-center'>
                                     <div className='2xl:block xl:block lg:block md:block sm:hidden s:hidden'>
                                         <h1 className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold 4xl:leading-[55px] 3xl:leading-[55px] 2xl:leading-[40px] xl:leading-[40px] lg:leading-[40px] md:leading-[40px] sm:leading-[40px] s:leading-[40px] text-white mb-3'>About Us</h1>
-                                        <p className='4xl:text-[30px] 3xl:text-[24px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[30px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8'>Get Cover is an InsureTech leader
-                                            delivering warranty coverage solutions
-                                            through its proprietary technology to both enterprise corporate organizations
-                                            (B2B) and individuals (B2C) clients.
-                                            <br />
-                                            <br />
-                                            Get Cover LLC is a subsidiary of NFG SA. a London based global private
-                                            investment firm focused on private equity and structured finance
-                                            investments into operating companies engaged in the insurance, financial
-                                            services, energy, infrastructure and real estate sectors.</p>
+                                        <p className='4xl:text-[30px] 3xl:text-[24px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[30px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8'>Get Cover has entered the US market, we have built the most flexible solutions for sustainable cover for the broadest range of technologies. We’ve listened to the customers and developed a warranty program that gives you the competitive edge. Get Cover is an Insurtech leader delivering warranty coverage solutions through its proprietary technology to both enterprise corporate organizations (B2B) and individuals (B2C) clients. <br /> <br /> As new technologies reach market maturity, technology providers must remain competitive by offering improved warranties, streamlining their admin and operate with more accurate data
+                                        </p>
                                     </div>
                                 </div>
-                                <div className='2xl:col-span-12 xl:col-span-12 lg:col-span-12 md:col-span-12 sm:col-span-6 s:col-span-6'>
-                                    <p className='w-[80%] mx-auto  mt-3 4xl:text-[30px] 3xl:text-[24px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[30px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8 text-center'>With more than $2.5 billion in firm capital and a focus on
-                                        transformative business combinations across our target industry sectors
-                                        throughout North America, Europe, Africa, and the Middle East creating a
-                                        strategic international presence, coupled with a deep understanding of the
-                                        importance of capital, NFG has the experience, expertise, and financial
-                                        capability to fund bespoke structured finance transactions creating
-                                        efficient and cost- effective financing programs <br />
-                                        that drive long term value
-                                        creation.
-                                    </p>
-                                </div>
+
                             </div>
                         </FadeIn>
                         <div id='technology'></div>
@@ -924,8 +899,8 @@ function Home() {
                         <div id='faq'></div>
                         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto 2xl:py-14 xl:py-14 lg:py-14 md:py-10 sm:py-8 s:py-8' >
                             <div className='lg:w-[80%] md:w-[90%] sm:w-[90%] s:w-[90%] mx-auto'>
-                                <p className='capitalize font-bold text-white text-[30px] text-center'>frequently asked questions</p>
-                                <p className='text-[#B8AEDA] text-center mb-5'>Reference site about Lorem Ipsum, giving information on its origins.</p>
+                                <p className='capitalize font-bold text-white text-[30px] text-center mb-5'>frequently asked questions</p>
+                                {/* <p className='text-[#B8AEDA] text-center mb-5'>Reference site about Lorem Ipsum, giving information on its origins.</p> */}
                                 <CustomAccordion items={accordionItems} />
                             </div>
                         </FadeIn>
