@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Header from '../common/Header'
 import overlay from '../assets/images/overlay.png';
 import Footer from '../common/Footer';
-import Contact from '../common/contact';
 import loader from '../assets/images/loader.gif';
 function TAndC() {
     const [loading, setLoading] = useState(true);
@@ -163,8 +162,6 @@ function TAndC() {
                                 appropriate legal action, including without limitation pursuing civil, criminal, and injunctive
                                 redress.</p>
                         </div>
-                        <div id='contact-us'></div>
-                        <Contact />
                         <div className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto'>
                             <Footer />
                         </div>

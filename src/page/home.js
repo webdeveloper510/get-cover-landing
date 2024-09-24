@@ -177,6 +177,27 @@ function Home() {
     }
   }, [loading, location]);
 
+  useEffect(() => {
+    if (!loading && location.state?.sectionId) {
+      const scrollToSection = () => {
+        const section = document.getElementById(location.state.sectionId);
+        if (section) {
+          const headerOffset = 100; // Adjust based on your header height
+          const elementPosition = section.getBoundingClientRect().top;
+          const offsetPosition =
+            elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+          });
+        }
+      };
+
+      // Delay to ensure that the page content has fully rendered
+      setTimeout(scrollToSection);
+    }
+  }, [loading, location]);
+
   return (
     <>
       {loading ? (
@@ -190,12 +211,13 @@ function Home() {
       ) : (
         <>
           <Header className="2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto" />
+          <div id="home"></div>
           <div className="2xl:bg-full-bg xl:bg-full-bg lg:bg-tab-bg md:bg-tab-bg sm:bg-mobile-bg bg-mobile-bg bg-cover bg-no-repeat pt-[90px] 2xl:px-0 xl:px-0 lg:px-0 md:px-10 sm:px-6 s:px-6 ">
             <FadeIn className=" 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto">
               <div className="grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
                 <div className="self-center 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center">
                   {/* <h1 className='4xl:text-[104px] 3xl:text-[72px] 2xl:text-[60px] xl:text-[60px] lg:text-[60px] md:text-[52px] sm:text-[42px] s:text-[38px] font-bold leading-none text-white'> Check Back <br /> <span className='text-[#dacdffda]'> Soon </span> </h1> */}
-                  <p className="gradient-text capitalize  bg-clip-text text-transparent 4xl:text-[36px] 3xl:text-[36px] 2xl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] sm:text-[24px] s:text-[24px] font-bold mb-2">
+                  <p className="gradient-text capitalize to-[#FF9E9C] bg-clip-text text-transparent 4xl:text-[36px] 3xl:text-[36px] 2xl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] sm:text-[24px] s:text-[24px] font-bold mb-2">
                     Device Protection Simplified
                   </p>
                   <h1 className="4xl:text-[104px] 3xl:text-[72px] 2xl:text-[50px] xl:text-[50px] lg:text-[50px] md:text-[42px] sm:text-[38 px] s:text-[38px] font-bold leading-none text-white">
@@ -203,12 +225,12 @@ function Home() {
                       {" "}
                       Expertise You Can{" "}
                       <br className="4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden" />{" "}
-                      Trust,{" "}
+                      Trust,
                     </span>{" "}
                     <br className="2xl:hidden xl:hidden lg:hidden md:block sm:hidden s:hidden" />{" "}
                     Assurance{" "}
                     <br className="4xl:hidden 3xl:hidden 2xl:block xl:block lg:block md:hidden sm:hidden s:hidden" />{" "}
-                    You Can Rely On.
+                    You Can Rely On
                   </h1>
                   {/* <p className='text-[#dacdffda] 4xl:text-[50px] 3xl:text-[38px] 2xl:text-[28px] xl:text-[28px] lg:text-[28px] md:text-[28px] sm:text-[28px] s:text-[28px] font-bold leading-none my-4'>Expertise You Can Trust, Assurance  <br className='2xl:block xl:block lg:hidden md:block sm:hidden s:hidden' />  You Can Rely On</p> */}
                   <p className="text-[#dacdffda] font-bold 4xl:text-[40px] 3xl:text-[34px] 2xl:text-[22px] xl:text-[22px] lg:text-[22px] md:text-[22px] sm:text-[22px] s:text-[18px] mb-8">
@@ -217,7 +239,7 @@ function Home() {
                     <br className="4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden" />{" "}
                     Technology{" "}
                     <br className="2xl:hidden xl:hidden lg:hidden md:block sm:hidden s:hidden" />{" "}
-                    With Hassle-Free service To <br /> Maximize Your Experience{" "}
+                    With Hassle-Free service To <br /> Maximize Your Experience
                   </p>
                   <div className="2xl:flex xl:flex lg:flex md:hidden sm:hidden s:hidden">
                     <p
@@ -262,20 +284,17 @@ function Home() {
                         About Us
                       </h1>
                       <p className="4xl:text-[30px] 3xl:text-[24px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[30px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center">
-                        Get Cover has entered the US market, we have built the
-                        most flexible solutions for sustainable cover for the
-                        broadest range of technologies. We’ve listened to the
+                        Get Cover has entered the US market, building the most
+                        flexible solutions for sustainable coverage across a
+                        broad range of technologies. We’ve listened to our
                         customers and developed a warranty program that gives
-                        you the competitive edge. Get Cover is an Insurtech
-                        leader delivering warranty coverage solutions through
-                        its proprietary technology to both enterprise corporate
-                        organizations (B2B) and individuals (B2C) clients.
-                        <br />
-                        <br />
-                        As new technologies reach market maturity, technology
-                        providers must remain competitive by offering improved
-                        warranties, streamlining their admin and operate with
-                        more accurate data
+                        you a competitive edge.Get Cover is an Insurtech leader,
+                        delivering warranty coverage solutions through its
+                        proprietary technology to both enterprise organizations
+                        (B2B) and individual clients (B2C). <br /> <br /> As new
+                        technologies mature, providers must stay competitive by
+                        offering improved warranties, streamlining
+                        administration, and operating with more accurate data.
                       </p>
                     </div>
                     <div className="flex">
@@ -293,33 +312,19 @@ function Home() {
                       About Us
                     </h1>
                     <p className="4xl:text-[30px] 3xl:text-[24px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[30px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8">
-                      Get Cover is an InsureTech leader delivering warranty
+                      Get Cover has entered the US market, building the most
+                      flexible solutions for sustainable coverage across a broad
+                      range of technologies. We’ve listened to our customers and
+                      developed a warranty program that gives you a competitive
+                      edge.Get Cover is an Insurtech leader, delivering warranty
                       coverage solutions through its proprietary technology to
-                      both enterprise corporate organizations (B2B) and
-                      individuals (B2C) clients.
-                      <br />
-                      <br />
-                      Get Cover LLC is a subsidiary of NFG SA. a London based
-                      global private investment firm focused on private equity
-                      and structured finance investments into operating
-                      companies engaged in the insurance, financial services,
-                      energy, infrastructure and real estate sectors.
+                      both enterprise organizations (B2B) and individual clients
+                      (B2C). <br /> <br /> As new technologies mature, providers
+                      must stay competitive by offering improved warranties,
+                      streamlining administration, and operating with more
+                      accurate data.
                     </p>
                   </div>
-                </div>
-                <div className="2xl:col-span-12 xl:col-span-12 lg:col-span-12 md:col-span-12 sm:col-span-6 s:col-span-6">
-                  <p className="w-[80%] mx-auto  mt-3 4xl:text-[30px] 3xl:text-[24px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[30px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8 text-center">
-                    With more than $2.5 billion in firm capital and a focus on
-                    transformative business combinations across our target
-                    industry sectors throughout North America, Europe, Africa,
-                    and the Middle East creating a strategic international
-                    presence, coupled with a deep understanding of the
-                    importance of capital, NFG has the experience, expertise,
-                    and financial capability to fund bespoke structured finance
-                    transactions creating efficient and cost- effective
-                    financing programs <br />
-                    that drive long term value creation.
-                  </p>
                 </div>
               </div>
             </FadeIn>
@@ -405,7 +410,7 @@ function Home() {
                 </div>
               </FadeIn>
             </div>
-            <div id="programs"></div>
+
             <FadeIn className=" 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-12 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8 ">
               <div className="grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4">
                 <div className="2xl:col-span-6 xl:col-span-6 flex lg:col-span-6 md:col-span-6 sm:col-span-6">
@@ -415,10 +420,10 @@ function Home() {
                         Why Get Device <br /> Protection Plans?
                       </h1>
                       <p className="text-lg text-[#B8AEDA] leading-[24px] mb-8 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center">
-                        One major benefit of having a device <br /> protection
-                        plan is saving money on expensive{" "}
+                        One major benefit of a device protection plan is saving
+                        money on expensive{" "}
                         <br className="2xl:block xl:block lg:block md:hidden sm:hidden s:hidden" />{" "}
-                        repairs that safeguards against damage,{" "}
+                        repairs while safeguarding against damage,
                         <br className="2xl:block xl:block lg:block md:hidden sm:hidden s:hidden" />{" "}
                         loss, and malfunctions.
                       </p>
@@ -438,8 +443,8 @@ function Home() {
                       Why Get Device <br /> Protection Plans?
                     </h1>
                     <p className="4xl:text-[30px] 3xl:text-[24px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[30px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8">
-                      One major benefit of having a device <br /> protection
-                      plan is saving money on expensive{" "}
+                      One major benefit of having a device protection plan is
+                      saving money on expensive{" "}
                       <br className="2xl:block xl:block lg:block md:hidden sm:hidden s:hidden" />{" "}
                       repairs that safeguards against damage,{" "}
                       <br className="2xl:block xl:block lg:block md:hidden sm:hidden s:hidden" />{" "}
@@ -450,8 +455,8 @@ function Home() {
                     <h1 className="text-white 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[21px] xl:text-[21px] lg:text-[21px] md:text-[21px] sm:text-[21px] s:text-[21px] font-bold">
                       Repair Plans
                     </h1>
-                    <p className="gradient-text1 capitalize bg-clip-text text-transparent 4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3">
-                      Efficient and effective solutions for fixing your <br />{" "}
+                    <p className="gradient-text1 capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3">
+                      Efficient, effective solutions for repairing your
                       products, ensuring they work like new.
                     </p>
                   </div>
@@ -460,8 +465,8 @@ function Home() {
                       Replacement Plans
                     </h1>
                     <p className="gradient-text1 capitalize to-[#BCA7B8] bg-clip-text text-transparent  4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3">
-                      Get Cover offers warranty programs that <br /> replace
-                      products versus repair.
+                      Get Cover offers warranty programs that replace products
+                      instead of repairing them.
                     </p>
                   </div>
                   <div className="mb-6">
@@ -476,7 +481,7 @@ function Home() {
                 </div>
               </div>
             </FadeIn>
-
+            <div id="programs"></div>
             <FadeIn className=" 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8">
               <div className="flex justify-between">
                 <p className="4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold leading-none text-white ">
@@ -1294,7 +1299,7 @@ function Home() {
                     <h1 className="4xl:text-[30px] 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-white leading-tight capitalize">
                       Education
                     </h1>
-                    <p className=" mb-3 gradient-text2 bg-clip-text capitalize text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]">
+                    <p className="gradient-text1 mb-3 bg-clip-text capitalize text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]">
                       Comprehensive warranty solutions for educational
                       institutions, protecting devices and equipment essential
                       for learning.
@@ -1316,7 +1321,7 @@ function Home() {
                     <h1 className="4xl:text-[30px] mt-7 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-white leading-tight capitalize">
                       Corporate Accounts
                     </h1>
-                    <p className=" mb-3 gradient-text2 bg-clip-text capitalize text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]">
+                    <p className="gradient-text1 mb-3 bg-clip-text capitalize text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]">
                       Efficient warranty <br /> solutions for businesses,
                       safeguarding assets and reducing operational disruptions.
                     </p>
@@ -1337,7 +1342,7 @@ function Home() {
                     <h1 className="4xl:text-[30px] mt-6 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-white capitalize leading-tight">
                       Government Programs
                     </h1>
-                    <p className="bg-gradient-to-r  gradient-text2 bg-clip-text capitalize text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]">
+                    <p className="gradient-text1  bg-clip-text capitalize text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]">
                       Specialized warranty <br /> solutions for government
                       organizations, ensuring compliance and operational
                       efficiency.
@@ -1348,7 +1353,7 @@ function Home() {
                         className="text-white cursor-pointer 4xl:text-[20px] 3xl:text-[20px] 2xl:text-[11px] xl:text-[11px] lg:text-[11px] md:text-[11px] sm:text-[11px] s:text-[11px] border border-[#AB9CC0] py-2 px-5 mt-3 rounded-lg"
                       >
                         {" "}
-                        Get Started Tody
+                        Get Started Today
                       </p>
                     </div>
                   </div>
@@ -1359,7 +1364,7 @@ function Home() {
                     <h1 className="4xl:text-[30px] mt-4 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-white leading-tight capitalize">
                       Brokers and Distributors
                     </h1>
-                    <p className="bg-gradient-to-r mb-3 gradient-text2 capitalize bg-clip-text text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]">
+                    <p className="gradient-text1 mb-3 capitalize bg-clip-text text-transparent 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]">
                       Collaborative warranty <br /> solutions for brokers and
                       distributors, enabling seamless service and support.
                     </p>
@@ -1369,7 +1374,7 @@ function Home() {
                         className="text-white cursor-pointer 4xl:text-[20px] w-auto mr-auto 3xl:text-[20px] 2xl:text-[11px] xl:text-[11px] lg:text-[11px] md:text-[11px] sm:text-[11px] s:text-[11px] border border-[#AB9CC0] py-2 px-5 mt-3 rounded-lg"
                       >
                         {" "}
-                        Get Started Tody
+                        Get Started Today
                       </div>
                     </div>
                   </div>
@@ -1405,13 +1410,10 @@ function Home() {
             <div id="faq"></div>
             <FadeIn className=" 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto 2xl:py-14 xl:py-14 lg:py-14 md:py-10 sm:py-8 s:py-8">
               <div className="lg:w-[80%] md:w-[90%] sm:w-[90%] s:w-[90%] mx-auto">
-                <p className="capitalize font-bold text-white text-[30px] text-center">
+                <p className="capitalize font-bold text-white text-[30px] text-center mb-5">
                   frequently asked questions
                 </p>
-                <p className="text-[#B8AEDA] text-center mb-5">
-                  Reference site about Lorem Ipsum, giving information on its
-                  origins.
-                </p>
+                {/* <p className='text-[#B8AEDA] text-center mb-5'>Reference site about Lorem Ipsum, giving information on its origins.</p> */}
                 <CustomAccordion items={accordionItems} />
               </div>
             </FadeIn>
