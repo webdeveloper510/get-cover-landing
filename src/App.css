@@ -17,7 +17,23 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+.gradient-text {
+  background: linear-gradient(to right, #ffc7ad, #ff9e9c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+.gradient-text1 {
+  background: linear-gradient(to right, #9b91c8, #bca7b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text2 {
+  background: linear-gradient(to right, #aca1df, #d8bcd2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .App-logo {
   height: 40vmin;
