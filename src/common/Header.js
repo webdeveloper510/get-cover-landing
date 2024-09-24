@@ -30,7 +30,7 @@ const Header = ({ className }) => {
                         <img src={menu} onClick={openDiv} alt='menu' />
                     </div>
                     <div className='justify-between text-white self-center 2xl:flex xl:flex lg:flex md:hidden sm:hidden s:hidden'>
-                        <Link to={'/'} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[13px] md:text-[10px] sm:text-[10px] s:text-[16px] cursor-pointer'> Home</Link>
+                        <a onClick={() => redirectToSection('home')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[13px] md:text-[10px] sm:text-[10px] s:text-[16px] cursor-pointer'> Home</a>
                         <a onClick={() => redirectToSection('about-us')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[13px] md:text-[10px] sm:text-[10px] s:text-[16px] cursor-pointer'> About Us</a>
                         <a onClick={() => redirectToSection('technology')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[13px] md:text-[10px] sm:text-[10px] s:text-[16px] cursor-pointer'>Technology</a>
                         <a onClick={() => redirectToSection('programs')} className='ml-5 self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[13px] md:text-[10px] sm:text-[10px] s:text-[16px] cursor-pointer'>Programs</a>

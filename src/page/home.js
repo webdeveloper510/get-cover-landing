@@ -182,6 +182,7 @@ function Home() {
                 </> :
                 <>
                     <Header className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto' />
+                    <div id='home'></div>
                     <div className='2xl:bg-full-bg xl:bg-full-bg lg:bg-tab-bg md:bg-tab-bg sm:bg-mobile-bg bg-mobile-bg bg-cover bg-no-repeat pt-[90px] 2xl:px-0 xl:px-0 lg:px-0 md:px-10 sm:px-6 s:px-6 '>
                         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto'>
 
@@ -277,7 +278,7 @@ function Home() {
                                 </div>
                             </FadeIn>
                         </div>
-                        <div id='programs'></div>
+
                         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-12 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8 '>
                             <div className='grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4'>
 
@@ -314,7 +315,7 @@ function Home() {
                                 </div>
                             </div>
                         </FadeIn>
-
+                        <div id='programs'></div>
                         <FadeIn className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-16 xl:py-16 lg:py-16 md:py-12 sm:py-8 s:py-8'>
                             <div className='flex justify-between'>
                                 <p className='4xl:text-[50px] 3xl:text-[50px] 2xl:text-[35px] xl:text-[35px] lg:text-[35px] md:text-[35px] sm:text-[35px] s:text-[35px] font-bold leading-none text-white '>Essential Gadgets <br /> Protection Plans</p>

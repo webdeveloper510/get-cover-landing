@@ -168,11 +168,11 @@ function Policy() {
                                 please contact us at:
                                 <br />
                                 <br />
-                                By Mail : Get Cover LLC - Attn: Customer Services, 9701 Wilshire Blvd, Suite 930,<br />
+                                By Mail : Get Cover LLC - Attn: Customer Services, 9701 Wilshire Blvd, Suite 930
                                 Beverly Hills, California 90212.
                                 <br />
                                 <br />
-                                By E-mail: to <Link to='mailto:customerservices@getcover.com' className='underline text-white'>Customerservices@getcover.com</Link></p>
+                                By E-mail: to <Link to='mailto:customerservices@getcover.com' className='underline text-white'>customerservices@getcover.com</Link></p>
                         </div>
                         <div className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto'>
                             <Footer />
