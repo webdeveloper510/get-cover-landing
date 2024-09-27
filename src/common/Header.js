@@ -43,8 +43,11 @@ const Header = ({ className }) => {
                     {isVisible && (
                         <div className='fixed top-0 left-0 w-full h-screen bg-[#323148fa] backdrop-blur-2xl'>
                             <img src={cross} onClick={openDiv} className='ml-5 mt-5' alt='cross' />
-                            <div className='mt-28  w-full  mx-auto'>
-                                <Link to={'/'} className='text-center my-5 text-white cursor-pointer'>About Us</Link>
+                            <div className='mt-8  w-full  mx-auto'>
+                                <Link to='/'>
+                                    <img src={logo} className="w-[158px] mx-auto" alt='logo' />
+                                </Link>
+                                <p className='text-center my-5 text-white cursor-pointer' onClick={() => redirectToSection('home')}>Home</p>
                                 <p className='text-center my-5 text-white cursor-pointer' onClick={() => redirectToSection('about-us')}>About Us</p>
                                 <p className='text-center mb-5 text-white cursor-pointer' onClick={() => redirectToSection('technology')}> Technology</p>
                                 <p className='text-center my-5 text-white cursor-pointer' onClick={() => redirectToSection('programs')}>Programs</p>

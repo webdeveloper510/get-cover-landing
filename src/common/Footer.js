@@ -72,7 +72,7 @@ function Footer() {
       <div className="2xl:hidden xl:hidden lg:hidden md:block sm:block s:block  py-6 pr-5 border-t border-[#B8AEDA]">
         <div className="2xl:flex xl:flex lg:flex md:flex sm:block s:block justify-between text-center">
           <div className="self-center">
-            <img src={logo} className="mx-auto" alt="logo" />
+            <img src={logo} className="mx-auto w-[158px]" alt="logo" />
           </div>
           <div className="flex justify-around my-3">
             <a
