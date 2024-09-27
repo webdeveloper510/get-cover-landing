@@ -16,7 +16,6 @@ const Header = ({ className }) => {
         navigate('/', { state: { sectionId: id } });
         setIsVisible(false); // Close the mobile menu after click
     };
-
     return (
         <div className={`fixed top-0 z-10 left-0 right-0 w-full bg-[#32314852] backdrop-blur-lg 2xl:px-0 xl:px-0 lg:px-0 md:px-16 sm:px-8 s:px-8`}>
             <div className={`${className}`}>
