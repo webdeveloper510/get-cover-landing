@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./../assets/images/logo.png";
+import logo from "./../assets/images/Logo.png";
 import Linked from "./../assets/images/icons/Link.svg";
 import Insta from "./../assets/images/icons/Insta.svg";
 import FaceBook from "./../assets/images/icons/faceBook.svg";
@@ -29,7 +29,7 @@ function Footer() {
       </div>
       <div className="2xl:flex xl:flex lg:flex md:hidden sm:hidden s:hidden justify-between py-6 pr-5 border-t border-[#B8AEDA]">
         <div className="self-center">
-          <img src={logo} alt="logo" />
+          <img src={logo} className="w-[158px]" alt="logo" />
         </div>
         <div className=" self-center">
           <p className="self-center 4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] text-[#B8AEDA]">

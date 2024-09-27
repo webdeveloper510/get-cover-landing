@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from './../assets/images/logo.png';
+import logo from './../assets/images/Logo.png';
 import menu from './../assets/images/icons/menu.svg';
 import cross from './../assets/images/icons/cross.svg';
 import { Link, useNavigate } from 'react-router-dom';
@@ -23,7 +23,7 @@ const Header = ({ className }) => {
                 <div className='flex justify-between py-6  2xl:pr-5 xl:pr-5 lg:pr-5 md:pr-5 sm:pr-0 s:pr-0'>
                     <div className='self-center'>
                         <Link to='/'>
-                            <img src={logo} alt='logo' />
+                            <img src={logo} className="w-[158px]" alt='logo' />
                         </Link>
                     </div>
                     <div className='self-center 2xl:hidden xl:hidden lg:hidden md:block sm:block s:block'>
