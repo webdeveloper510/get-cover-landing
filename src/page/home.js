@@ -235,11 +235,11 @@ function Home() {
                   {/* <p className='text-[#dacdffda] 4xl:text-[50px] 3xl:text-[38px] 2xl:text-[28px] xl:text-[28px] lg:text-[28px] md:text-[28px] sm:text-[28px] s:text-[28px] font-bold leading-none my-4'>Expertise You Can Trust, Assurance  <br className='2xl:block xl:block lg:hidden md:block sm:hidden s:hidden' />  You Can Rely On</p> */}
                   <p className="text-[#dacdffda] font-bold 4xl:text-[40px] 3xl:text-[34px] 2xl:text-[22px] xl:text-[22px] lg:text-[22px] md:text-[22px] sm:text-[22px] s:text-[18px] mb-8">
                     {" "}
-                    Warranty Cover Solutions, And Premium{" "}
+                    Warranty Cover Solutions and Premium{" "}
                     <br className="4xl:hidden 3xl:hidden 2xl:block xl:block lg:hidden md:hidden sm:hidden s:hidden" />{" "}
                     Technology{" "}
                     <br className="2xl:hidden xl:hidden lg:hidden md:block sm:hidden s:hidden" />{" "}
-                    With Hassle-Free service To <br /> Maximize Your Experience
+                    with Hassle-Free Service to <br /> Maximize Your Experience
                   </p>
                   <div className="2xl:flex xl:flex lg:flex md:hidden sm:hidden s:hidden">
                     <p
@@ -288,13 +288,14 @@ function Home() {
                         flexible solutions for sustainable coverage across a
                         broad range of technologies. We’ve listened to our
                         customers and developed a warranty program that gives
-                        you a competitive edge.Get Cover is an Insurtech leader,
-                        delivering warranty coverage solutions through its
-                        proprietary technology to both enterprise organizations
-                        (B2B) and individual clients (B2C). <br /> <br /> As new
-                        technologies mature, providers must stay competitive by
-                        offering improved warranties, streamlining
-                        administration, and operating with more accurate data.
+                        you a competitive edge. Get Cover is an Insurtech
+                        leader, delivering warranty coverage solutions through
+                        its proprietary technology to both enterprise
+                        organizations (B2B) and individual clients (B2C). <br />{" "}
+                        <br /> As new technologies mature, providers must stay
+                        competitive by offering improved warranties,
+                        streamlining administration and operating with more
+                        accurate data.
                       </p>
                     </div>
                     <div className="flex">
@@ -316,13 +317,13 @@ function Home() {
                       flexible solutions for sustainable coverage across a broad
                       range of technologies. We’ve listened to our customers and
                       developed a warranty program that gives you a competitive
-                      edge.Get Cover is an Insurtech leader, delivering warranty
-                      coverage solutions through its proprietary technology to
-                      both enterprise organizations (B2B) and individual clients
-                      (B2C). <br /> <br /> As new technologies mature, providers
-                      must stay competitive by offering improved warranties,
-                      streamlining administration, and operating with more
-                      accurate data.
+                      edge. Get Cover is an Insurtech leader, delivering
+                      warranty coverage solutions through its proprietary
+                      technology to both enterprise organizations (B2B) and
+                      individual clients (B2C). <br /> <br /> As new
+                      technologies mature, providers must stay competitive by
+                      offering improved warranties, streamlining administration
+                      and operating with more accurate data.
                     </p>
                   </div>
                 </div>
@@ -443,10 +444,10 @@ function Home() {
                       Why Get Device <br /> Protection Plans?
                     </h1>
                     <p className="4xl:text-[30px] 3xl:text-[24px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[18px] sm:text-[18px] s:text-[18px] text-[#B8AEDA] 4xl:leading-[35px] 3xl:leading-[30px] 2xl:leading-[24px] xl:leading-[24px] lg:leading-[24px] md:leading-[24px] sm:leading-[24px] s:leading-[24px] mb-8">
-                      One major benefit of having a device protection plan is
-                      saving money on expensive{" "}
+                      One major benefit of a device protection plan is saving
+                      money on expensive{" "}
                       <br className="2xl:block xl:block lg:block md:hidden sm:hidden s:hidden" />{" "}
-                      repairs that safeguards against damage,{" "}
+                      repairs while safeguarding against damage,{" "}
                       <br className="2xl:block xl:block lg:block md:hidden sm:hidden s:hidden" />{" "}
                       loss, and malfunctions.
                     </p>
@@ -455,7 +456,7 @@ function Home() {
                     <h1 className="text-white 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[21px] xl:text-[21px] lg:text-[21px] md:text-[21px] sm:text-[21px] s:text-[21px] font-bold">
                       Repair Plans
                     </h1>
-                    <p className="gradient-text1 capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3">
+                    <p className="gradient-text1  to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3">
                       Efficient, effective solutions for repairing your
                       products, ensuring they work like new.
                     </p>
@@ -464,7 +465,7 @@ function Home() {
                     <h1 className="text-white 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[21px] xl:text-[21px] lg:text-[21px] md:text-[21px] sm:text-[21px] s:text-[21px] font-bold">
                       Replacement Plans
                     </h1>
-                    <p className="gradient-text1 capitalize to-[#BCA7B8] bg-clip-text text-transparent  4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3">
+                    <p className="gradient-text1  to-[#BCA7B8] bg-clip-text text-transparent  4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3">
                       Get Cover offers warranty programs that replace products
                       instead of repairing them.
                     </p>
@@ -473,7 +474,7 @@ function Home() {
                     <h1 className="text-white 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[21px] xl:text-[21px] lg:text-[21px] md:text-[21px] sm:text-[21px] s:text-[21px] font-bold">
                       Accidental Damage Plans
                     </h1>
-                    <p className="gradient-text1 capitalize to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3">
+                    <p className="gradient-text1  to-[#BCA7B8] bg-clip-text text-transparent 4xl:text-[24px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px] font-bold mb-3">
                       Finding skilled and experienced technicians <br /> for
                       appliance repairs can be difficult.
                     </p>
@@ -1287,8 +1288,7 @@ function Home() {
                     Enterprise
                   </h1>
                   <p className="text-[#B8AEDA] 4xl:text-[30px] 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] leading-1 text-center">
-                    Enterprise programs are available for the following
-                    channels:
+                    Enterprise programs are available for the following sectors:
                   </p>
                 </div>
               </FadeIn>
