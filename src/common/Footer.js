@@ -38,10 +38,35 @@ function Footer() {
           {/* <p className="4xl:text-[22px] 3xl:text-[19px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] text-[#B8AEDA] font-medium text-center " style={{ bottom: '20px' }}>Design, Develop & Maintain by <a rel="noreferrer" href="https://codenomad.net/" className='text-[#fff] ' target="_blank">Codenomad India </a></p> */}
         </div>
         <div className="flex">
-          <img src={Linked} alt="Linked" />
-          <img src={FaceBook} alt="FaceBook" />
-          <img src={Twitter} alt="Twitter" />
-          <img src={Insta} alt="Insta" />
+          <a
+            href="https://www.linkedin.com/company/get-cover-company"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <img src={Linked} alt="Linked" />{" "}
+          </a>
+          <a
+            href="https://www.facebook.com/GetCoverCompany"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={FaceBook} alt="FaceBook" />
+          </a>
+          <a
+            href="https://x.com/GetCoverCompany"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Twitter} alt="Twitter" />
+          </a>
+          <a
+            href="https://www.instagram.com/getcovercompany/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Insta} alt="Insta" />
+          </a>
         </div>
       </div>
       <div className="2xl:hidden xl:hidden lg:hidden md:block sm:block s:block  py-6 pr-5 border-t border-[#B8AEDA]">
@@ -50,10 +75,34 @@ function Footer() {
             <img src={logo} className="mx-auto" alt="logo" />
           </div>
           <div className="flex justify-around my-3">
-            <img src={Linked} className="w-14 h-14" alt="Linked" />
-            <img src={FaceBook} className="w-14 h-14" alt="FaceBook" />
-            <img src={Twitter} className="w-14 h-14" alt="Twitter" />
-            <img src={Insta} className="w-14 h-14" alt="Insta" />
+            <a
+              href="https://www.linkedin.com/company/get-cover-company"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={Linked} className="w-14 h-14" alt="Linked" />
+            </a>
+            <a
+              href="https://www.facebook.com/GetCoverCompany"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={FaceBook} className="w-14 h-14" alt="FaceBook" />
+            </a>
+            <a
+              href="https://x.com/GetCoverCompany"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={Twitter} className="w-14 h-14" alt="Twitter" />
+            </a>
+            <a
+              href="https://www.instagram.com/getcovercompany/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={Insta} className="w-14 h-14" alt="Insta" />
+            </a>
           </div>
         </div>
         <div className=" text-center mt-4">
