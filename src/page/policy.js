@@ -53,25 +53,25 @@ function Policy() {
                     <Header className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto' />
                     <div className='2xl:bg-full-bg xl:bg-full-bg lg:bg-tab-bg md:bg-tab-bg sm:bg-mobile-bg bg-mobile-bg bg-cover bg-no-repeat pt-[90px] 2xl:px-0 xl:px-0 lg:px-0 md:px-10 sm:px-6 s:px-6 '>
                         <div className='pt-16 pb-3'>
-                            <h1 className='4xl:text-[104px] 3xl:text-[72px] 2xl:text-[50px] xl:text-[50px] lg:text-[50px] md:text-[42px] sm:text-[38 px] s:text-[38px] font-bold leading-none text-center text-white'>Privacy Policy</h1>
+                            <h1 className='4xl:text-[104px] 3xl:text-[72px] 2xl:text-[50px] xl:text-[50px] lg:text-[50px] md:text-[42px] sm:text-[38 px] s:text-[38px] font-bold leading-none text-center text-[#4E4D69]'>Privacy Policy</h1>
                         </div>
                         <div className=' 2xl:mb-12 xl:mb-12 lg:mb-12 md:mb-12 sm:mb-8 s:mb-8 ' >
                             <img className='object-cover w-full' src={overlay} alt='Overlay' />
                             <div className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto relative'>
-                                <p className='text-white font-[600] text-right mt-2'><span className='text-[#B8AEDA]'> Effective Date: </span> September 1, 2024</p>
+                                <p className='text-[#4E4D69] font-[600] text-right mt-2'><span className='text-[#9991BE]'> Effective Date: </span> September 1, 2024</p>
                             </div>
                         </div>
 
                         <div className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto mt-3'>
-                            <p className='text-white text-3xl font-semibold mb-4 mt-16'>1) Introduction</p>
-                            <p className='text-[#B8AEDA]'>Get Cover LLC (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is committed to protecting the privacy of our
+                            <p className='text-[#4E4D69] text-3xl font-semibold mb-4 mt-16'>1) Introduction</p>
+                            <p className='text-[#9991BE]'>Get Cover LLC (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is committed to protecting the privacy of our
                                 customers and partners. This Privacy Policy explains how we collect, use, disclose, and
                                 protect your personal information when you interact with us in our role as an insurtech
                                 warranty administrator.</p>
                         </div>
                         <div className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto mt-3'>
-                            <p className='text-white text-3xl font-semibold my-4'>2)  Information We Collect</p>
-                            <p className='text-[#B8AEDA]'>We collect various types of information, including:
+                            <p className='text-[#4E4D69] text-3xl font-semibold my-4'>2)  Information We Collect</p>
+                            <p className='text-[#9991BE]'>We collect various types of information, including:
                                 <br />
                                 <br />
                                 - Personal Information: Name, contact information (email, phone number, address), and
@@ -90,8 +90,8 @@ function Policy() {
                                 preferences and behaviors.</p>
                         </div>
                         <div className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto mt-3'>
-                            <p className='text-white text-3xl font-semibold my-4'>3)   How We Use Your Information</p>
-                            <p className='text-[#B8AEDA]'>We use your information for the following purposes:
+                            <p className='text-[#4E4D69] text-3xl font-semibold my-4'>3)   How We Use Your Information</p>
+                            <p className='text-[#9991BE]'>We use your information for the following purposes:
                                 <br />
                                 <br />
                                 - To Administer Warranties: Process warranty claims, manage warranty records, and
@@ -110,8 +110,8 @@ function Policy() {
                                 legal requests, and protect our rights.</p>
                         </div>
                         <div className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto mt-3'>
-                            <p className='text-white text-3xl font-semibold my-4'>4)  How We Share Your Information</p>
-                            <p className='text-[#B8AEDA] mb-3'>We may share your information with:
+                            <p className='text-[#4E4D69] text-3xl font-semibold my-4'>4)  How We Share Your Information</p>
+                            <p className='text-[#9991BE] mb-3'>We may share your information with:
                                 <br />
                                 <br />
                                 - Third-Party Service Providers**: Companies that perform services on our behalf, such
@@ -127,15 +127,15 @@ function Policy() {
                                 - Business Transfers: In the event of a merger, acquisition, or sale of assets.</p>
                         </div>
                         <div className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto mt-3'>
-                            <p className='text-white text-3xl font-semibold my-4'>5)  Data Security</p>
-                            <p className='text-[#B8AEDA] mb-3'>We implement reasonable security measures to protect your personal information from
+                            <p className='text-[#4E4D69] text-3xl font-semibold my-4'>5)  Data Security</p>
+                            <p className='text-[#9991BE] mb-3'>We implement reasonable security measures to protect your personal information from
                                 unauthorized access, use, or disclosure. However, no method of transmission over the
                                 internet or electronic storage is 100% secure, and we cannot guarantee absolute
                                 security.</p>
                         </div>
                         <div className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto mt-3'>
-                            <p className='text-white text-3xl font-semibold my-4'>6)  Your Rights</p>
-                            <p className='text-[#B8AEDA] mb-3'>You have the following rights regarding your personal information:
+                            <p className='text-[#4E4D69] text-3xl font-semibold my-4'>6)  Your Rights</p>
+                            <p className='text-[#9991BE] mb-3'>You have the following rights regarding your personal information:
                                 <br />
                                 <br />
                                 - Access: Request access to the personal information we hold about you.
@@ -151,20 +151,20 @@ function Policy() {
                                 - Opt-Out: Opt-out of receiving marketing communications.</p>
                         </div>
                         <div className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto mt-3'>
-                            <p className='text-white text-3xl font-semibold my-4'>7)  Cookies and Tracking Technologies</p>
-                            <p className='text-[#B8AEDA] mb-3'>We use cookies and similar tracking technologies to collect information about your
+                            <p className='text-[#4E4D69] text-3xl font-semibold my-4'>7)  Cookies and Tracking Technologies</p>
+                            <p className='text-[#9991BE] mb-3'>We use cookies and similar tracking technologies to collect information about your
                                 browsing activities and enhance your experience on our website. You can manage your
                                 cookie preferences through your browser settings.</p>
                         </div>
                         <div className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto mt-3'>
-                            <p className='text-white text-3xl font-semibold my-4'>8)  Changes to This Privacy Policy</p>
-                            <p className='text-[#B8AEDA] mb-3'>We may update this Privacy Policy from time to time. Any changes will be posted on our
+                            <p className='text-[#4E4D69] text-3xl font-semibold my-4'>8)  Changes to This Privacy Policy</p>
+                            <p className='text-[#9991BE] mb-3'>We may update this Privacy Policy from time to time. Any changes will be posted on our
                                 website with an updated effective date. Your continued use of our services constitutes
                                 acceptance of the revised policy.</p>
                         </div>
                         <div className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto mt-3'>
-                            <p className='text-white text-3xl font-semibold my-4'>9)  Contact Us</p>
-                            <p className='text-[#B8AEDA] mb-3'>If you have any questions or concerns about this Privacy Policy or our data practices,
+                            <p className='text-[#4E4D69] text-3xl font-semibold my-4'>9)  Contact Us</p>
+                            <p className='text-[#9991BE] mb-3'>If you have any questions or concerns about this Privacy Policy or our data practices,
                                 please contact us at:
                                 <br />
                                 <br />
@@ -172,7 +172,7 @@ function Policy() {
                                 Beverly Hills, California 90212.
                                 <br />
                                 <br />
-                                By E-mail: to <Link to='mailto:customerservices@getcover.com' className='underline text-white'>customerservices@getcover.com</Link></p>
+                                By E-mail: to <Link to='mailto:customerservices@getcover.com' className='underline text-[#4E4D69]'>customerservices@getcover.com</Link></p>
                         </div>
                         <div className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto'>
                             <Footer />

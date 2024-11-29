@@ -54,7 +54,7 @@ function Information() {
           <Header className="2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto" />
           <div className="2xl:bg-full-bg xl:bg-full-bg lg:bg-tab-bg md:bg-tab-bg sm:bg-mobile-bg bg-mobile-bg bg-cover bg-no-repeat pt-[90px] 2xl:px-0 xl:px-0 lg:px-0 md:px-10 sm:px-6 s:px-6 ">
             <div className="pt-16 pb-3">
-              <h1 className="4xl:text-[104px] 3xl:text-[72px] 2xl:text-[50px] xl:text-[50px] lg:text-[50px] md:text-[42px] sm:text-[38 px] s:text-[38px] font-bold leading-none text-center text-white">
+              <h1 className="4xl:text-[104px] 3xl:text-[72px] 2xl:text-[50px] xl:text-[50px] lg:text-[50px] md:text-[42px] sm:text-[38 px] s:text-[38px] font-bold leading-none text-center text-[#4E4D69]">
                 NFG information
               </h1>
             </div>
@@ -67,7 +67,7 @@ function Information() {
             </div>
 
             <div className=" 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-12 xl:py-12 lg:py-12 md:py-12 sm:py-8 s:py-8">
-              <p className="text-[#B8AEDA]">
+              <p className="text-[#9991BE]">
                 Get Cover LLC is a subsidiary of NFG SA. a London based global
                 private investment firm focused on private equity and structured
                 finance investments into operating companies engaged in the

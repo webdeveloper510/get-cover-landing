@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Input from "./Input";
 import Select from "./select";
 import FadeIn from "./FadeIn";
-import Email from "../assets/images/Email.png";
-import Phone from "../assets/images/phone.png";
-import Address from "../assets/images/Address.png";
+import Email from "../assets/images/sider/email.svg";
+import Phone from "../assets/images/sider/phone.svg";
+import Address from "../assets/images/sider/address.svg";
 
 function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -145,7 +145,7 @@ function Contact() {
           <div className="bg-Contact bg-cover bg-no-repeat rounded-[16px]">
             <div className="grid 2xl:grid-cols-12 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 s:grid-cols-6 gap-4 2xl:p-12 xl:p-12 lg:p-12 md:p-10 sm:p-8 s:p-8">
               <div className="2xl:col-span-5 xl:col-span-5 lg:col-span-5 md:col-span-6 sm:col-span-6 s:col-span-6 self-center px-6">
-                <p className="2xl:text-[50px] xl:text-[45px] lg:text-[45px] md:text-[32px] sm:text-[28px] s:text-[28px] text-white 2xl:leading-[55px] xl:leading-[50px] lg:leading-[50px] md:leading-[37px] sm:leading-[32px] s:leading-[32px]  font-bold 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center">
+                <p className="2xl:text-[50px] xl:text-[45px] lg:text-[45px] md:text-[32px] sm:text-[28px] s:text-[28px] text-[#4E4D69] 2xl:leading-[55px] xl:leading-[50px] lg:leading-[50px] md:leading-[37px] sm:leading-[32px] s:leading-[32px]  font-bold 2xl:text-left xl:text-left lg:text-left md:text-center sm:text-center s:text-center">
                   Are you ready to Get Covered? Contact Us
                 </p>
                 <div className="my-4">
@@ -156,8 +156,8 @@ function Contact() {
                       alt="Address"
                     />
                     <div className=" 2xl:pl-5 xl:pl-5 lg:pl-5 md:pl-5 sm:pl-0 s:pl-0  2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center">
-                      <p className="text-white font-semibold">Address</p>
-                      <p className="gradient-text2 capitalize to-[#D8BCD2] bg-clip-text text-transparent">
+                      <p className="text-[#4E4D69] font-semibold">Address</p>
+                      <p className="capitalize text-[#9991BE]">
                         9701 Wilshire Blvd., Suite 930 <br /> Beverly Hills, CA
                         90212
                       </p>
@@ -172,8 +172,8 @@ function Contact() {
                       alt="Phone"
                     />
                     <div className=" 2xl:pl-5 xl:pl-5 lg:pl-5 md:pl-5 sm:pl-0 s:pl-0  2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center">
-                      <p className="text-white font-semibold">Phone</p>
-                      <p className="gradient-text2 capitalize to-[#D8BCD2] bg-clip-text text-transparent">
+                      <p className="text-[#4E4D69] font-semibold">Phone</p>
+                      <p className=" capitalize text-[#9991BE]">
                         {" "}
                         <a href="tel:3107730033"> 310-773-0033 </a> <br />{" "}
                         <a href="tel:8882095598">888-209-5598</a>{" "}
@@ -189,8 +189,8 @@ function Contact() {
                       alt="Email"
                     />
                     <div className=" 2xl:pl-5 xl:pl-5 lg:pl-5 md:pl-5 sm:pl-0 s:pl-0  2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center s:text-center">
-                      <p className="text-white font-semibold">Email</p>
-                      <p className="gradient-text2 to-[#D8BCD2] break-words bg-clip-text text-transparent underline">
+                      <p className="text-[#4E4D69] font-semibold">Email</p>
+                      <p className="text-[#9991BE] break-words underline">
                         <a href="mailto:info@getcover.com" className="undeline">
                           info@getcover.com{" "}
                         </a>{" "}
@@ -281,12 +281,12 @@ function Contact() {
                     <div className="2xl:col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-2 s:col-span-2 flex">
                       <button
                         type="submit"
-                        className="font-semibold text-[#323148] bg-white rounded-lg 4xl:text-[26px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px]  px-5 py-4"
+                        className="font-semibold text-[#fff] bg-[#B064CA] rounded-lg 4xl:text-[26px] 3xl:text-[20px] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] s:text-[14px]  px-5 py-4"
                       >
                         Send Message
                       </button>
                       {show && (
-                        <p className="self-center pl-5 text-[#feb0a3] text-lg">
+                        <p className="self-center pl-5 text-[#000] text-lg">
                           {text}
                         </p>
                       )}

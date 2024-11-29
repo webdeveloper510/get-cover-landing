@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import open from '../assets/images/open.png';
-import close from '../assets/images/close.png';
+import open from '../assets/images/sider/active.svg';
+import close from '../assets/images/sider/inactive.svg';
 
 const AccordionItem = ({ title, content, isOpen, onClick }) => {
   const contentRef = useRef(null);
@@ -16,7 +16,7 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
         }`}
     >
       <div
-        className="accordion-header flex justify-between text-lg font-Lufga text-[#fff]"
+        className="accordion-header flex justify-between text-lg font-bold font-Lufga text-[#4E4D69]"
         onClick={onClick}
       >
         <span className="self-center">{title}</span>
@@ -25,7 +25,7 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
       <div
         ref={contentRef}
         style={{ maxHeight, opacity: isOpen ? 1 : 0 }}
-        className="accordion-content overflow-hidden transition-all duration-500 ease-in-out pl-5  bg-gradient-to-r from-[#ACA1DF] capitalize to-[#D8BCD2] bg-clip-text text-transparent"
+        className="accordion-content overflow-hidden transition-all duration-500 ease-in-out pl-5  capitalize  text-[#4E4D69]"
       >
         <div className='mt-3'>
           {content}

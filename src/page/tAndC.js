@@ -52,7 +52,7 @@ function TAndC() {
                     <Header className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto' />
                     <div className='2xl:bg-full-bg xl:bg-full-bg lg:bg-tab-bg md:bg-tab-bg sm:bg-mobile-bg bg-mobile-bg bg-cover bg-no-repeat pt-[90px] 2xl:px-0 xl:px-0 lg:px-0 md:px-10 sm:px-6 s:px-6 '>
                         <div className='pt-16 pb-3'>
-                            <h1 className='4xl:text-[104px] 3xl:text-[72px] 2xl:text-[50px] xl:text-[50px] lg:text-[50px] md:text-[42px] sm:text-[38 px] s:text-[38px] font-bold leading-none text-center text-white'>Terms and Conditions</h1>
+                            <h1 className='4xl:text-[104px] 3xl:text-[72px] 2xl:text-[50px] xl:text-[50px] lg:text-[50px] md:text-[42px] sm:text-[38 px] s:text-[38px] font-bold leading-none text-center text-[#4E4D69]'>Terms and Conditions</h1>
                         </div>
                         <div className=' 2xl:mb-12 xl:mb-12 lg:mb-12 md:mb-12 sm:mb-8 s:mb-8 ' >
                             <img className='object-cover w-full' src={overlay} alt='Overlay' />
@@ -60,7 +60,7 @@ function TAndC() {
 
                         <div className=' 2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto  2xl:py-12 xl:py-12 lg:py-12 md:py-12 sm:py-8 s:py-8'>
 
-                            <p className='text-[#B8AEDA]'>These Terms and Conditions constitute a legally binding agreement made between you, whether personally
+                            <p className='text-[#9991BE]'>These Terms and Conditions constitute a legally binding agreement made between you, whether personally
                                 or on behalf of an entity (“you”) and Get Cover LLC (“we,” “us” or “our”), concerning your access to and use
                                 of the getcover.com website as well as any other media form, media channel, mobile website or mobile
                                 application related, linked, or otherwise connected thereto (collectively, the “Site”).
@@ -97,8 +97,8 @@ function TAndC() {
                         </div>
                         <div className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto'>
 
-                            <p className='text-white text-2xl font-semibold mb-4 mt-16'>1)  Limited Liability Clause</p>
-                            <p className='text-[#B8AEDA]'>In no event will we or our directors, employees, or agents be liable
+                            <p className='text-[#4E4D69] text-2xl font-semibold mb-4 mt-16'>1)  Limited Liability Clause</p>
+                            <p className='text-[#9991BE]'>In no event will we or our directors, employees, or agents be liable
                                 to you or any third party for any direct, indirect, consequential,
                                 exemplary, incidental, special, or punitive damages, including lost
                                 profit, lost revenue, loss of data, or other damages arising from
@@ -106,8 +106,8 @@ function TAndC() {
                                 of such damages</p>
                         </div>
                         <div className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto'>
-                            <p className='text-white text-2xl font-semibold my-4'>2)  Intellectual Property Clause</p>
-                            <p className='text-[#B8AEDA]'>Unless otherwise indicated, the Site is our proprietary property and all source code,
+                            <p className='text-[#4E4D69] text-2xl font-semibold my-4'>2)  Intellectual Property Clause</p>
+                            <p className='text-[#9991BE]'>Unless otherwise indicated, the Site is our proprietary property and all source code,
                                 databases, functionality, software, website designs, audio, video, text, photographs, and
                                 graphics on the Site (collectively, the “Content”) and the trademarks, service marks, and logos
                                 contained therein (the “Marks”) are owned or controlled by us or licensed to us, and are
@@ -131,8 +131,8 @@ function TAndC() {
                                 not expressly granted to you in and to the Site, the Content and the Marks.</p>
                         </div>
                         <div className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto'>
-                            <p className='text-white text-2xl font-semibold my-4'>3)  Governing Law Clause</p>
-                            <p className='text-[#B8AEDA]'>These Terms and Conditions and your use of the Site are
+                            <p className='text-[#4E4D69] text-2xl font-semibold my-4'>3)  Governing Law Clause</p>
+                            <p className='text-[#9991BE]'>These Terms and Conditions and your use of the Site are
                                 governed by and construed in accordance with the laws of the
                                 State of California applicable to agreements made and to be
                                 entirely performed within the State
@@ -140,9 +140,9 @@ function TAndC() {
                                 without regard to its conflict of law principles.</p>
                         </div>
                         <div className='2xl:w-large xl:w-1366 lg:w-tablet md:w-full sm:w-full mx-auto'>
-                            <p className='text-white text-2xl font-semibold my-4'>4)  Termination/Access of Account</p>
-                            <p className='text-[#B8AEDA] mb-3'>These Terms and Conditions shall remain in full force and effect while you use the Site.</p>
-                            <p className='text-[#B8AEDA] mb-3'>WITHOUT LIMITING ANY OTHER PROVISION OF THESE TERMS AND CONDITIONS,
+                            <p className='text-[#4E4D69] text-2xl font-semibold my-4'>4)  Termination/Access of Account</p>
+                            <p className='text-[#9991BE] mb-3'>These Terms and Conditions shall remain in full force and effect while you use the Site.</p>
+                            <p className='text-[#9991BE] mb-3'>WITHOUT LIMITING ANY OTHER PROVISION OF THESE TERMS AND CONDITIONS,
                                 WE RESERVE THE RIGHT
                                 TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE
                                 OR LIABILITY, DENY ACCESS TO AND USE OF THE SITE (INCLUDING BLOCKING
@@ -154,7 +154,7 @@ function TAndC() {
                                 ACCOUNT AND] ANY CONTENT
                                 OR INFORMATION THAT YOU POSTED AT ANY
                                 TIME, WITHOUT WARNING, IN OUR SOLE DISCRETION.</p>
-                            <p className='text-[#B8AEDA]'>If we terminate or suspend your account for any reason, you are prohibited from registering
+                            <p className='text-[#9991BE]'>If we terminate or suspend your account for any reason, you are prohibited from registering
                                 and creating a new account under your name, a fake or borrowed name, or the name of
                                 any third party, even if you may be acting on behalf of the third party.
 

@@ -32,8 +32,8 @@ const Input = ({
                 minLength={minLength}
                 pattern={type === "number" ? "[0-9]*" : undefined}
                 maxLength={maxLength}
-                className={`block px-4 py-4  w-full text-base outline-none font-medium rounded-lg bg-[#323148] appearance-none peer ${className1} ${error ? "border-[red]" : ""
-                    } placeholder-white text-white`}
+                className={`block px-4 py-4  w-full text-base outline-none font-medium rounded-lg bg-[#FDF4F0] appearance-none peer ${className1} ${error ? "border-[red]" : ""
+                    } placeholder-[#4E4D69] text-[#4E4D69]`}
                 onChange={handleChange} // Use the handleChange function
                 disabled={disabled}
                 required={required}
