@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import DropdownArrowImage from "../assets/images/icons/Drop.svg";
+import DropdownArrowImage from "../assets/images/sider/arrow.svg";
 import DropActive from "../assets/images/icons/DropActive.svg";
 
 const Select = ({
