@@ -705,7 +705,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Headphone bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Power bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -720,7 +720,7 @@ function Home() {
                         </div>
                       </div>
 
-                      <div className="bg-Power bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Laptop bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -734,7 +734,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Smartwatch bg-cover bg-no-repeat px-4 py-7 rounded-[20px]">
+                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -750,7 +750,7 @@ function Home() {
                       </div>
                     </div>
                     <div className="mx-3">
-                      <div className="bg-Laptop bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Mobile bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -764,7 +764,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Fitness bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Power bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -779,7 +779,7 @@ function Home() {
                         </div>
                       </div>
 
-                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Laptop bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -793,7 +793,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]">
+                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -809,7 +809,7 @@ function Home() {
                       </div>
                     </div>
                     <div className="mx-3">
-                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Mobile bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -823,7 +823,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Major bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Power bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -837,7 +837,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Laptop bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -851,7 +851,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]">
+                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -867,7 +867,7 @@ function Home() {
                       </div>
                     </div>
                     <div className="mx-3">
-                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Mobile bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -881,7 +881,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Major bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Power bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -895,7 +895,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Laptop bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img className="mx-auto" src={DVD} alt="Gaming" />
@@ -905,7 +905,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]">
+                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img className="mx-auto" src={Floor} alt="Major" />
@@ -917,7 +917,7 @@ function Home() {
                       </div>
                     </div>
                     <div className="mx-3">
-                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Mobile bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -931,7 +931,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Major bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Power bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img className="mx-auto" src={Golf} alt="Major" />
@@ -941,7 +941,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Laptop bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img className="mx-auto" src={House} alt="Gaming" />
@@ -951,7 +951,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]">
+                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -967,7 +967,7 @@ function Home() {
                       </div>
                     </div>
                     <div className="mx-3">
-                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Mobile bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img className="mx-auto" src={Lawn} alt="Gaming" />
@@ -977,7 +977,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Major bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Power bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img className="mx-auto" src={Mp3} alt="Major" />
@@ -987,7 +987,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Laptop bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -1001,7 +1001,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]">
+                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -1017,7 +1017,7 @@ function Home() {
                       </div>
                     </div>
                     <div className="mx-3">
-                      <div className="bg-Laptop bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Mobile bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -1032,7 +1032,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Fitness bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Power bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img className="mx-auto" src={Toys} alt="Fitness" />
@@ -1043,7 +1043,7 @@ function Home() {
                         </div>
                       </div>
 
-                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Laptop bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img
@@ -1057,7 +1057,7 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Major bg-cover bg-no-repeat px-4 py-7 rounded-[20px]">
+                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img

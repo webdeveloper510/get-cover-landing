@@ -41,7 +41,7 @@ const Header = ({ className }) => {
                     </div>
 
                     {isVisible && (
-                        <div className='fixed top-0 left-0 w-full h-screen bg-[#323148fa] backdrop-blur-2xl'>
+                        <div className='fixed top-0 left-0 w-full h-screen bg-[#f2e9f2] backdrop-blur-2xl'>
                             <img src={cross} onClick={openDiv} className='ml-5 mt-5' alt='cross' />
                             <div className='mt-8  w-full  mx-auto'>
                                 <Link to='/'>
