@@ -538,7 +538,7 @@ function Home() {
                         </p>
                       </div>
                       <div className="text-left 2xl:hidden xl:hidden lg:hidden md:block sm:block s:block">
-                        <button className="bg-white 4xl:text-[35px] 3xl:text-[35px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] font-semibold text-[#323148] py-4 px-12 rounded-lg">
+                        <button className="bg-[#4E4D69] 4xl:text-[35px] 3xl:text-[35px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] font-semibold text-[#fff] py-4 px-12 rounded-lg">
                           Learn More
                         </button>
                       </div>
