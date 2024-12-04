@@ -1115,7 +1115,7 @@ function Home() {
                 <div className="col-span-1 mb-4">
                   <div className="pr-5">
                     <img className="mb-3" src={plainImage2} alt="plainImage" />
-                    <h1 className="4xl:text-[30px] mt-7 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-[#4E4D69] leading-tight capitalize">
+                    <h1 className="4xl:text-[30px] 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-[#4E4D69] leading-tight capitalize">
                       Corporate Accounts
                     </h1>
                     <p className="text-[#9991BE] mb-3 capitalize 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]">
@@ -1136,7 +1136,7 @@ function Home() {
                 <div className="col-span-1 mb-4">
                   <div className="pr-5">
                     <img className="mb-3" src={plainImage1} alt="plainImage" />
-                    <h1 className="4xl:text-[30px] mt-6 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-[#4E4D69] capitalize leading-tight">
+                    <h1 className="4xl:text-[30px] 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-[#4E4D69] capitalize leading-tight">
                       Government Programs
                     </h1>
                     <p className="text-[#9991BE] capitalize  4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]">
@@ -1158,17 +1158,17 @@ function Home() {
                 <div className="col-span-1 mb-4">
                   <div className=" h-full">
                     <img className="mb-3" src={plainImage3} alt="plainImage" />
-                    <h1 className="4xl:text-[30px] mt-4 3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-[#4E4D69] leading-tight capitalize">
+                    <h1 className="4xl:text-[30px]  3xl:text-[30px] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[20px] s:text-[20px] font-semibold text-[#4E4D69] leading-tight capitalize">
                       Brokers and Distributors
                     </h1>
                     <p className="text-[#9991BE] mb-3 capitalize 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]">
                       Collaborative warranty <br /> solutions for brokers and
-                      distributors, enabling seamless service and support.
+                      distributors, enabling seamless service and <br /> support.
                     </p>
                     <div className="flex ">
                       <div
                         onClick={() => scrollToSection("contact-us")}
-                        className="text-[#4E4D69] cursor-pointer 4xl:text-[20px] w-auto mr-auto 3xl:text-[20px] 2xl:text-[11px] xl:text-[11px] lg:text-[11px] md:text-[11px] sm:text-[11px] s:text-[11px] border border-[#AB9CC0] py-2 px-5 mt-3 rounded-lg"
+                        className="text-[#4E4D69] cursor-pointer 4xl:text-[20px] w-auto mr-auto 3xl:text-[20px] 2xl:text-[11px] xl:text-[11px] lg:text-[11px] md:text-[11px] sm:text-[11px] s:text-[11px] border border-[#AB9CC0] py-2 px-5 rounded-lg"
                       >
                         {" "}
                         Get Started Today
