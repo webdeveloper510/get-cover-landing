@@ -700,7 +700,7 @@ function Home() {
                               alt="mobile"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Mobile Protection <br /> Plans
                           </p>
                         </div>
@@ -714,7 +714,7 @@ function Home() {
                               alt="Headphone"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Headphone <br /> Protection
                           </p>
                         </div>
@@ -729,7 +729,7 @@ function Home() {
                               alt="Power"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Power Tool <br /> Protection
                           </p>
                         </div>
@@ -743,7 +743,7 @@ function Home() {
                               alt="Smartwatch"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Smartwatch <br /> Protection
                           </p>
                         </div>
@@ -759,7 +759,7 @@ function Home() {
                               alt="Laptop"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Laptop <br /> Protection
                           </p>
                         </div>
@@ -773,7 +773,7 @@ function Home() {
                               alt="Fitness"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Fitness Equipment <br /> Protection
                           </p>
                         </div>
@@ -788,7 +788,7 @@ function Home() {
                               alt="Gaming"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Gaming Console <br /> Protection
                           </p>
                         </div>
@@ -802,7 +802,7 @@ function Home() {
                               alt="Major"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Major Appliance <br /> Protection
                           </p>
                         </div>
@@ -818,7 +818,7 @@ function Home() {
                               alt="Gaming"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Tablets <br /> Protection
                           </p>
                         </div>
@@ -832,7 +832,7 @@ function Home() {
                               alt="Major"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Television <br /> Protection
                           </p>
                         </div>
@@ -846,7 +846,7 @@ function Home() {
                               alt="Gaming"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Camera <br /> Protection
                           </p>
                         </div>
@@ -860,7 +860,7 @@ function Home() {
                               alt="Major"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Desktop <br /> Protection
                           </p>
                         </div>
@@ -876,7 +876,7 @@ function Home() {
                               alt="Gaming"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Automobile <br /> Protection
                           </p>
                         </div>
@@ -890,7 +890,7 @@ function Home() {
                               alt="Major"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Cycling <br /> Protection
                           </p>
                         </div>
@@ -900,7 +900,7 @@ function Home() {
                           <div className="self-center w-[30%]">
                             <img className="mx-auto" src={DVD} alt="Gaming" />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             DVD Media <br /> Protection
                           </p>
                         </div>
@@ -910,7 +910,7 @@ function Home() {
                           <div className="self-center w-[30%]">
                             <img className="mx-auto" src={Floor} alt="Major" />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Floor Care <br /> Protection
                           </p>
                         </div>
@@ -926,7 +926,7 @@ function Home() {
                               alt="Gaming"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Furniture <br /> Protection
                           </p>
                         </div>
@@ -936,7 +936,7 @@ function Home() {
                           <div className="self-center w-[30%]">
                             <img className="mx-auto" src={Golf} alt="Major" />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Golf <br /> Protection
                           </p>
                         </div>
@@ -946,7 +946,7 @@ function Home() {
                           <div className="self-center w-[30%]">
                             <img className="mx-auto" src={House} alt="Gaming" />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             House security <br /> Protection
                           </p>
                         </div>
@@ -960,7 +960,7 @@ function Home() {
                               alt="Major"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Jewelry <br /> Protection
                           </p>
                         </div>
@@ -972,7 +972,7 @@ function Home() {
                           <div className="self-center w-[30%]">
                             <img className="mx-auto" src={Lawn} alt="Gaming" />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Lawn & Garden <br /> Protection
                           </p>
                         </div>
@@ -982,7 +982,7 @@ function Home() {
                           <div className="self-center w-[30%]">
                             <img className="mx-auto" src={Mp3} alt="Major" />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Mp3 Player <br /> Protection
                           </p>
                         </div>
@@ -996,7 +996,7 @@ function Home() {
                               alt="Gaming"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Pc <br /> Protection
                           </p>
                         </div>
@@ -1010,7 +1010,7 @@ function Home() {
                               alt="Major"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Personal Care <br /> Protection
                           </p>
                         </div>
@@ -1026,7 +1026,7 @@ function Home() {
                               alt="Laptop"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Home Theater
                             <br /> Protection
                           </p>
@@ -1037,7 +1037,7 @@ function Home() {
                           <div className="self-center w-[30%]">
                             <img className="mx-auto" src={Toys} alt="Fitness" />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Toys <br /> Protection
                           </p>
                         </div>
@@ -1052,7 +1052,7 @@ function Home() {
                               alt="Gaming"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Gaming Console <br /> Protection
                           </p>
                         </div>
@@ -1066,7 +1066,7 @@ function Home() {
                               alt="Major"
                             />
                           </div>
-                          <p className="text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
+                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             Major Appliance <br /> Protection
                           </p>
                         </div>
