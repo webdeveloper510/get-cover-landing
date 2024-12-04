@@ -1163,12 +1163,12 @@ function Home() {
                     </h1>
                     <p className="text-[#9991BE] mb-3 capitalize 4xl:text-[25px] 3xl:text-[25px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px]">
                       Collaborative warranty <br /> solutions for brokers and
-                      distributors, enabling seamless service and <br /> support.
+                      distributors, enabling  seamless service and  support.
                     </p>
                     <div className="flex ">
                       <div
                         onClick={() => scrollToSection("contact-us")}
-                        className="text-[#4E4D69] cursor-pointer 4xl:text-[20px] w-auto mr-auto 3xl:text-[20px] 2xl:text-[11px] xl:text-[11px] lg:text-[11px] md:text-[11px] sm:text-[11px] s:text-[11px] border border-[#AB9CC0] py-2 px-5 rounded-lg"
+                        className="text-[#4E4D69] cursor-pointer 4xl:text-[20px] mt-6 w-auto mr-auto 3xl:text-[20px] 2xl:text-[11px] xl:text-[11px] lg:text-[11px] md:text-[11px] sm:text-[11px] s:text-[11px] border border-[#AB9CC0] py-2 px-5 rounded-lg"
                       >
                         {" "}
                         Get Started Today
