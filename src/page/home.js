@@ -32,7 +32,7 @@ import Tablets from "../assets/images/sider/Tablets Protection.png";
 import Television from "../assets/images/sider/Television Protection.png";
 import Camera from "../assets/images/sider/Camera Protection.png";
 import Desktop from "../assets/images/sider/Desktop Protection.png";
-import Automobile from "../assets/images/sider/Automobile Protection.png";
+import PcIcon from "../assets/images/sider/pcIcon.svg";
 import Cycling from "../assets/images/sider/Cycling Protection.png";
 import DVD from "../assets/images/sider/DVD Media Protection.png";
 import Floor from "../assets/images/sider/Floor Care Protection.png";
@@ -262,8 +262,8 @@ function Home() {
     },
     {
       background: "bg-Mobile",
-      icon: Jewelry,
-      title: "Jewelry",
+      icon: DVD,
+      title: "DVD Media",
       subtitle: "Protection",
       background1: "bg-Power",
       icon1: Lawn,
@@ -276,7 +276,7 @@ function Home() {
       title: "Mp3 Player",
       subtitle: "Protection",
       background1: "bg-Gaming",
-      icon1: HeadphoneIcon,
+      icon1: PcIcon,
       title1: "Pc",
       subtitle1: "Protection",
     },
@@ -291,19 +291,9 @@ function Home() {
       subtitle1: "Protection",
     },
     {
-      background: "bg-Laptop",
-      icon: Automobile,
-      title: "Automobile",
-      subtitle: "Protection",
-      background1: "bg-Gaming",
-      icon1: DVD,
-      title1: "DVD Media",
-      subtitle1: "Protection",
-    },
-    {
       background: "bg-Mobile",
-      icon: Floor,
-      title: "Floor Care",
+      icon: Personal,
+      title: "Personal Care",
       subtitle: "Protection",
       background1: "bg-Power",
       icon1: Furniture,
@@ -320,16 +310,7 @@ function Home() {
       title1: "Toys",
       subtitle1: "Protection",
     },
-    {
-      background: "bg-Mobile",
-      icon: Personal,
-      title: "Personal Care",
-      subtitle: "Protection",
-      background1: "bg-Power",
-      icon1: Golf,
-      title1: "Golf",
-      subtitle1: "Protection",
-    },
+
   ];
 
 
@@ -537,7 +518,7 @@ function Home() {
                           Sales <br /> Enhancement
                         </p>
                       </div>
-                      <div className="text-left 2xl:hidden xl:hidden lg:hidden md:block sm:block s:block">
+                      <div className="text-left 2xl:hidden xl:hidden lg:hidden md:block sm:block s:block">n
                         <button className="bg-[#4E4D69] 4xl:text-[35px] 3xl:text-[35px] 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[16px] s:text-[16px] font-semibold text-[#fff] py-4 px-12 rounded-lg">
                           Learn More
                         </button>
@@ -872,12 +853,12 @@ function Home() {
                           <div className="self-center w-[30%]">
                             <img
                               className="mx-auto"
-                              src={Automobile}
+                              src={Furniture}
                               alt="Gaming"
                             />
                           </div>
                           <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
-                            Automobile <br /> Protection
+                            Furniture <br /> Protection
                           </p>
                         </div>
                       </div>
@@ -905,63 +886,13 @@ function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 rounded-[20px]">
-                        <div className="flex pl-4">
-                          <div className="self-center w-[30%]">
-                            <img className="mx-auto" src={Floor} alt="Major" />
-                          </div>
-                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
-                            Floor Care <br /> Protection
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mx-3">
-                      <div className="bg-Mobile bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
-                        <div className="flex pl-4">
-                          <div className="self-center w-[30%]">
-                            <img
-                              className="mx-auto"
-                              src={Furniture}
-                              alt="Gaming"
-                            />
-                          </div>
-                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
-                            Furniture <br /> Protection
-                          </p>
-                        </div>
-                      </div>
-                      <div className="bg-Power bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
-                        <div className="flex pl-4">
-                          <div className="self-center w-[30%]">
-                            <img className="mx-auto" src={Golf} alt="Major" />
-                          </div>
-                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
-                            Golf <br /> Protection
-                          </p>
-                        </div>
-                      </div>
-                      <div className="bg-Laptop bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
+                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 mb-4 rounded-[20px]">
                         <div className="flex pl-4">
                           <div className="self-center w-[30%]">
                             <img className="mx-auto" src={House} alt="Gaming" />
                           </div>
                           <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
                             House security <br /> Protection
-                          </p>
-                        </div>
-                      </div>
-                      <div className="bg-Gaming bg-cover bg-no-repeat px-4 py-7 rounded-[20px]">
-                        <div className="flex pl-4">
-                          <div className="self-center w-[30%]">
-                            <img
-                              className="mx-auto"
-                              src={Jewelry}
-                              alt="Major"
-                            />
-                          </div>
-                          <p className="text-[#4E4D69] 4xl:text-[26px] 3xl:text-[21px] 2xl:text-[16px] xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] s:text-[15px]">
-                            Jewelry <br /> Protection
                           </p>
                         </div>
                       </div>
@@ -992,7 +923,7 @@ function Home() {
                           <div className="self-center w-[30%]">
                             <img
                               className="mx-auto"
-                              src={HeadphoneIcon}
+                              src={PcIcon}
                               alt="Gaming"
                             />
                           </div>
