@@ -21,11 +21,11 @@ function Contact() {
   // Dummy data for Select options (adjust as needed)
   const [categorys, setCategorys] = useState([
     // Initialize options array
-    { value: "general-inquiry", label: "General Inquiry" },
-    { value: "education", label: "Education" },
-    { value: "corporate-accounts", label: "Corporate Accounts" },
-    { value: "government-programs", label: "Government Programs" },
-    { value: "brokers-and-distributors", label: "Brokers and Distributors" },
+    { value: "General Inquiry", label: "General Inquiry" },
+    { value: "Education", label: "Education" },
+    { value: "Corporate Accounts", label: "Corporate Accounts" },
+    { value: "Government Programs", label: "Government Programs" },
+    { value: "Brokers and Distributors", label: "Brokers and Distributors" },
   ]);
 
   const handleEmailChange = (e) => {
@@ -74,70 +74,87 @@ function Contact() {
       return;
     }
 
-    const payload = {
-      firstName,
-      lastName,
-      email,
-      phoneNumber,
-      description,
-      category,
-    };
-
     try {
-      const response = await fetch(
-        "https://api.getcover.com/api-v1/user/contact-us",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(payload),
+      // Fetch the IP address
+      const ipResponse = await fetch("https://api.ipify.org?format=json");
+      const ipData = await ipResponse.json();
+      const ipAddress = ipData.ip;
+
+      // Get the site URL
+      const siteURL = window.location.href;
+
+      // Get the location
+      navigator.geolocation.getCurrentPosition(
+        async (position) => {
+          const location = {
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude,
+          };
+
+          // Include location, site URL, and IP address in the payload
+          const payload = {
+            firstName,
+            lastName,
+            email,
+            phoneNumber,
+            description,
+            category,
+            location,
+            siteURL,
+            ipAddress, // Add IP address here
+          };
+
+          // Make the API request
+          const response = await fetch(
+            "https://api.getcover.com/api-v1/user/contact-us",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(payload),
+            }
+          );
+
+          if (!response.ok) {
+            const errorDetails = await response.json();
+            setShow(true);
+            setText(errorDetails.message);
+            setTimeout(() => {
+              setText("");
+            }, 10000);
+            return;
+          }
+
+          setShow(true);
+          setText("Message sent successfully!");
+          setTimeout(() => {
+            setText("");
+          }, 10000);
+
+          // Clear form fields
+          setFirstName("");
+          setLastName("");
+          setEmail("");
+          setPhoneNumber("");
+          setDescription("");
+          setCategory("");
+        },
+        (error) => {
+          console.error("Error getting location:", error);
+          setShow(true);
+          setText("Unable to retrieve location.");
+          setTimeout(() => {
+            setText("");
+          }, 4000);
         }
       );
-
-      if (!response.ok) {
-        const errorDetails = await response.json();
-        setShow(true);
-        setText(errorDetails.message);
-        setTimeout(() => {
-          setText("");
-        }, 10000);
-        return;
-      }
-
-      setShow(true);
-      setText("Message sent successfully!");
-      setTimeout(() => {
-        setText("");
-      }, 10000);
-
-      if (!response.ok) {
-        const errorDetails = await response.json();
-        setShow(true);
-        setText(errorDetails.message);
-        setTimeout(() => {
-          setText("");
-        }, 10000);
-        return;
-      }
-
-      setShow(true);
-      setText("Message sent successfully!");
-      setTimeout(() => {
-        setText("");
-      }, 10000);
-
-      // Clear form fields
-      setFirstName("");
-      setLastName("");
-      setEmail("");
-      setPhoneNumber("");
-      setDescription("");
     } catch (error) {
       console.error("Error occurred while sending message:", error);
       alert("An error occurred. Please try again later.");
     }
   };
+
   return (
     <>
       <div>
