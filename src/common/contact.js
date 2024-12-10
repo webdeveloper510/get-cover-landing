@@ -99,9 +99,8 @@ function Contact() {
             phoneNumber,
             description,
             category,
-            location,
             siteURL,
-            ipAddress, // Add IP address here
+            ipAddress,
           };
 
           // Make the API request
