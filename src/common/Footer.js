@@ -3,7 +3,7 @@ import logo from "./../assets/images/New_logo.png";
 import Linked from "./../assets/images/sider/linked.svg";
 import Insta from "./../assets/images/sider/instagram.svg";
 import FaceBook from "./../assets/images/sider/facebook.svg";
-import Twitter from "./../assets/images/sider/twitter.svg";
+import Twitter from "./../assets/images/sider/twitter.png";
 import { Link } from "react-router-dom";
 
 function Footer() {
