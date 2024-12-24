@@ -1,0 +1,15 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "Coming-soon",
+    "main"
+  ],
+  "parent": {
+    "Coming-soon": "main",
+    "main": null
+  },
+  "order": [
+    "main",
+    "Coming-soon"
+  ]
+}
